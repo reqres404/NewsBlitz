@@ -1,130 +1,99 @@
-import React, { useState, useMemo, useRef } from 'react'
-import TinderCard from 'react-tinder-card'
-import "./Cards.css"
+import React, { useRef, useState } from "react";
+import ReactCardCarousel from "react-card-carousel";
+import data from "./data";
 
-const db = [
-  {
-    name: 'News 1',
-    url: '../../assets/NBCropped.png'
-  },
-  {
-    name: 'News 2',
-    url: '../../assets/NBCropped.png'
-  },
-  {
-    name: 'News 3',
-    url: '../../assets/NBCropped.png'
-  },
-  {
-    name: 'News 4',
-    url: '../../assets/NBCropped.png'
-  },
-  {
-    name: 'News 5',
-    url: '../../assets/NBCropped.png'
-  }
-]
+const Cards = () => {
+  const carouselRef = useRef(null);
+  const [selectedCard, setSelectedCard] = useState(null);
 
-function Cards () {
-  const [currentIndex, setCurrentIndex] = useState(db.length - 1)
-  const [lastDirection, setLastDirection] = useState()
-  // used for outOfFrame closure
-  const currentIndexRef = useRef(currentIndex)
+  const CONTAINER_STYLE = {
+    position: "relative",
+    height: "100vh",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
 
-  const childRefs = useMemo(
-    () =>
-      Array(db.length)
-        .fill(0)
-        .map((i) => React.createRef()),
-    []
-  )
+  const CARD_STYLE = {
+    height: "45vh",
+    width: "45vw",
+    paddingTop: "80px",
+    textAlign: "center",
+    background: "#52C0F5",
+    color: "#FFF",
+    fontFamily: "sans-serif",
+    fontSize: "12px",
+    textTransform: "uppercase",
+    borderRadius: "10px",
+    boxSizing: "border-box",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    transition: "transform 0.3s ease-in-out",
+    cursor: "pointer", // Add cursor pointer to indicate clickability
+    overflow: "hidden", // Hide overflow content initially
+  };
 
-  const updateCurrentIndex = (val) => {
-    setCurrentIndex(val)
-    currentIndexRef.current = val
-  }
+  const SELECTED_CARD_STYLE = {
+    ...CARD_STYLE,
+    transform: "scale(1.2)",
+  };
 
-  const canGoBack = currentIndex < db.length - 1
+  const CARD_CONTENT_STYLE = {
+    maxHeight: "100%", // Allow content to expand vertically
+    overflowY: "auto", // Enable vertical scrolling if content overflows
+    padding: "10px", // Add padding to prevent text from touching edges
+  };
 
-  const canSwipe = currentIndex >= 0
+  const BUTTON_STYLE = {
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
+    fontSize: "5rem",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    color: "#ddb411",
+  };
 
-  // set last direction and decrease current index
-  const swiped = (direction, nameToDelete, index) => {
-    setLastDirection(direction)
-    updateCurrentIndex(index - 1)
-  }
+  const leftButtonStyle = { ...BUTTON_STYLE, left: "10px" };
+  const rightButtonStyle = { ...BUTTON_STYLE, right: "10px" };
 
-  const outOfFrame = (name, idx) => {
-    console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current)
-    // handle the case in which go back is pressed before card goes outOfFrame
-    currentIndexRef.current >= idx && childRefs[idx].current.restoreCard()
-    // TODO: when quickly swipe and restore multiple times the same card,
-    // it happens multiple outOfFrame events are queued and the card disappear
-    // during latest swipes. Only the last outOfFrame event should be considered valid
-  }
-
-  const swipe = async (dir) => {
-    if (canSwipe && currentIndex < db.length) {
-      await childRefs[currentIndex].current.swipe(dir) // Swipe the card!
-    }
-  }
-
-  // increase current index and show card
-  const goBack = async () => {
-    if (!canGoBack) return
-    const newIndex = currentIndex + 1
-    updateCurrentIndex(newIndex)
-    await childRefs[newIndex].current.restoreCard()
-  }
+  const handleCardClick = (index) => {
+    setSelectedCard(index === selectedCard ? null : index);
+  };
 
   return (
-    <div>
-      <link
-        href='https://fonts.googleapis.com/css?family=Damion&display=swap'
-        rel='stylesheet'
-      />
-      <link
-        href='https://fonts.googleapis.com/css?family=Alatsi&display=swap'
-        rel='stylesheet'
-      />
-      <h1>News</h1>
-      <div className='cardSection'>
-      <div className='cardContainer'>
-        {db.map((character, index) => (
-          <TinderCard
-            ref={childRefs[index]}
-            className='swipe'
-            key={character.name}
-            onSwipe={(dir) => swiped(dir, character.name, index)}
-            onCardLeftScreen={() => outOfFrame(character.name, index)}
+    <div style={CONTAINER_STYLE}>
+      <button style={leftButtonStyle} onClick={() => carouselRef.current.prev()}>‹</button>
+      <ReactCardCarousel ref={carouselRef} autoplay={false}>
+        {data.map((item, index) => (
+          <div 
+            key={index} 
+            style={{
+              ...(selectedCard === index ? SELECTED_CARD_STYLE : CARD_STYLE),
+              backgroundImage: `url(${item.imgURL})`
+            }}
+            onClick={() => handleCardClick(index)}
           >
-            <div
-              style={{ backgroundImage: 'url(' + character.url + ')' }}
-              className='card'
-            >
-              <h3>{character.name}</h3>
+            <div style={CARD_CONTENT_STYLE}>
+              <h3>{item.name}</h3>
+              <p>{item.category}</p>
+              {/* Display image URL with scrolling if selected */}
+              {selectedCard === index && (
+                <p>{item.summary}</p>
+              )}
             </div>
-          </TinderCard>
+          </div>
         ))}
-      </div>
-      <div className='buttons'>
-        <button style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('left')}>Swipe left!</button>
-        <button style={{ backgroundColor: !canGoBack && '#c3c4d3' }} onClick={() => goBack()}>Undo swipe!</button>
-        <button style={{ backgroundColor: !canSwipe && '#c3c4d3' }} onClick={() => swipe('right')}>Swipe right!</button>
-      </div>
-      {lastDirection ? (
-        <h2 key={lastDirection} className='infoText'>
-          You swiped {lastDirection}
-        </h2>
-      ) : (
-        <h2 className='infoText'>
-          Swipe a card or press a button to get Restore Card button visible!
-        </h2>
-      )}
+      </ReactCardCarousel>
+      <button style={rightButtonStyle} onClick={() => carouselRef.current.next()}>›</button>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Cards
-
+export default Cards;

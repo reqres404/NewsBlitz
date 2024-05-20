@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ionic/core": "^8.1.2",
+    "@ionic/react": "^8.1.2",
     "@react-spring/web": "^9.5.5",
+    "framer": "^2.4.1",
     "react": "^18.2.0",
+    "react-card-carousel": "^1.1.3",
     "react-card-swiper": "^1.1.25",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",

@@ -1,26 +1,23 @@
-import Navbar from "../src/Components/Navbar/navbar"
-import Cards from "./Components/Cards/Cards"
-import "./App.css"
-function App() {
+import React, { useState } from 'react';
+import Navbar from './Components/Navbar/navbar';
+import Cards from './Components/Cards/Cards';
+import data from './Components/Cards/data';
+import './App.css'; // Import the CSS file for styling
 
-  const handleReadMore = (url) => {
-    window.open(url, '_blank'); // Open the original article in a new tab
-  };
-
-  const handleDismiss = () => {
-    // Implement logic to dismiss the news card
+const App = () => {
+  const [cards, setCards] = useState(data);
+  console.log(cards)
+  const handleSwipe = (isRight) => {
+    console.log(isRight ? "Swiped right!" : "Swiped left!");
+    setCards((prevCards) => prevCards.slice(0));
   };
 
   return (
-    <>
-      <div>
-        <Navbar />
-        <div className="deck">
-          <Cards />
-        </div>
-      </div>
-    </>
-  )
-}
+    <div className="app-container">
+      <Navbar />
+      <Cards/>
+    </div>
+  );
+};
 
-export default App
+export default App;
