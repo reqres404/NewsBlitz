@@ -3,41 +3,34 @@ const path = require('path');
 
 async function loadData() {
     try {
-        // ../API/data.json
         const newsDataFile = path.join(__dirname, '..', 'data.json');
+        console.log(newsDataFile)
         const data = await fs.readFile(newsDataFile, 'utf8');
         const newsData = JSON.parse(data);
-        
-    } catch (error) {
-        console.error(error);
-        throw error; // Re-throw the error to handle it outside
-    }
-}
-
-async function getAllNews(req,res) {
-    try {
-        // Load data
-        const newsData = await loadData();
-
-        // Perform operations that depend on newsData here
-        // For example:
-        res.status(200).json(newsData)
-        
+        console.log(newsData);
         return newsData;
     } catch (error) {
         console.error(error);
-        res.status(404).json({error:error})
-        throw error; // Re-throw the error to handle it outside
+        throw error;
     }
 }
 
-module.exports = {
-    getAllNews
-};
+async function getAllNews(req, res) {
+    try {
+        console.log("Does this work");
+        const newsData = await loadData();
+        res.status(200).json(newsData);
+    } catch (error) {
+        console.error(error);
+        res.status(404).json({ error: error.message });
+    }
+}
 
-// Usage:
-// getAllNews().then(newsData => {
-//     // Use newsData here
-// }).catch(error => {
-//     // Handle error
-// });
+const testRoute = (req, res) => {
+    res.status(200).json({ message: "this works well" });
+}
+
+module.exports = {
+    getAllNews,
+    testRoute
+};

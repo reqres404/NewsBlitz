@@ -1,24 +1,27 @@
-/* MyCarousel.css */
-
-.container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button_style{
+  position: "absolute";
+  top: "50%";
+  transform: "translateY(-50%)";
+  font-size: "5rem";
+  background: "none";
+  border: "none";
+  cursor: "pointer";
+  color: "#ddb411";
 }
+.title{
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 10%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+.summary{
+  font-family: "Rowdies", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: start;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.705);
 
-.card {
-  height: 200px;
-  width: 200px;
-  padding-top: 80px;
-  text-align: center;
-  background: #52c0f5;
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  border-radius: 10px;
-  box-sizing: border-box;
 }

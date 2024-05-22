@@ -24,14 +24,10 @@ article_count = 0
 
 feed = "https://abcnews.go.com/abcnews/internationalheadlines"
 
-# first make a get request to the RSS feed
 response = requests.get(feed)
-# collect the contents of the request
 webpage = response.content
-# create a BeautifulSoup object that we can then parse to extract the links and title
 soup = BeautifulSoup(webpage, features='xml')
 
-# here we find every instance of an <item> tag, collect everything inside each tag, and store them all in a list
 items = soup.find_all('item')
 
 # extract the article link within each <item> tag and store in a separate list
@@ -47,19 +43,18 @@ for url in articles:
     article.parse()
     article.nlp()
 
-    # store the necessary data in variables
+    
     title = article.title
     summary = article.summary
     keywords = article.keywords
     text = article.text
-
     url = article.url
-    
-    # run sentiment analysis on the article text
-    # create a Textblob object and then get the sentiment values and store them
-    text_blob = TextBlob(text)
-    polarity = text_blob.polarity
-    subjectivity = text_blob.subjectivity
+    imgURL = article.top_image
+    # # run sentiment analysis on the article text
+    # # create a Textblob object and then get the sentiment values and store them
+    # text_blob = TextBlob(text)
+    # polarity = text_blob.polarity
+    # subjectivity = text_blob.subjectivity
 
     newsDetails = {
         "News": article_count,
@@ -70,16 +65,16 @@ for url in articles:
         "polarity":polarity,
         # "text_blob": text_blob,
         "subjectivity": subjectivity,  
-        "url":url  
+        "url":url ,
+        "imgURL":imgURL
     }
     newsData.append(newsDetails)
     article_count+=1
 
-    if article_count>=2:
+    if article_count>=20:
         break   
              
 with open(json_file_path, 'w') as json_file:
     json.dump(newsData, json_file)
 
-    # now we can print out the data
 print(newsData)
