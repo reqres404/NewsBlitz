@@ -17,11 +17,29 @@
   background-color: rgba(0, 0, 0, 0.705);
 }
 .summary{
-  font-family: "Rowdies", sans-serif;
+  font-family:monospace;
   font-weight: 600;
+  font-size: medium;
   font-style: normal;
   text-align: start;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.705);
+  background-color: rgba(0, 0, 0, 0.766);
+  
+}
 
+.read-more-button{
+  display: flex;
+  width: 5vw;
+  text-align: center;
+  flex-direction: start;
+  font-weight: 700;
+  padding: 1.5%;
+  color:black;
+  text-decoration: none;
+  background-color: var(--yellow);
+  transition-duration: 0.5s;
+}
+
+.read-more-button:hover{
+  scale: 1.1;
 }

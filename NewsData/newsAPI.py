@@ -3,7 +3,7 @@ import json
 from newsapi import NewsApiClient
 
 # Initialize the NewsApiClient with your API key
-newsapi = NewsApiClient(api_key='353fc8bcb62d4b1f90761db68103a6e2')
+newsapi = NewsApiClient("api key")
 
 # Fetch news articles with a page size limit of 25
 allNews = newsapi.get_everything(q='india', page_size=25)

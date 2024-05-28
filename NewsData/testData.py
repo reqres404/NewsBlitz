@@ -39,13 +39,13 @@ article_count = 0
 
 # Load the JSON data from the file
 with open('gnews_url.json', 'r') as file:
-    data = json.load(file)
+    url_data = json.load(file)
 
 # List to store scraped news data
 news_data = []
 
 # Iterate over each item in the JSON data
-for item in data:
+for item in url_data:
     url = item['link']  # Extract the link from the item
     article = Article(url)
     
