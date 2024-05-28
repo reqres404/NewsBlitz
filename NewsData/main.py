@@ -62,9 +62,9 @@ for url in articles:
         "summary": summary,
         # "text": text,
         "keywords":keywords,
-        "polarity":polarity,
+        # "polarity":polarity,
         # "text_blob": text_blob,
-        "subjectivity": subjectivity,  
+        # "subjectivity": subjectivity,  
         "url":url ,
         "imgURL":imgURL
     }
