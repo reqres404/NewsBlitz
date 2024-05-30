@@ -1,0 +1,26 @@
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+button {
+    background-color: var(--yellow);
+    font-size: 1.25rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button.active {
+    background-color: white;
+    color:black;
+}

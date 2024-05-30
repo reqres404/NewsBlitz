@@ -7,7 +7,7 @@ async function loadData() {
         console.log(newsDataFile)
         const data = await fs.readFile(newsDataFile, 'utf8');
         const newsData = JSON.parse(data);
-        console.log(newsData);
+        console.log("Data Sent");
         return newsData;
     } catch (error) {
         console.error(error);

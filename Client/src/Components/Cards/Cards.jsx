@@ -3,7 +3,7 @@ import ReactCardCarousel from "react-card-carousel";
 import axios from "axios";
 import "./Cards.css";
 
-const fetchNewsData = async () => {
+const fetchNewsData = async (props) => {
   const url = "http://localhost:4000/api/news";
   try {
     const response = await axios.get(url);
