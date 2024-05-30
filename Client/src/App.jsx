@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Navbar from './Components/Navbar/navbar';
 import Cards from './Components/Cards/Cards';
 import './App.css'; // Import the CSS file for styling
