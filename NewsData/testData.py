@@ -5,6 +5,12 @@ from newspaper import Article
 import requests
 from bs4 import BeautifulSoup
 
+health = 'https://www.google.com/search?sca_esv=361416631b2a74db&sca_upv=1&rlz=1C1FKPE_en-GBIN1108IN1108&sxsrf=ADLYWIIx5tW7S36gl5LvM3xlhJsJL8KNKw:1717165906405&q=health&tbm=nws&source=lnms&prmd=invsmbtz&sa=X&ved=2ahUKEwj1jvy-jbiGAxX9rlYBHUOpAIMQ0pQJegQICxAB&biw=1536&bih=730&dpr=1.25'
+sports = 'https://www.google.com/search?sca_esv=361416631b2a74db&sca_upv=1&rlz=1C1FKPE_en-GBIN1108IN1108&sxsrf=ADLYWILAEYnaOqGhjN5peYhtRcr9y2lYfg:1717165953052&q=sports&tbm=nws&source=lnms&prmd=insvmbtz&sa=X&ved=2ahUKEwjUk5vVjbiGAxUaslYBHfBPMXIQ0pQJegQIERAB&biw=1536&bih=730&dpr=1.25'
+finance = 'https://www.google.com/search?sca_esv=361416631b2a74db&sca_upv=1&rlz=1C1FKPE_en-GBIN1108IN1108&sxsrf=ADLYWILUjbr_C68PA_uECfeN76FofGM4hw:1717165976169&q=finance&tbm=nws&source=lnms&prmd=invsmbtz&sa=X&ved=2ahUKEwinqJ7gjbiGAxW9slYBHaJaDDwQ0pQJegQIEBAB&biw=1536&bih=730&dpr=1.25'
+politics = 'https://www.google.com/search?sca_esv=361416631b2a74db&sca_upv=1&rlz=1C1FKPE_en-GBIN1108IN1108&sxsrf=ADLYWIJjzDsE1nNgvhcjEDDIyHae1FuFEA:1717166008335&q=politics&tbm=nws&source=lnms&prmd=invsbmtz&sa=X&ved=2ahUKEwiJxcnvjbiGAxUrk1YBHTD2BkUQ0pQJegQIChAB&biw=1536&bih=730&dpr=1.25'
+india = 'https://www.google.com/search?q=india&num=100&sca_esv=6dc0ae32fc817d32&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIIacKjqsDULdbvQJeq4SIYV-BON9g%3A1716923053018&ei=rSpWZpNl5dWx4w-omIbwCA&oq=ind&gs_lp=Egxnd3Mtd2l6LW5ld3MiA2luZCoCCAgyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCxAAGIAEGJECGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMhAQABiABBixAxhDGIMBGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMhAQABiABBixAxhDGIMBGIoFMgUQABiABEiUaVDcEViaGXAAeACQAQCYAZ8BoAGrBaoBAzAuNbgBAcgBAPgBAZgCBaAC0gXCAgsQABiABBixAxiDAcICBxAAGIAEGArCAggQABiABBixA8ICDhAAGIAEGLEDGIMBGIoFmAMAiAYBkgcDMC41oAfSHA&sclient=gws-wiz-news'
+
 nltk.download('punkt')
 
 def getNewsData():
@@ -13,7 +19,7 @@ def getNewsData():
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"
     }
     response = requests.get(
-        "https://www.google.com/search?q=india&num=100&sca_esv=6dc0ae32fc817d32&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIIacKjqsDULdbvQJeq4SIYV-BON9g%3A1716923053018&ei=rSpWZpNl5dWx4w-omIbwCA&oq=ind&gs_lp=Egxnd3Mtd2l6LW5ld3MiA2luZCoCCAgyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCxAAGIAEGJECGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMhAQABiABBixAxhDGIMBGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMhAQABiABBixAxhDGIMBGIoFMgUQABiABEiUaVDcEViaGXAAeACQAQCYAZ8BoAGrBaoBAzAuNbgBAcgBAPgBAZgCBaAC0gXCAgsQABiABBixAxiDAcICBxAAGIAEGArCAggQABiABBixA8ICDhAAGIAEGLEDGIMBGIoFmAMAiAYBkgcDMC41oAfSHA&sclient=gws-wiz-news", headers=headers
+        india, headers=headers
     )
     soup = BeautifulSoup(response.content, "html.parser")
     news_results = []
@@ -31,7 +37,6 @@ def getNewsData():
       # Writing the data to a JSON file
     with open("gnews_url.json", "w") as f:
         json.dump(news_results, f, indent=2)
-
 getNewsData()
 api_folder_path = os.path.join(os.path.dirname(__file__), '..', 'API')
 json_file_path = os.path.join(api_folder_path, 'data.json')
@@ -57,7 +62,7 @@ for item in url_data:
         # Extract relevant information
         title = article.title
         summary = article.summary
-        keywords = article.keywords
+        # keywords = article.keywords
         text = article.text
         url = article.url
         imgURL = article.top_image        
@@ -87,4 +92,4 @@ for item in url_data:
 with open(json_file_path, 'w') as json_file:
     json.dump(news_data, json_file)
 
-print(news_data)
+

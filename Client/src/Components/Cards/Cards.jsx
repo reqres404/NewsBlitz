@@ -1,22 +1,24 @@
-import  { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import ReactCardCarousel from "react-card-carousel";
 import axios from "axios";
 import "./Cards.css";
 
-const fetchNewsData = async (props) => {
-  const url = "http://localhost:4000/api/news";
+// Fetch news data from the API
+const fetchNewsData = async () => {
+  const url = "http://localhost:4000/api/news"; 
   try {
     const response = await axios.get(url);
     return response.data;
   } catch (error) {
     console.error("Error fetching news data:", error);
-    return [];
+    return {};
   }
 };
 
-const Cards = () => {
-  const [news, setNews] = useState([]);
+const Cards = ({ category }) => {
+  const [news, setNews] = useState({});
   const [selectedCard, setSelectedCard] = useState(null);
+  const [carouselIndex, setCarouselIndex] = useState(0);
   const carouselRef = useRef(null);
 
   useEffect(() => {
@@ -27,20 +29,43 @@ const Cards = () => {
     getNewsData();
   }, []);
 
+  useEffect(() => {
+    // Reset the selected card and carousel index when category changes
+    setSelectedCard(null);
+    setCarouselIndex(0);
+    if (carouselRef.current) {
+      carouselRef.current.goTo(0);
+    }
+  }, [category]);
+
   const handleCardClick = (index) => {
     setSelectedCard(index === selectedCard ? null : index);
   };
 
+  // Filter news based on selected category
+  const filteredNews = category === 'ALL' 
+    ? Object.values(news).flat() 
+    : news[category.toLowerCase()] || [];
+
+  const totalNews = filteredNews.length;
+
   return (
     <div className="container_style">
+
       <button
         className="button_style left_button_style"
-        onClick={() => carouselRef.current.prev()}
+        onClick={() => {
+          const newIndex = carouselIndex - 1;
+          if (newIndex >= 0) {
+            setCarouselIndex(newIndex);
+            carouselRef.current.prev();
+          }
+        }}
       >
         ‹
       </button>
       <ReactCardCarousel ref={carouselRef} autoplay={false}>
-        {news.map((item, index) => (
+        {filteredNews.map((item, index) => (
           <div
             key={index}
             className={`card_style ${selectedCard === index ? 'selected_card_style' : ''}`}
@@ -48,7 +73,6 @@ const Cards = () => {
             onClick={() => handleCardClick(index)}
           >
             <div className="card_content_style">
-              <p>{item.news_number}</p>
               <h3 className="title">{item.title}</h3>
               {selectedCard === index && (
                 <>
@@ -67,9 +91,18 @@ const Cards = () => {
           </div>
         ))}
       </ReactCardCarousel>
+      <div className="news_number_display">
+        {totalNews > 0 ? `${carouselIndex + 1} / ${totalNews}` : "No news available"}
+      </div>
       <button
         className="button_style right_button_style"
-        onClick={() => carouselRef.current.next()}
+        onClick={() => {
+          const newIndex = carouselIndex + 1;
+          if (newIndex < totalNews) {
+            setCarouselIndex(newIndex);
+            carouselRef.current.next();
+          }
+        }}
       >
         ›
       </button>
