@@ -145,16 +145,14 @@
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.766);
   }
+  .card_style {
+    background-clip: contain;
+  }
+
+
   /* .container_style {
     flex-direction: column;
   }
-
-  .card_style {
-    height: 60vh;
-    width: 80vw;
-  }
-
-
 
   .left_button_style {
     top: auto;
