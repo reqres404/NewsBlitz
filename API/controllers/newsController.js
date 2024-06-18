@@ -3,7 +3,7 @@ const path = require('path');
 
 async function loadData() {
     try {
-        const newsDataFile = path.join(__dirname, '..', 'data.json');
+        const newsDataFile = path.join(__dirname, '..', 'headless_data.json');
         console.log(newsDataFile)
         const data = await fs.readFile(newsDataFile, 'utf8');
         const newsData = JSON.parse(data);

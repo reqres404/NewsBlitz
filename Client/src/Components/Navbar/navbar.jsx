@@ -1,46 +1,46 @@
-import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import {CgMenuRight as Hamburger} from 'react-icons/cg'
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { CgMenuRight as Hamburger } from 'react-icons/cg';
 import logoSvg from '../../assets/NBCropped.png';
-import './navbar.css'
+import './navbar.css';
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar)
-  }
+    setShowNavbar(!showNavbar);
+  };
 
   return (
     <nav className="navbar">
       <div className="container">
-      <div className="logo">
-        <Link to ="/" className='"logo-link'>
-          <img src={logoSvg} alt="Logo" />
+        <div className="logo">
+          <Link to="/" className="logo-link">
+            <img src={logoSvg} alt="Logo" />
           </Link>
         </div>
-        <div className="menu-icon"  onClick={handleShowNavbar}>
+        <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger />
         </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+        <div className={`nav-elements ${showNavbar ? 'active' : ''}`}>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="" activeclassname="active">News</NavLink>
             </li>
             <li>
-              <NavLink to="/news">News</NavLink>
+              <NavLink to="/feedback" activeclassname="active">Feedback</NavLink>
             </li>
             <li>
-              <NavLink to="/profile">Profile</NavLink>
+              <NavLink to="/about" activeclassname="active">About</NavLink>
             </li>
             <li>
-              <NavLink to="/logout">Logout</NavLink>
+              <NavLink to="/donate" activeclassname="active">Donate</NavLink>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

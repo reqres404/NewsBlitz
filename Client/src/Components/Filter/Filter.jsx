@@ -15,7 +15,7 @@ const Filter = ({ onCategoryChange }) => {
         className={`filter-button ${category === 'India' ? 'active' : ''}`} 
         onClick={() => handleCategoryClick('India')}
       >
-        ALL
+        International
       </button>
       <button 
         className={`filter-button ${category === 'Health' ? 'active' : ''}`} 

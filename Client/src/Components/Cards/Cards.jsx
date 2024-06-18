@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from "react";
 import ReactCardCarousel from "react-card-carousel";
 import axios from "axios";
 import "./Cards.css";
-
 // Fetch news data from the API
 const fetchNewsData = async () => {
   const url = "http://localhost:4000/api/news"; 
@@ -51,7 +50,6 @@ const Cards = ({ category }) => {
 
   return (
     <div className="container_style">
-
       <button
         className="button_style left_button_style"
         onClick={() => {

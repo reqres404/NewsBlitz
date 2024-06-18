@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import {Route,Routes} from "react-router-dom"
 import Navbar from './Components/Navbar/Navbar';
-import Filter from './Components/Filter/Filter';
-import Cards from './Components/Cards/Cards';
+import News from './Pages/News/News';
+import Feedback from './Pages/Feedback/Feedback';
+import About from './Pages/About/About';
 import './App.css';
 
 const App = () => {
@@ -14,9 +16,11 @@ const App = () => {
   return (
     <div className="app-container">
       <Navbar />
-      <h1 className="tagline">NEWS AT LIGHTNING <span style={{ color: 'yellow', fontStyle: 'italic' }}>SPEED⚡</span></h1>
-      <Filter onCategoryChange={handleCategoryChange} />
-      <Cards category={category} />
+      <Routes>
+        <Route path="/" element={<News/>}/>
+        <Route path="feedback" element={<Feedback/>}/>
+        <Route path="about" element={<About/>}/>
+      </Routes>
     </div>
   );
 };
