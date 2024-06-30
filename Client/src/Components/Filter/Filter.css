@@ -9,11 +9,11 @@
 
 button {
     background-color: var(--yellow);
-    font-size: 1.25rem;
-    font-weight:600;
-    font-family: monospace;
+    font-size: 18px;
+    font-weight:500;
+    font-family: "Rowdies", sans-serif;
     border: none;
-    padding: 0.5rem;
+    padding: 0.7rem;
     border-radius: 10px 10px;
     transition: 0.5s;
     cursor: pointer;

@@ -12,7 +12,8 @@ const News = () => {
 
   return (
     <div className="app-container">
-      <h1 className="tagline">NEWS AT LIGHTNING <span style={{ color: 'yellow', fontStyle: 'italic' }}>SPEED⚡</span></h1>
+      <div className="separator-line"></div>
+      <h1 className="tagline">NEWS AT LIGHTNING <span style={{ color: 'yellow' }}>SPEED⚡</span></h1>
       <Filter onCategoryChange={handleCategoryChange} />
       <Cards category={category} />
     </div>

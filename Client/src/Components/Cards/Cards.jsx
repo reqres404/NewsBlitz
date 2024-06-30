@@ -72,6 +72,7 @@ const Cards = ({ category }) => {
           >
             <div className="card_content_style">
               <h3 className="title">{item.title}</h3>
+              <span className="down-arrow">▼</span>
               {selectedCard === index && (
                 <>
                   <p className="summary">{item.summary}</p>
