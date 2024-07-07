@@ -11,7 +11,7 @@ button {
     background-color: var(--yellow);
     font-size: 1.25rem;
     font-weight:600;
-    font-family: monospace;
+    font-family: 'Inter', sans-serif;
     border: none;
     padding: 0.5rem;
     border-radius: 10px 10px;

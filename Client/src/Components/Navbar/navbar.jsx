@@ -12,6 +12,10 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const handleCloseNavbar = () => {
+    setShowNavbar(false);
+  };
+
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -27,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   const handleMenuClick = (event) => {
-    event.stopPropagation(); // Prevent document click event from closing navbar
+    event.stopPropagation();
     handleShowNavbar();
   };
 
@@ -45,22 +49,22 @@ const Navbar = () => {
         <div ref={navbarRef} className={`nav-elements ${showNavbar ? 'active' : ''}`}>
           <ul>
             <li>
-              <NavLink exact to="/" activeClassName="active">
+              <NavLink exact to="/" activeClassName="active" onClick={handleCloseNavbar}>
                 News
               </NavLink>
             </li>
             <li>
-              <NavLink to="/feedback" activeClassName="active">
+              <NavLink to="/feedback" activeClassName="active" onClick={handleCloseNavbar}>
                 Feedback
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeClassName="active">
+              <NavLink to="/about" activeClassName="active" onClick={handleCloseNavbar}>
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/donate" activeClassName="active">
+              <NavLink to="/donate" activeClassName="active" onClick={handleCloseNavbar}>
                 Donate
               </NavLink>
             </li>

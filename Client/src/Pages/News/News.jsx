@@ -13,7 +13,9 @@ const News = () => {
   return (
     <div className="app-container">
       <h1 className="tagline">
-        NEWS AT LIGHTNING <span className="highlight">SPEED⚡</span>
+      Stay Informed, Stay Engaged With
+      <br />Instant News Summaries
+      {/* News at Lightning <span className="highlight">Speed⚡</span> */}
       </h1>
       <Filter onCategoryChange={handleCategoryChange} />
       <Cards category={category} />

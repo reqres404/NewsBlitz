@@ -1,6 +1,6 @@
 .container_style {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   background: #52c0f5;
   overflow-y: auto;
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -68,7 +68,7 @@
 }
 
 .title, .summary {
-  font-family: "Rowdies", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: medium;
   padding: 15px;
