@@ -6,41 +6,29 @@ const Filter = ({ onCategoryChange }) => {
 
   const handleCategoryClick = (selectedCategory) => {
     setCategory(selectedCategory);
-    onCategoryChange(selectedCategory);
+    onCategoryChange(selectedCategory === 'ALL' ? 'ALL' : selectedCategory);
   };
+
+  const buttons = [
+    { label: 'All', value: 'ALL' },
+    { label: 'International', value: 'India' },
+    { label: 'Health', value: 'Health' },
+    { label: 'Sports', value: 'Sports' },
+    { label: 'Politics', value: 'Politics' },
+    { label: 'Finance', value: 'Finance' },
+  ];
 
   return (
     <div className="filter-container">
-      <button 
-        className={`filter-button ${category === 'India' ? 'active' : ''}`} 
-        onClick={() => handleCategoryClick('India')}
-      >
-        International
-      </button>
-      <button 
-        className={`filter-button ${category === 'Health' ? 'active' : ''}`} 
-        onClick={() => handleCategoryClick('Health')}
-      >
-        Health
-      </button>
-      <button 
-        className={`filter-button ${category === 'Sports' ? 'active' : ''}`} 
-        onClick={() => handleCategoryClick('Sports')}
-      >
-        Sports
-      </button>
-      <button 
-        className={`filter-button ${category === 'Politics' ? 'active' : ''}`} 
-        onClick={() => handleCategoryClick('Politics')}
-      >
-        Politics
-      </button>
-      <button 
-        className={`filter-button ${category === 'Finance' ? 'active' : ''}`} 
-        onClick={() => handleCategoryClick('Finance')}
-      >
-        Finance
-      </button>
+      {buttons.map((button, index) => (
+        <button
+          key={index}
+          className={`filter-button ${category === button.value ? 'active' : ''}`}
+          onClick={() => handleCategoryClick(button.value)}
+        >
+          {button.label}
+        </button>
+      ))}
     </div>
   );
 };

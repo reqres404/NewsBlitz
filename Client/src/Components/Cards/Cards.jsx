@@ -2,17 +2,6 @@ import { useRef, useState, useEffect } from "react";
 import ReactCardCarousel from "react-card-carousel";
 import axios from "axios";
 import "./Cards.css";
-// Fetch news data from the API
-const fetchNewsData = async () => {
-  const url = "http://localhost:4000/api/news"; 
-  try {
-    const response = await axios.get(url);
-    return response.data;
-  } catch (error) {
-    console.error("Error fetching news data:", error);
-    return {};
-  }
-};
 
 const Cards = ({ category }) => {
   const [news, setNews] = useState({});
@@ -21,15 +10,22 @@ const Cards = ({ category }) => {
   const carouselRef = useRef(null);
 
   useEffect(() => {
-    const getNewsData = async () => {
-      const data = await fetchNewsData();
-      setNews(data);
+    const fetchNewsData = async () => {
+      const url = "http://localhost:4000/api/news";
+      try {
+        const response = await axios.get(url);
+        setNews(response.data);
+      } catch (error) {
+        console.error("Error fetching news data:", error);
+        setNews({});
+      }
     };
-    getNewsData();
+
+    fetchNewsData();
   }, []);
 
   useEffect(() => {
-    // Reset the selected card and carousel index when category changes
+    // Reset carousel state when category changes
     setSelectedCard(null);
     setCarouselIndex(0);
     if (carouselRef.current) {
@@ -38,12 +34,12 @@ const Cards = ({ category }) => {
   }, [category]);
 
   const handleCardClick = (index) => {
-    setSelectedCard(index === selectedCard ? null : index);
+    setSelectedCard(selectedCard === index ? null : index);
   };
 
   // Filter news based on selected category
-  const filteredNews = category === 'ALL' 
-    ? Object.values(news).flat() 
+  const filteredNews = category === 'ALL'
+    ? Object.values(news).flat()
     : news[category.toLowerCase()] || [];
 
   const totalNews = filteredNews.length;

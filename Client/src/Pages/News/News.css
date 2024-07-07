@@ -1,6 +1,5 @@
-body{
-    background-color: black;
-    /* overflow: hidden; */
+body {
+  background-color: black;
 }
 .tagline{
   color: white;
@@ -8,17 +7,21 @@ body{
   text-align: center;
   font-family: monospace;
   font-weight: 900;
-  font-style: normal;
+  margin-top: 4rem;
 }
+
+.highlight {
+  color: yellow;
+}
+
 .deck {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    min-height: 100vh;
-    color: white;
-    /* overflow: hidden; */
-  }
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
 
   .deck>div {
     display: flex;
@@ -28,20 +31,18 @@ body{
   }
   
 
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    /* overflow: hidden; */
-  }
-  
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 45vh; /* Adjust based on the navbar height */
-  }
-  
-  
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 45vh;
+  /* Adjust based on the navbar height */
+}

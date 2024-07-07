@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Filter from "../../Components/Filter/Filter";
+import Filter from '../../Components/Filter/Filter';
 import Cards from '../../Components/Cards/Cards';
 import './News.css';
 
@@ -12,7 +12,9 @@ const News = () => {
 
   return (
     <div className="app-container">
-      <h1 className="tagline">NEWS AT LIGHTNING <span style={{ color: 'yellow', fontStyle: 'italic' }}>SPEED⚡</span></h1>
+      <h1 className="tagline">
+        NEWS AT LIGHTNING <span className="highlight">SPEED⚡</span>
+      </h1>
       <Filter onCategoryChange={handleCategoryChange} />
       <Cards category={category} />
     </div>
