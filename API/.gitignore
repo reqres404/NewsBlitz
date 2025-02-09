@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+./headless_data.json
+./news.json
+./news_summarise.json
+./newsAPIData.json

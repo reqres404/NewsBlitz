@@ -80,7 +80,14 @@
   font-size: 14px;
   text-align: justify;
 }
-
+.publish_date {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: medium;
+  padding: 5px;
+  width: 15%;
+  background-color: rgba(0, 0, 0);
+}
 .read-more-button {
   display: flex;
   width: 5vw;

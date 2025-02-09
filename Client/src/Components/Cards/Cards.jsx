@@ -71,6 +71,7 @@ const Cards = ({ category }) => {
               {selectedCard === index && (
                 <>
                   <p className="summary">{item.summary}</p>
+                  <p className="publish_date">{item.date !=null ? item.date.substring(0,10):"Date Unkown"}</p>
                   <a
                     href={item.url}
                     target="_blank"
