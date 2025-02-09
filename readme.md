@@ -16,8 +16,8 @@ The platform intelligently selects the most relevant updates, ensuring you're in
 ### 4. **Quick and Easy Access**
 With **News Blitz**, you’ll spend less time reading and more time doing, getting only the key insights you need to stay ahead of the game.
 
-![alt text](https://github.com/reqres404/NewsBlitz/assets/app_images/blob/opt_backend/Newsblitz_SS.png?raw=true)
-![alt text](https://github.com/reqres404/NewsBlitz/assets/app_images/blob/opt_backend/Newsblitz_SS_2.png?raw=true)
+![alt text](https://github.com/reqres404/NewsBlitz/blob/Opt_backend/assets/app_images/Newsblitz_SS.png?raw=true)
+![alt text](https://github.com/reqres404/NewsBlitz/assets/app_images/blob/opt_backend/Newsblitz_SS_3.png?raw=true)
 ## Architecture
 
 ### **Frontend: React with Vite**
