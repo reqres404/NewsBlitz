@@ -21,12 +21,20 @@ OLLAMA_API_URL = "http://localhost:11434/api/generate"  # Adjust if running on a
 MODEL_NAME = "deepseek-r1:1.5b"  # Update if your model has a different name in Ollama
 
 topics = {
-    "india": 'https://www.google.com/search?q=international&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIJ2Ap-o7gm-0qFWxEEsiApjuPzPAg%3A1718289373162&ei=3QNrZq3ECaCnseMP0fu0kQQ&ved=0ahUKEwjtptXd5tiGAxWgU2wGHdE9LUIQ4dUDCA0&uact=5&oq=international&gs_lp=Egxnd3Mtd2l6LW5ld3MiDWludGVybmF0aW9uYWwyERAAGIAEGJECGLEDGIMBGIoFMgsQABiABBiRAhiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTILEAAYgAQYsQMYgwEyDRAAGIAEGLEDGEMYigUyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwFI9EZQ1QxY2DVwAHgAkAEAmAHJAaAB2RGqAQYwLjE0LjG4AQPIAQD4AQGYAg-gAsUSwgIQEAAYgAQYsQMYQxiDARiKBcICBRAAGIAEwgIIEAAYgAQYsQOYAwCIBgGSBwYwLjEzLjKgB_Zc&sclient=gws-wiz-news',
-    "health": 'https://www.google.com/search?q=india+health&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWILHgXefVMkf7U_q4jVXsRTBVYT1yw%3A1718289342451&ei=vgNrZpL5GvDiseMP_uuFwAY&ved=0ahUKEwiS0ILP5tiGAxVwcWwGHf51AWgQ4dUDCA0&uact=5&oq=india+health&gs_lp=Egxnd3Mtd2l6LW5ld3MiDGluZGlhIGhlYWx0aDILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgsQABiABBixAxiDATIFEAAYgAQyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgARI_h5QxBVYgxxwA3gAkAEAmAG3AqABuQyqAQcwLjcuMS4xuAEDyAEA-AEBmAIMoAKrDcICEBAAGIAEGLEDGEMYgwEYigXCAgoQABiABBhDGIoFwgIREAAYgAQYkQIYsQMYgwEYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIOEAAYgAQYsQMYgwEYigWYAwCIBgGSBwczLjcuMS4xoAeNMw&sclient=gws-wiz-news',
-    "sports": 'https://www.google.com/search?q=india+sports&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIJhFySp6FcLyvQi_RR_eHWYExjrdA%3A1718289304723&ei=mANrZrzgK-iUseMPn66duA4&ved=0ahUKEwi8jIS95tiGAxVoSmwGHR9XB-cQ4dUDCA0&uact=5&oq=india+sports&gs_lp=Egxnd3Mtd2l6LW5ld3MiDGluZGlhIHNwb3J0czILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI3A9QhwVY4AxwAHgAkAEAmAGTAqABjAqqAQUwLjcuMbgBA8gBAPgBAZgCCKAC0QrCAhAQABiABBixAxhDGIMBGIoFwgILEAAYgAQYkQIYigXCAg4QABiABBiRAhixAxiKBcICERAAGIAEGJECGLEDGIMBGIoFwgIOEAAYgAQYsQMYgwEYigXCAggQABiABBixA8ICBBAAGAOYAwCIBgGSBwUwLjcuMaAHzCw&sclient=gws-wiz-news',
-    "finance": 'https://www.google.com/search?q=india+finance&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIK9Vsy8IIUE_j5kQF2QGAqlep7BSw%3A1718289219171&ei=QwNrZpv9CZzXseMP4q2hoAU&ved=0ahUKEwjbqp6U5tiGAxWca2wGHeJWCFQQ4dUDCA0&uact=5&oq=india+finance&gs_lp=Egxnd3Mtd2l6LW5ld3MiDWluZGlhIGZpbmFuY2UyERAAGIAEGJECGLEDGIMBGIoFMgUQABiABDILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjrL1D9C1jSIXAAeACQAQCYAZwCoAGCD6oBBTAuNi40uAEDyAEA-AEBmAIKoALqD8ICEBAAGIAEGLEDGEMYgwEYigXCAg4QABiABBixAxiDARiKBcICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIREAAYgAQYkQIYsQMYgwEYigXCAg4QABiABBiRAhixAxiKBcICCxAAGIAEGJECGIoFmAMAiAYBkgcFMC42LjSgB8w6&sclient=gws-wiz-news',
-    "politics": 'https://www.google.com/search?q=india+politics&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWILSSxKpnF2FV0lalcGQRUQbn4evOw%3A1718289209337&ei=OQNrZv39E4C5seMPv_miyAo&ved=0ahUKEwi9_sWP5tiGAxWAXGwGHb-8CKkQ4dUDCA0&uact=5&oq=india+politics&gs_lp=Egxnd3Mtd2l6LW5ld3MiDmluZGlhIHBvbGl0aWNzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjrL1D9C1jSIXAAeACQAQCYAZwCoAGCD6oBBTAuNi40uAEDyAEA-AEBmAIKoALqD8ICEBAAGIAEGLEDGEMYgwEYigXCAg4QABiABBixAxiDARiKBcICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIOEAAYgAQYsQMYgwEYigWYAwCIBgGSBwUwLjcuMaAHzCw&sclient=gws-wiz-news',
+    "techAndAI": 'https://www.google.com/search?q=Latest+Global+Tech+%26+AI+news+&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zoJQAfny1xYLCpTJ1plS3TB8AvsGQ%3A1740669066282&ei=ioDAZ-zjEKibseMP6LyXGQ&ved=0ahUKEwjs0PfKkeSLAxWoTWwGHWjeJQMQ4dUDCA4&uact=5&oq=Latest+Global+Tech+%26+AI+news+&gs_lp=Egxnd3Mtd2l6LW5ld3MiHUxhdGVzdCBHbG9iYWwgVGVjaCAmIEFJIG5ld3MgMggQIRigARjDBDIIECEYoAEYwwQyCBAhGKABGMMESO8wUMMTWOkucAB4AJABAJgBxAKgAa0QqgEHMC41LjQuMbgBA8gBAPgBAZgCBaACpgfCAggQABiABBiiBMICBRAhGKABwgIKECEYoAEYwwQYCpgDAIgGAZIHBTAuNC4xoAfTNQ&sclient=gws-wiz-news',
+    "health": 'https://www.google.com/search?q=latest+Global+health+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zqrBcSHz0Urvx4CWCgtCyuz-v-Wkg%3A1740669212166&ei=HIHAZ4PYCfmfnesPwa2q-As&ved=0ahUKEwiD1r-QkuSLAxX5T2cHHcGWCr8Q4dUDCA4&uact=5&oq=latest+Global+health+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiGWxhdGVzdCBHbG9iYWwgaGVhbHRoIG5ld3MyBRAAGIAEMgYQABgIGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBUieKlDYB1jGJ3AGeACQAQCYAaYFoAGvEqoBCTAuOS4yLjUtMbgBA8gBAPgBAZgCDqACog7CAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYgwEYDcICBxAAGIAEGA3CAggQABgIGA0YHsICCBAAGAcYCBgemAMAiAYBkgcJNi41LjIuNS0xoAeRSg&sclient=gws-wiz-news',
+    "sports": 'https://www.google.com/search?q=latest+Global+sports+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zqXHzs1TBcRJ0IWDZg27r5w93tEwA%3A1740669223266&ei=J4HAZ4H5D42dseMP6PmxmQs&ved=0ahUKEwjBqOWVkuSLAxWNTmwGHeh8LLMQ4dUDCA4&uact=5&oq=latest+Global+sports+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiGWxhdGVzdCBHbG9iYWwgc3BvcnRzIG5ld3MyBBAAGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBUibDVC8Ali_CnAAeACQAQGYAf4FoAHxD6oBCzAuNC4xLjEuNi0xuAEDyAEA-AEBmAICoALBAsICBhAAGAcYHpgDAIgGAZIHAzAuMqAHnyk&sclient=gws-wiz-news',
+    "finance": 'https://www.google.com/search?q=latest+Global+finance+and+crypto+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zpDNo3vnUapH-ssWsIejPZPFOooxw%3A1740669287584&ei=Z4HAZ7CvI_SVseMP3bqiwA0&ved=0ahUKEwjw_rq0kuSLAxX0SmwGHV2dCNgQ4dUDCA4&uact=5&oq=latest+Global+finance+and+crypto+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiJWxhdGVzdCBHbG9iYWwgZmluYW5jZSBhbmQgY3J5cHRvIG5ld3MyChAhGKABGMMEGAoyChAhGKABGMMEGApImCBQvAdYsR5wAXgAkAEAmAGOA6AB8BOqAQcwLjcuNC4xuAEDyAEA-AEBmAIGoAKGCsICBBAAGB7CAgYQABgIGB7CAgsQABiABBiGAxiKBcICBhAAGAcYHsICCBAhGKABGMMEmAMAiAYBkgcJMS4yLjIuMC4xoAevOg&sclient=gws-wiz-news',
+    "geoPolitics": 'https://www.google.com/search?q=latest+geopolitocal+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zpyzeWoVEsDvU9060juZzlHvq5zlg%3A1740669365807&ei=tYHAZ4f3MPjVseMP5IbyoQI&ved=0ahUKEwjHpeHZkuSLAxX4amwGHWSDPCQQ4dUDCA4&uact=5&oq=latest+geopolitocal+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiGGxhdGVzdCBnZW9wb2xpdG9jYWwgbmV3czIHEAAYgAQYDTIHEAAYgAQYDTIIEAAYCBgNGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBUjNNlCnElj4MXAAeACQAQCYAZ0DoAHwIaoBCjAuMTIuNy4xLjG4AQPIAQD4AQGYAgqgAv8OwgIIEAAYgAQYogTCAgQQIRgVwgIOEAAYgAQYkQIYsQMYigXCAgsQABiABBiRAhiKBcICBRAAGIAEwgIGEAAYBxgewgINEAAYgAQYsQMYgwEYDcICChAAGIAEGLEDGA3CAggQABgHGAgYHsICBhAAGA0YHpgDAIgGAZIHBTAuNy4zoAfQhQE&sclient=gws-wiz-news',
 }
+
+# topics = {
+#     "india": 'https://www.google.com/search?q=international&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIJ2Ap-o7gm-0qFWxEEsiApjuPzPAg%3A1718289373162&ei=3QNrZq3ECaCnseMP0fu0kQQ&ved=0ahUKEwjtptXd5tiGAxWgU2wGHdE9LUIQ4dUDCA0&uact=5&oq=international&gs_lp=Egxnd3Mtd2l6LW5ld3MiDWludGVybmF0aW9uYWwyERAAGIAEGJECGLEDGIMBGIoFMgsQABiABBiRAhiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTILEAAYgAQYsQMYgwEyDRAAGIAEGLEDGEMYigUyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwFI9EZQ1QxY2DVwAHgAkAEAmAHJAaAB2RGqAQYwLjE0LjG4AQPIAQD4AQGYAg-gAsUSwgIQEAAYgAQYsQMYQxiDARiKBcICBRAAGIAEwgIIEAAYgAQYsQOYAwCIBgGSBwYwLjEzLjKgB_Zc&sclient=gws-wiz-news',
+#     "health": 'https://www.google.com/search?q=india+health&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWILHgXefVMkf7U_q4jVXsRTBVYT1yw%3A1718289342451&ei=vgNrZpL5GvDiseMP_uuFwAY&ved=0ahUKEwiS0ILP5tiGAxVwcWwGHf51AWgQ4dUDCA0&uact=5&oq=india+health&gs_lp=Egxnd3Mtd2l6LW5ld3MiDGluZGlhIGhlYWx0aDILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgsQABiABBixAxiDATIFEAAYgAQyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgARI_h5QxBVYgxxwA3gAkAEAmAG3AqABuQyqAQcwLjcuMS4xuAEDyAEA-AEBmAIMoAKrDcICEBAAGIAEGLEDGEMYgwEYigXCAgoQABiABBhDGIoFwgIREAAYgAQYkQIYsQMYgwEYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIOEAAYgAQYsQMYgwEYigWYAwCIBgGSBwczLjcuMS4xoAeNMw&sclient=gws-wiz-news',
+#     "sports": 'https://www.google.com/search?q=india+sports&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIJhFySp6FcLyvQi_RR_eHWYExjrdA%3A1718289304723&ei=mANrZrzgK-iUseMPn66duA4&ved=0ahUKEwi8jIS95tiGAxVoSmwGHR9XB-cQ4dUDCA0&uact=5&oq=india+sports&gs_lp=Egxnd3Mtd2l6LW5ld3MiDGluZGlhIHNwb3J0czILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI3A9QhwVY4AxwAHgAkAEAmAGTAqABjAqqAQUwLjcuMbgBA8gBAPgBAZgCCKAC0QrCAhAQABiABBixAxhDGIMBGIoFwgILEAAYgAQYkQIYigXCAg4QABiABBiRAhixAxiKBcICERAAGIAEGJECGLEDGIMBGIoFwgIOEAAYgAQYsQMYgwEYigXCAggQABiABBixA8ICBBAAGAOYAwCIBgGSBwUwLjcuMaAHzCw&sclient=gws-wiz-news',
+#     "finance": 'https://www.google.com/search?q=india+finance&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIK9Vsy8IIUE_j5kQF2QGAqlep7BSw%3A1718289219171&ei=QwNrZpv9CZzXseMP4q2hoAU&ved=0ahUKEwjbqp6U5tiGAxWca2wGHeJWCFQQ4dUDCA0&uact=5&oq=india+finance&gs_lp=Egxnd3Mtd2l6LW5ld3MiDWluZGlhIGZpbmFuY2UyERAAGIAEGJECGLEDGIMBGIoFMgUQABiABDILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjrL1D9C1jSIXAAeACQAQCYAZwCoAGCD6oBBTAuNi40uAEDyAEA-AEBmAIKoALqD8ICEBAAGIAEGLEDGEMYgwEYigXCAg4QABiABBixAxiDARiKBcICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIREAAYgAQYkQIYsQMYgwEYigXCAg4QABiABBiRAhixAxiKBcICCxAAGIAEGJECGIoFmAMAiAYBkgcFMC42LjSgB8w6&sclient=gws-wiz-news',
+#     "politics": 'https://www.google.com/search?q=india+politics&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWILSSxKpnF2FV0lalcGQRUQbn4evOw%3A1718289209337&ei=OQNrZv39E4C5seMPv_miyAo&ved=0ahUKEwi9_sWP5tiGAxWAXGwGHb-8CKkQ4dUDCA0&uact=5&oq=india+politics&gs_lp=Egxnd3Mtd2l6LW5ld3MiDmluZGlhIHBvbGl0aWNzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjrL1D9C1jSIXAAeACQAQCYAZwCoAGCD6oBBTAuNi40uAEDyAEA-AEBmAIKoALqD8ICEBAAGIAEGLEDGEMYgwEYigXCAg4QABiABBixAxiDARiKBcICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIOEAAYgAQYsQMYgwEYigWYAwCIBgGSBwUwLjcuMaAHzCw&sclient=gws-wiz-news',
+# }
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -47,7 +55,7 @@ def get_news_data():
         try:
             WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div.SoaBEf")))
         except Exception as e:
-            print(f"Error loading page: {e}")
+            print(f"Error loading page with url : {topic_url} due to {e}")
             return []
 
         news_results = []
@@ -76,7 +84,7 @@ def get_news_data():
     with open("gnews_url.json", "w") as f:
         json.dump(all_news_data, f, indent=2)
 
-    api_folder_path = os.path.join(os.path.dirname(__file__), "..", "API")
+    api_folder_path = os.path.join(os.path.dirname(__file__), ".", "Data")
     json_file_path = os.path.join(api_folder_path, "news.json")
 
     detailed_news_data = {}
@@ -110,7 +118,7 @@ def get_news_data():
                 detailed_topic_data.append(news_item)
                 article_count += 1
 
-                if article_count >= 30:
+                if article_count >= 5:
                     break
 
             except Exception as e:
@@ -143,9 +151,9 @@ def summarize_news(json_file_path):
             if summary:
                 article["content"] = summary  # Replace content with summary
                 number = article["news_number"]
-                print(f"article number ${number} of topic ${topic} summarised") 
+                print(f"article number {number} of topic {topic} summarised") 
 
-    summarized_file_path = os.path.join(os.path.dirname(__file__), "..", "API", "news_summarise.json")
+    summarized_file_path = os.path.join(os.path.dirname(__file__), ".", "Data", "news_summarised.json")
     with open(summarized_file_path, "w") as json_file:
         json.dump(news_data, json_file, indent=2)
 
@@ -157,9 +165,13 @@ def get_summary_from_ollama(text):
     payload = {
         "model": MODEL_NAME,
         "prompt": (
-            "Summarize the following article while maintaining key details. "
-            "Do not include any additional commentary, reasoning, or meta-text. "
-            "Output should be clean and directly contain the summary between 100-150 words.:\n\n"
+            "Summarize the following news article in strictly under 80-100 words while preserving all key details and ensuring readability for a general audience. "
+            "The summary should be concise, coherent, and easy to understand. Capture the core facts, context, and any important quotes or statistics."
+            "Do not leave out critical information that affects the overall meaning of the article."
+            "rewrite the content in your own words while preserving accuracy"
+            "Make it engaging by using a compelling hook, essential facts, and a clear structure"
+            "the summary should be strictly under 80-100 words"
+            "Do not include any additional commentary, reasoning, or meta-text.:\n\n "
             f"{text}"
         ),
         "stream": False
@@ -180,4 +192,4 @@ def get_summary_from_ollama(text):
 
 while True:
     get_news_data()
-    time.sleep(2700) # Time Interval for script to rerun.
+    time.sleep(600) # Time Interval for script to rerun.
