@@ -11,7 +11,7 @@ const Cards = ({ category }) => {
 
   useEffect(() => {
     const fetchNewsData = async () => {
-      const url = "http://localhost:4000/api/news";
+      const url = "http://localhost:5000/getAllNews";
       try {
         const response = await axios.get(url);
         setNews(response.data);
@@ -70,7 +70,7 @@ const Cards = ({ category }) => {
               <h3 className="title">{item.title}</h3>
               {selectedCard === index && (
                 <>
-                  <p className="summary">{item.summary}</p>
+                  <p className="summary">{item.content}</p>
                   <p className="publish_date">{item.date !=null ? item.date.substring(0,10):"Date Unkown"}</p>
                   <a
                     href={item.url}
