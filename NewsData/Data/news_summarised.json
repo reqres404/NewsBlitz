@@ -1,57 +1,8 @@
 {
-  "techAndAI": [
-    {
-      "news_number": 0,
-      "title": "How DeepSeek\u2019s AI Model Is Redefining Global Tech Dynamics",
-      "content": "DeepSeek's rise as a cost-effective AI model disrupts the industry, challenging conventional AI strategies. By leveraging Mixture-of-Experts architecture and efficient hardware optimization, DeepSeek reduces computational demands while maintaining high performance, making it competitive yet innovative. This innovation challenges the belief that traditional large-scale investments are necessary for cutting-edge AI, instead showing scalability and efficiency. The emergence of DeepSeek could democratize access to AI technologies, though ethical concerns and regulatory issues need attention. Its impact on the AI market is significant, reshaping competition and fostering responsible innovation.",
-      "publisher": "expresscomputer",
-      "url": "https://www.expresscomputer.in/guest-blogs/how-deepseeks-ai-model-is-redefining-global-tech-dynamics/122096/",
-      "imgURL": "https://cdn1.expresscomputer.in/wp-content/uploads/2024/11/28133429/EC-artificial-intelligence-robot-hand-pointing-750.jpg",
-      "date": "2025-02-25T06:03:48+00:00"
-    }
-  ],
-  "health": [
-    {
-      "news_number": 0,
-      "title": "World Health Day 2025 to spotlight women and babies\u2019 survival, urging solidarity at a critical moment for global health",
-      "content": "World Health Day 2025 is officially announced as \"Healthy beginnings, hopeful futures,\" focusing on improving maternal and newborn health. The initiative emphasizes the significance of this year as a crucial moment to help families and showcase progress while highlighting research for better women's lives. Globally, over 300,000 maternal deaths occur each year, with nearly 2 million births and around 2 million stillborn worldwide. Most losses are in low-income countries, those affected by conflict, or facing crises. Health facilities closing pose risks to pregnant women accessing essential services. Current funding constraints slow progress, as many critical health programs stall alongside medical research. The campaign will run until 2026, urging investments in proven interventions like improved pregnancy care and access. It also aims to address health issues beyond maternal complications, including mental health and nutrition. Every dollar invested is expected to yield $9-$20 back. Women need paid leave, vital family planning, research for better care, support during emergencies, and strengthening healthcare worker roles. In low-income countries, investments yield significant returns. The campaign aims to move beyond saving lives to prioritize women's well-being, with a focus on maternal and newborn health.",
-      "publisher": "who",
-      "url": "https://www.who.int/news/item/21-02-2025-world-health-day-2025-to-spotlight-women-and-babies--survival--urging-solidarity-at-a-critical-moment-for-global-health",
-      "imgURL": "https://www.who.int/favicon.ico",
-      "date": null
-    }
-  ],
-  "sports": [
-    {
-      "news_number": 0,
-      "title": "What's behind West Asia's multibillion push to attract global sports stars?",
-      "content": "Coco Gauff secured a historic victory at the WTA Finals, defeating Anna McGaughey in her first title since 2013, as she overcame challenging battles including Riyadh\u2019s heat and China\u2019s Zheng Qinwen to clinch her win. The $4.8 million prize money marked new records for women's sports.",
-      "publisher": "business-standard",
-      "url": "https://www.business-standard.com/sports/other-sports-news/what-drives-west-asia-s-multi-billion-push-to-attract-global-sports-stars-124112201349_1.html",
-      "imgURL": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-11/22/thumb/fitandfill/400X400/1732294547-6774.jpg",
-      "date": "2024-11-22T22:26:07+05:30"
-    }
-  ],
-  "finance": [
-    {
-      "news_number": 0,
-      "title": "Global market crash: From Asian markets to crypto prices, US recession fears jolt financial markets globally",
-      "content": "The Indian stock market experienced a severe sell-off, as the Sensex and Nifty 50 indices dropped over 3%, reflecting concerns amid U.S. recession and geopolitical tensions. Factors contributing to this downturn include weakened job prospects and rising interest rates. Investors were advised to enter equities during volatile periods, signaling a cautious approach due to the heightened risks of further decline.",
-      "publisher": "livemint",
-      "url": "https://www.livemint.com/market/stock-market-news/global-market-crash-from-asian-markets-to-crypto-prices-us-recession-fears-jolt-financial-markets-globally-11722841898336.html",
-      "imgURL": "https://www.livemint.com/lm-img/img/2024/08/05/1600x900/2-0-972295078-499578669-0_1679914632962_1722842635579.jpg",
-      "date": "2024-08-05T13:01:28+05:30"
-    }
-  ],
-  "geoPolitics": [
-    {
-      "news_number": 0,
-      "title": "China's latest action plan shows it's trying to boost foreign investment amid geopolitical tensions",
-      "content": "China is ramping up foreign investment amid global tensions, with a significant action plan released to ease investments in telecommunication and biotechnology. The document includes clearer procurement standards and aims to gradually allow foreign capital into education/culture sectors. Data shows FDI dropped by 13% compared to the previous year, underscoring China's efforts despite challenges. American businesses have faced restrictions on advanced tech and tariffs, though China is optimistic about future reforms. This approach aligns with a broader strategy for boosting investment confidence, promising tangible benefits for member companies looking to localize production in China. The action plan reflects China's proactive stance despite economic uncertainties.",
-      "publisher": "cnbc",
-      "url": "https://www.cnbc.com/2025/02/24/china-strives-to-attract-foreign-investment-amid-geopolitical-tensions.html",
-      "imgURL": "https://image.cnbcfm.com/api/v1/image/108059555-17309842732024-11-07t082151z_1789535505_rc260bay0usl_rtrmadp_0_usa-election-china-economy.jpeg?v=1740106030&w=1920&h=1080",
-      "date": "2025-02-24T00:00:00"
-    }
-  ]
+  "AI": [],
+  "health": [],
+  "sports": [],
+  "finance": [],
+  "geopolitical": [],
+  "crypto": []
 }

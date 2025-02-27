@@ -13,6 +13,7 @@ import newspaper.settings
 from datetime import datetime, timedelta
 import re
 from urllib.parse import urlparse
+
 nltk.download('punkt')
 
 newspaper.settings.DATA_DIRECTORY = os.path.join(os.getcwd(), 'newspaper_cache')
@@ -20,14 +21,20 @@ newspaper.settings.DATA_DIRECTORY = os.path.join(os.getcwd(), 'newspaper_cache')
 # DeepSeek R1 API settings
 OLLAMA_API_URL = "http://localhost:11434/api/generate"  # Adjust if running on a different port
 MODEL_NAME = "deepseek-r1:1.5b"  # Update if your model has a different name in Ollama
-
+today = datetime.today()
+yesterday = today - timedelta(days=1)
+yesterday =yesterday.date()
 topics = {
-    "techAndAI": 'https://www.google.com/search?q=Latest+Global+Tech+%26+AI+news+&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zoJQAfny1xYLCpTJ1plS3TB8AvsGQ%3A1740669066282&ei=ioDAZ-zjEKibseMP6LyXGQ&ved=0ahUKEwjs0PfKkeSLAxWoTWwGHWjeJQMQ4dUDCA4&uact=5&oq=Latest+Global+Tech+%26+AI+news+&gs_lp=Egxnd3Mtd2l6LW5ld3MiHUxhdGVzdCBHbG9iYWwgVGVjaCAmIEFJIG5ld3MgMggQIRigARjDBDIIECEYoAEYwwQyCBAhGKABGMMESO8wUMMTWOkucAB4AJABAJgBxAKgAa0QqgEHMC41LjQuMbgBA8gBAPgBAZgCBaACpgfCAggQABiABBiiBMICBRAhGKABwgIKECEYoAEYwwQYCpgDAIgGAZIHBTAuNC4xoAfTNQ&sclient=gws-wiz-news',
-    "health": 'https://www.google.com/search?q=latest+Global+health+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zqrBcSHz0Urvx4CWCgtCyuz-v-Wkg%3A1740669212166&ei=HIHAZ4PYCfmfnesPwa2q-As&ved=0ahUKEwiD1r-QkuSLAxX5T2cHHcGWCr8Q4dUDCA4&uact=5&oq=latest+Global+health+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiGWxhdGVzdCBHbG9iYWwgaGVhbHRoIG5ld3MyBRAAGIAEMgYQABgIGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBUieKlDYB1jGJ3AGeACQAQCYAaYFoAGvEqoBCTAuOS4yLjUtMbgBA8gBAPgBAZgCDqACog7CAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYgwEYDcICBxAAGIAEGA3CAggQABgIGA0YHsICCBAAGAcYCBgemAMAiAYBkgcJNi41LjIuNS0xoAeRSg&sclient=gws-wiz-news',
-    "sports": 'https://www.google.com/search?q=latest+Global+sports+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zqXHzs1TBcRJ0IWDZg27r5w93tEwA%3A1740669223266&ei=J4HAZ4H5D42dseMP6PmxmQs&ved=0ahUKEwjBqOWVkuSLAxWNTmwGHeh8LLMQ4dUDCA4&uact=5&oq=latest+Global+sports+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiGWxhdGVzdCBHbG9iYWwgc3BvcnRzIG5ld3MyBBAAGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBUibDVC8Ali_CnAAeACQAQGYAf4FoAHxD6oBCzAuNC4xLjEuNi0xuAEDyAEA-AEBmAICoALBAsICBhAAGAcYHpgDAIgGAZIHAzAuMqAHnyk&sclient=gws-wiz-news',
-    "finance": 'https://www.google.com/search?q=latest+Global+finance+and+crypto+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zpDNo3vnUapH-ssWsIejPZPFOooxw%3A1740669287584&ei=Z4HAZ7CvI_SVseMP3bqiwA0&ved=0ahUKEwjw_rq0kuSLAxX0SmwGHV2dCNgQ4dUDCA4&uact=5&oq=latest+Global+finance+and+crypto+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiJWxhdGVzdCBHbG9iYWwgZmluYW5jZSBhbmQgY3J5cHRvIG5ld3MyChAhGKABGMMEGAoyChAhGKABGMMEGApImCBQvAdYsR5wAXgAkAEAmAGOA6AB8BOqAQcwLjcuNC4xuAEDyAEA-AEBmAIGoAKGCsICBBAAGB7CAgYQABgIGB7CAgsQABiABBiGAxiKBcICBhAAGAcYHsICCBAhGKABGMMEmAMAiAYBkgcJMS4yLjIuMC4xoAevOg&sclient=gws-wiz-news',
-    "geoPolitics": 'https://www.google.com/search?q=latest+geopolitocal+news&sca_esv=ea93a93fa601efe3&rlz=1C1FKPE_en-GBIN1108IN1108&biw=1536&bih=730&tbm=nws&sxsrf=AHTn8zpyzeWoVEsDvU9060juZzlHvq5zlg%3A1740669365807&ei=tYHAZ4f3MPjVseMP5IbyoQI&ved=0ahUKEwjHpeHZkuSLAxX4amwGHWSDPCQQ4dUDCA4&uact=5&oq=latest+geopolitocal+news&gs_lp=Egxnd3Mtd2l6LW5ld3MiGGxhdGVzdCBnZW9wb2xpdG9jYWwgbmV3czIHEAAYgAQYDTIHEAAYgAQYDTIIEAAYCBgNGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBUjNNlCnElj4MXAAeACQAQCYAZ0DoAHwIaoBCjAuMTIuNy4xLjG4AQPIAQD4AQGYAgqgAv8OwgIIEAAYgAQYogTCAgQQIRgVwgIOEAAYgAQYkQIYsQMYigXCAgsQABiABBiRAhiKBcICBRAAGIAEwgIGEAAYBxgewgINEAAYgAQYsQMYgwEYDcICChAAGIAEGLEDGA3CAggQABgHGAgYHsICBhAAGA0YHpgDAIgGAZIHBTAuNy4zoAfQhQE&sclient=gws-wiz-news',
+    "AI": f"https://www.google.com/search?q=AI+news+after:{yesterday}&tbm=nws",
+    "health": f"https://www.google.com/search?q=health+news+after:{yesterday}&tbm=nws",
+    "sports": f"https://www.google.com/search?q=sports+news+after:{yesterday}&tbm=nws",
+    "finance": f"https://www.google.com/search?q=finance+news+after:{yesterday}&tbm=nws",
+    "geopolitical": f"https://www.google.com/search?q=geopolitical+news+after:{yesterday}&tbm=nws",
+    "crypto": f"https://www.google.com/search?q=crypto+news+after:{yesterday}&tbm=nws"
 }
+
+# "geopolitical" = f"https://www.google.com/search?q=geopolitical+news+after:{today.date()}&tbm=nws"
+
 
 # topics = {
 #     "india": 'https://www.google.com/search?q=international&num=100&sca_esv=361f429e8db713bc&sca_upv=1&gl=us&tbm=nws&sxsrf=ADLYWIJ2Ap-o7gm-0qFWxEEsiApjuPzPAg%3A1718289373162&ei=3QNrZq3ECaCnseMP0fu0kQQ&ved=0ahUKEwjtptXd5tiGAxWgU2wGHdE9LUIQ4dUDCA0&uact=5&oq=international&gs_lp=Egxnd3Mtd2l6LW5ld3MiDWludGVybmF0aW9uYWwyERAAGIAEGJECGLEDGIMBGIoFMgsQABiABBiRAhiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTILEAAYgAQYsQMYgwEyDRAAGIAEGLEDGEMYigUyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwFI9EZQ1QxY2DVwAHgAkAEAmAHJAaAB2RGqAQYwLjE0LjG4AQPIAQD4AQGYAg-gAsUSwgIQEAAYgAQYsQMYQxiDARiKBcICBRAAGIAEwgIIEAAYgAQYsQOYAwCIBgGSBwYwLjEzLjKgB_Zc&sclient=gws-wiz-news',
@@ -61,18 +68,21 @@ def get_news_data():
 
         news_results = []
         elements = driver.find_elements(By.CSS_SELECTOR, "div.SoaBEf")
-
-        for el in elements:
+        
+        for el in elements:         
             try:
-                news_results.append(
-                    {
-                        "link": el.find_element(By.TAG_NAME, "a").get_attribute("href"),
-                        "title": el.find_element(By.CSS_SELECTOR, "div.MBeuO").text,
-                        "snippet": el.find_element(By.CSS_SELECTOR, ".GI74Re").text,
-                        "date": el.find_element(By.CSS_SELECTOR, ".LfVVr").text,
-                        "source": el.find_element(By.CSS_SELECTOR, ".NUnG9d span").text,
-                    }
-                )
+                news_date_str = el.find_element(By.CSS_SELECTOR, ".LfVVr").text
+                print(news_date_str)
+                if "hours" in news_date_str or "minutes" in news_date_str:    
+                        news_results.append(
+                        {
+                            "link": el.find_element(By.TAG_NAME, "a").get_attribute("href"),
+                            "title": el.find_element(By.CSS_SELECTOR, "div.MBeuO").text,
+                            "snippet": el.find_element(By.CSS_SELECTOR, ".GI74Re").text,
+                            "date": el.find_element(By.CSS_SELECTOR, ".LfVVr").text,
+                            "source": el.find_element(By.CSS_SELECTOR, ".NUnG9d span").text,
+                        }
+                    )
             except Exception as e:
                 print(f"Error extracting news item: {e}")
 
@@ -120,7 +130,7 @@ def get_news_data():
                 detailed_topic_data.append(news_item)
                 article_count += 1
 
-                if article_count >= 1:
+                if article_count == 1:
                     break
 
             except Exception as e:

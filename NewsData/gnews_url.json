@@ -1,362 +1,371 @@
 {
-  "techAndAI": [
+  "AI": [
     {
-      "link": "https://technologymagazine.com/ai-and-machine-learning/global-tech-ai-awards-an-exclusive-interview-with-mars",
-      "title": "Global Tech & AI Awards: An Exclusive Interview With Mars",
-      "snippet": "We spoke to Nikolay Burlutskiy, Senior Manager of Gen AI Platforms at Mars, ahead of his appearance as a judge at the Global Tech & AI...",
+      "link": "https://www.reuters.com/technology/artificial-intelligence/tencent-releases-new-ai-model-says-replies-faster-than-deepseek-r1-2025-02-27/",
+      "title": "Tencent releases new AI model, says replies faster than DeepSeek-R1",
+      "snippet": "Chinese tech giant Tencent on Thursday released a new AI model that it says can answer queries faster than global hit DeepSeek's R1, in the latest sign the...",
+      "date": "8 hours ago",
+      "source": "Reuters"
+    },
+    {
+      "link": "https://www.bloomberg.com/news/articles/2025-02-27/tencent-releases-turbo-ai-model-it-says-is-faster-than-deepseek",
+      "title": "Tencent Releases Turbo AI Model It Says Is Faster Than DeepSeek",
+      "snippet": "Tencent Holdings Ltd. joined the ranks of companies measuring themselves against DeepSeek by touting how much faster its latest AI model is.",
+      "date": "7 hours ago",
+      "source": "Bloomberg"
+    },
+    {
+      "link": "https://www.ndtv.com/world-news/video-ai-robot-attacks-people-at-china-festival-internet-says-so-it-begins-7808616",
+      "title": "Video: AI Robot Attacks Crowd At China Festival, Internet Says ''So It Begins'\"",
+      "snippet": "Security personnel swiftly intervened, dragging the erratic robot away from the crowd to prevent any potential harm.",
       "date": "6 hours ago",
-      "source": "Technology Magazine"
+      "source": "NDTV"
     },
     {
-      "link": "https://www.business-standard.com/world-news/deepseek-emerges-as-a-global-force-in-china-s-rapidly-growing-ai-industry-125022700263_1.html",
-      "title": "DeepSeek emerges as a global force in China's rapidly growing AI industry",
-      "snippet": "When small Chinese artificial intelligence (AI) company DeepSeek released a family of extremely efficient and highly competitive AI models...",
-      "date": "11 hours ago",
-      "source": "Business Standard"
+      "link": "https://finance.yahoo.com/news/salesforce-stock-falls-amid-concerns-around-its-ai-agent-wall-street-reacts-110918993.html",
+      "title": "Salesforce stock falls amid concerns around its AI agent: Wall Street reacts",
+      "snippet": "Salesforce talks down its sales potential for AI agents in 2025. Here's what All Street analysts are saying.",
+      "date": "8 hours ago",
+      "source": "Yahoo Finance"
     },
     {
-      "link": "https://www.expresscomputer.in/guest-blogs/how-deepseeks-ai-model-is-redefining-global-tech-dynamics/122096/",
-      "title": "How DeepSeek's AI Model Is Redefining Global Tech Dynamics",
-      "snippet": "By Dinesh P, Principal Technologist and Founding Member, DaveAI. AI has transformed industries worldwide, with leading players like OpenAI,...",
-      "date": "2 days ago",
-      "source": "Express Computer"
+      "link": "https://www.pymnts.com/artificial-intelligence-2/2025/taktile-raises-54-million-for-ai-powered-financial-decision-making/",
+      "title": "Taktile Raises $54 Million for AI-Powered Financial Decision-Making",
+      "snippet": "Taktile has raised $54 million to help power its artificial intelligence (AI)-powered risk management tool.",
+      "date": "2 hours ago",
+      "source": "PYMNTS.com"
     },
     {
-      "link": "https://technologymagazine.com/digital-transformation/global-tech-ai-awards-an-exclusive-interview-with-rashays",
-      "title": "Global Tech & AI Awards: An Exclusive Interview With RASHAYS",
-      "snippet": "We spoke to Nazih Battal, Chief Information & Technology Officer at RASHAYS, before his appearance as a judge at the Global Tech & AI...",
-      "date": "1 day ago",
-      "source": "Technology Magazine"
+      "link": "https://www.moneycontrol.com/news/world/the-spy-sheikh-s-ai-empire-how-sheikh-tahnoon-is-turning-abu-dhabi-into-an-ai-hub-12952226.html",
+      "title": "The spy Sheikh\u2019s AI empire: How Sheikh Tahnoon is turning Abu Dhabi into an AI hub",
+      "snippet": "For years, Sheikh Tahnoon bin Zayed Al Nahyan has operated in the shadows, his official title as UAE's National Security Adviser barely scratching the...",
+      "date": "6 hours ago",
+      "source": "Moneycontrol"
     },
     {
-      "link": "https://www.yanoticias.es/news-en/the-ai-surge-nvidias-record-breaking-boom-amid-global-tech-tensions/102108/",
-      "title": "The AI Surge: Nvidia\u2019s Record-Breaking Boom Amid Global Tech Tensions",
-      "snippet": "Nvidia, pivotal in the AI revolution, leads with its specialized Blackwell chips, crucial for AI system demands. In the latest quarter,...",
-      "date": "19 hours ago",
-      "source": "yanoticias.es"
-    },
-    {
-      "link": "https://www.scmp.com/tech/big-tech/article/3300111/alibabas-us52-billion-capex-seen-catalyst-chinas-big-tech-ai-race",
-      "title": "Alibaba\u2019s US$52 billion capex seen as catalyst for China\u2019s Big Tech in AI race",
-      "snippet": "Global tech giants are eyeing the first-mover advantages in the initial stage of artificial intelligence development, Everbright Securities...",
-      "date": "1 day ago",
-      "source": "South China Morning Post"
-    },
-    {
-      "link": "https://m.economictimes.com/news/international/global-trends/deepseek-chinese-ai-chatgpt-faqs-why-is-everyone-talking-about-chinas-ai-startup-and-how-has-it-sent-shockwaves-through-global-tech-openai-nvidia-google-alphabet/articleshow/117626797.cms",
-      "title": "DeepSeek FAQs: Why is everyone talking about China's AI startup and how has it sent shockwaves through glo",
-      "snippet": "DeepSeek is a Chinese AI chatbot reportedly made at a fraction of the cost of its rivals and has already become the most downloaded free app in the US.",
-      "date": "1 month ago",
-      "source": "The Economic Times"
-    },
-    {
-      "link": "https://telecom.economictimes.indiatimes.com/news/internet/ais-future-lies-in-india-say-global-tech-giants/118144524",
-      "title": "AI's future lies in India, say global tech giants",
-      "snippet": "New Delhi: As Artificial Intelligence (AI) continues to reshape industries and redefine the global technological landscape, India is...",
-      "date": "2 weeks ago",
-      "source": "ET Telecom"
-    },
-    {
-      "link": "https://www.aljazeera.com/economy/2025/1/28/why-chinas-ai-startup-deepseek-is-sending-shockwaves-through-global-tech",
-      "title": "What\u2019s DeepSeek, China\u2019s AI startup sending shockwaves through global tech?",
-      "snippet": "Chip giant Nvidia shed nearly $600bn in market value after Chinese AI model cast doubt on supremacy of US tech firms.",
-      "date": "1 month ago",
-      "source": "Al Jazeera"
-    },
-    {
-      "link": "https://indianexpress.com/article/technology/artificial-intelligence/deepseek-ai-news-live-updates-9803168/",
-      "title": "Deepseek AI News Live Updates: Tech stock sell-off sparked by DeepSeek deepens on Day 2",
-      "snippet": "The tech world has been rattled by a little-known Chinese AI startup called DeepSeek that has developed cost-efficient large language models.",
-      "date": "1 month ago",
-      "source": "The Indian Express"
+      "link": "https://www.euronews.com/2025/02/27/ai-generated-video-by-trump-shows-gaza-as-lavish-resort-drawing-criticism",
+      "title": "AI-generated video by Trump shows Gaza as lavish resort, drawing criticism",
+      "snippet": "The US president posted an AI-generated video of the Gaza Strip as a luxury tourist destination on social media, which users have slammed as offensive and...",
+      "date": "9 hours ago",
+      "source": "Euronews"
     }
   ],
   "health": [
     {
-      "link": "https://www.who.int/news/item/21-02-2025-world-health-day-2025-to-spotlight-women-and-babies--survival--urging-solidarity-at-a-critical-moment-for-global-health",
-      "title": "World Health Day 2025 to spotlight women and babies\u2019 survival, urging solidarity at a critical moment for global health",
-      "snippet": "The World Health Organization (WHO) has officially announced the theme of World Health Day 2025, Healthy beginnings, hopeful futures,...",
-      "date": "6 days ago",
+      "link": "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/this-everyday-vitamin-can-help-ease-period-pain-says-nhs-doctor/articleshow/118611330.cms",
+      "title": "This everyday vitamin can help ease period pain, says NHS doctor",
+      "snippet": "Dr. Karan Rajan highlights the potential of Vitamin D in easing primary dysmenorrhea. He mentions its effectiveness in repressing enzymes responsible.",
+      "date": "6 minutes ago",
+      "source": "Times of India"
+    },
+    {
+      "link": "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/belly-fat-may-actually-boost-your-brain-health-surprising-findings-of-a-new-study/articleshow/118610953.cms",
+      "title": "Belly fat may actually boost your brain health: Surprising findings of a new study",
+      "snippet": "Japanese researchers have found that visceral fat, produced by belly fat, may play an important role in maintaining brain health by producing a vital.",
+      "date": "33 minutes ago",
+      "source": "Times of India"
+    },
+    {
+      "link": "https://indianexpress.com/article/news-today/despite-who-exit-plan-us-americas-health-agency-9860202/",
+      "title": "Despite WHO exit plan, US still in Americas health agency",
+      "snippet": "On his first day in office, Donald Trump began the US withdrawal from WHO and cut foreign aid, impacting global health programs.",
+      "date": "55 minutes ago",
+      "source": "The Indian Express"
+    },
+    {
+      "link": "https://www.thehindu.com/news/national/karnataka/karnataka-health-minister-assures-action-against-hotels-using-cancer-causing-polythene-sheets-in-idli-preparation/article69270294.ece",
+      "title": "Karnataka Health Department bans use of cancer-causing polythene sheets for steaming idlis in hotels across State",
+      "snippet": "Karnataka Health Minister reveals 52 hotels using plastic sheets for idli preparation, vows to ban carcinogenic practice.",
+      "date": "7 hours ago",
+      "source": "The Hindu"
+    },
+    {
+      "link": "https://www.who.int/news/item/27-02-2025-third-meeting-of-the-international-health-regulations-2005-emmergency-committee-regarding-the-upsurge-of-mpox-2024-temporary-recommendations",
+      "title": "Third meeting of the International Health Regulations (2005) Emergency Committee regarding the upsurge of mpox 2024 \u2013 Temporary recommendations",
+      "snippet": "The Director-General of the World Health Organization (WHO), following the third meeting of the International Health Regulations (2005) (IHR) Emergency...",
+      "date": "8 hours ago",
       "source": "World Health Organization (WHO)"
     },
     {
-      "link": "https://www.voanews.com/z/607",
-      "title": "Science & Health",
-      "snippet": "February 23, 2025. Philippine village battles dengue by offering bounties for mosquitos \u2014 dead or alive. At least 28,234 dengue cases have...",
-      "date": "24 hours ago",
-      "source": "VOA - Voice of America English News"
+      "link": "https://www.weforum.org/stories/2025/02/protect-mothers-and-babies-says-who-and-other-top-health-stories/",
+      "title": "WHO sounds alarm on maternal and newborn health crisis, and other top health stories",
+      "snippet": "Top health news: WHO calls for investment in maternal and newborn health; Europe's life expectancy growth stalls; Major advances in migraine treatment.",
+      "date": "8 hours ago",
+      "source": "The World Economic Forum"
     },
     {
-      "link": "https://www.nytimes.com/2025/02/26/health/usaid-global-health-surveys.html",
-      "title": "Trump Administration Ends Global Health Research Program",
-      "snippet": "The Demographic and Health Surveys were the only sources of reliable information in many countries on metrics such as mortality,...",
-      "date": "18 hours ago",
-      "source": "The New York Times"
+      "link": "https://www.hindustantimes.com/lifestyle/health/elective-c-section-what-is-it-is-it-safe-doctor-explains-101740665976395.html",
+      "title": "Elective C-section: What is it? Is it safe? Doctor explains",
+      "snippet": "Is elective C-section safe? Doctor noted down the things to be careful about while choosing elective C-section for childbirth. | Health.",
+      "date": "5 hours ago",
+      "source": "Hindustan Times"
     },
     {
-      "link": "https://www.thehealthsite.com/news/health-news-live-uk-death-toll-from-weight-loss-and-diabetes-drugs-hits-82-deadly-soil-bacteria-kills-14-in-australia-1190310/",
-      "title": "Are Covishield Side Effects Linked to Guillain-Barre Syndrome? Govt Panel Issues Warning",
-      "snippet": "Health News Live Updates: Get the latest breaking updates on global health developments, medical breakthroughs, disease outbreaks,...",
-      "date": "17 minutes ago",
-      "source": "TheHealthSite"
+      "link": "https://zeenews.india.com/hindi/zeephh/punjab/children-are-suffering-from-fever-and-cough-due-to-influenza-experts-suggest-preventive-measures/2663045",
+      "title": "Health News: \u0a07\u0a28\u0a2b\u0a32\u0a48\u0a1c\u0a3e \u0a2b\u0a32\u0a42 \u0a28\u0a3e\u0a32 \u0a2c\u0a41\u0a16\u0a3c\u0a3e\u0a30 \u0a24\u0a47 \u0a16\u0a3e\u0a02\u0a38\u0a40 \u0a26\u0a40 \u0a32\u0a2a\u0a47\u0a1f \u0a35\u0a3f\u0a71\u0a1a \u0a06 \u0a30\u0a39\u0a47 \u0a2c\u0a71\u0a1a\u0a47; \u0a2e\u0a3e\u0a39\u0a3f\u0a30\u0a3e\u0a02 \u0a28\u0a47 \u0a26\u0a71\u0a38\u0a47 \u0a2c\u0a1a\u0a3e\u0a05 \u0a26\u0a47 \u0a09\u0a2a\u0a3e\u0a05",
+      "snippet": "Health News: \u0a2a\u0a3f\u0a1b\u0a32\u0a47 \u0a07\u0a71\u0a15 \u0a2e\u0a39\u0a40\u0a28\u0a47 \u0a24\u0a4b\u0a02 \u0a2b\u0a48\u0a32\u0a47 \u0a07\u0a28\u0a2b\u0a32\u0a48\u0a02\u0a1c\u0a3e \u0a2b\u0a32\u0a42 \u0a15\u0a3e\u0a30\u0a28 \u0a2b\u0a3f\u0a30\u0a4b\u0a1c\u0a3c\u0a2a\u0a41\u0a30 \u0a35\u0a3f\u0a71\u0a1a \u0a24\u0a47 \u0a39\u0a4b\u0a30 \u0a1c\u0a3c\u0a3f\u0a32\u0a4d\u0a39\u0a3f\u0a06\u0a02 \u0a35\u0a3f\u0a71\u0a1a \u0a32\u0a17\u0a3e\u0a24\u0a3e\u0a30 \u0a1b\u0a4b\u0a1f\u0a47 \u0a2c\u0a71\u0a1a\u0a47 \u0a2c\u0a3f\u0a2e\u0a3e\u0a30 \u0a39\u0a4b \u0a30\u0a39\u0a47 \u0a39\u0a28\u0964 \u0a07\u0a38 \u0a2b\u0a32\u0a42 \u0a15\u0a3e\u0a30\u0a28 \u0a2c\u0a71\u0a1a\u0a3f\u0a06\u0a02 \u0a28\u0a42\u0a70 \u0a24\u0a47\u0a1c\u0a3c \u0a2c\u0a41\u0a16\u0a3e\u0a30 \u0a24\u0a47 \u0a24\u0a47\u0a1c\u0a3c \u0a16\u0a3e\u0a02\u0a38\u0a40 \u0a05\u0a24\u0a47 \u0a2a\u0a47\u0a1f \u0a16\u0a30\u0a3e\u0a2c \u0a26\u0a38\u0a24 \u0a32\u0a71\u0a17\u0a23\u0a3e, \u0a09\u0a32\u0a1f\u0a40\u0a06\u0a02 \u0a32\u0a71\u0a17\u0a23\u0a40\u0a06\u0a02 \u0a06\u0a26\u0a3f \u0a26\u0a47 \u0a32\u0a71\u0a1b\u0a23...",
+      "date": "11 hours ago",
+      "source": "Zee News"
     },
     {
-      "link": "https://www.nature.com/articles/d41586-025-00449-w",
-      "title": "What\u2019s next for the World Health Organization? US exit could reshape agency",
-      "snippet": "Few health-policy experts were surprised when US President Donald Trump last month announced that he would pull the United States out of the...",
-      "date": "1 week ago",
-      "source": "Nature"
+      "link": "https://www.amarujala.com/himachal-pradesh/chamba/abha-card-is-necessary-to-avail-health-services-chamba-news-c-88-1-ssml1006-144830-2025-02-27",
+      "title": "Chamba News: \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0938\u0947\u0935\u093e \u0932\u0947\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092d\u093e \u0915\u093e\u0930\u094d\u0921 \u091c\u0930\u0942\u0930\u0940",
+      "snippet": "\u0906\u092f\u0941\u0937\u094d\u092e\u093e\u0928 \u092d\u093e\u0930\u0924 \u0921\u093f\u091c\u093f\u091f\u0932 \u092e\u093f\u0936\u0928 \u0915\u094b \u0932\u0947\u0915\u0930 \u0926\u093f\u092f\u093e \u092a\u094d\u0930\u0936\u093f\u0915\u094d\u0937\u0923. \u0914\u0930 \u092a\u0922\u093c\u0947\u0902....",
+      "date": "57 minutes ago",
+      "source": "Amar Ujala"
     },
     {
-      "link": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
-      "title": "Deafness and hearing loss",
-      "snippet": "Over 5% of the world's population \u2013 or 430 million people \u2013 require rehabilitation to address their disabling hearing loss (including 34 million children).",
-      "date": "1 day ago",
-      "source": "World Health Organization (WHO)"
-    },
-    {
-      "link": "https://www.thehealthsite.com/news/health-news-live-seasonal-flu-deadlier-than-covid-19-in-the-u-s-for-the-first-time-in-five-years-1188780/",
-      "title": "Health News Live: Seasonal Flu Deadlier Than COVID-19 in the U.S. for the First Time in Five Years",
-      "snippet": "Health News Live Updates: Get the latest breaking health news, live updates on medical advancements, wellness tips, and global health alerts...",
-      "date": "6 days ago",
-      "source": "TheHealthSite"
-    },
-    {
-      "link": "https://www.who.int/news/item/26-02-2025-who-strengthens-support-for-grassroots-crowdsourcing-campaign--a-global-movement-of-unity-and-solidarity",
-      "title": "WHO strengthens support for grassroots crowdsourcing campaign: a global movement of unity and solidarity",
-      "snippet": "What started as a grassroots initiative by a WHO staff member has grown into a global movement for health.",
-      "date": "1 day ago",
-      "source": "World Health Organization (WHO)"
-    },
-    {
-      "link": "https://www.who.int/news/item/14-08-2024-who-director-general-declares-mpox-outbreak-a-public-health-emergency-of-international-concern",
-      "title": "WHO Director-General declares mpox outbreak a public health emergency of international concern",
-      "snippet": "WHO Director-General Dr Tedros Adhanom Ghebreyesus has determined that the upsurge of mpox in the Democratic Republic of the Congo (DRC) and...",
-      "date": "14 Aug 2024",
-      "source": "World Health Organization (WHO)"
-    },
-    {
-      "link": "https://www.who.int/news-room/fact-sheets/detail/cancer",
-      "title": "Cancer",
-      "snippet": "Cancer is a leading cause of death worldwide, accounting for nearly 10 million deaths in 2020, or nearly one in six deaths.",
-      "date": "3 weeks ago",
-      "source": "World Health Organization (WHO)"
+      "link": "https://www.manoramaonline.com/business/personal-finance/2025/02/27/health-insurance-growth-india.html",
+      "title": "\u0d15\u0d4b\u0d35\u0d3f\u0d21\u0d3f\u0d28\u0d41\u0d36\u0d47\u0d37\u0d02 \u0d06\u0d30\u0d4b\u0d17\u0d4d\u0d2f \u0d07\u0d7b\u0d37\u0d41\u0d31\u0d7b\u0d38\u0d3f\u0d28\u0d4d \u0d35\u0d7b \u0d21\u0d3f\u0d2e\u0d3e\u0d7b\u0d21\u0d4d; \u0d35\u0d33\u0d7c\u0d1a\u0d4d\u0d1a 200 \u0d36\u0d24\u0d2e\u0d3e\u0d28\u0d24\u0d4d\u0d24\u0d3f\u0d32\u0d27\u0d3f\u0d15\u0d02",
+      "snippet": "\u0d15\u0d4b\u0d35\u0d3f\u0d21\u0d3f\u0d28\u0d41\u0d36\u0d47\u0d37\u0d02 \u0d30\u0d3e\u0d1c\u0d4d\u0d2f\u0d24\u0d4d\u0d24\u0d4d \u0d06\u0d30\u0d4b\u0d17\u0d4d\u0d2f \u0d07\u0d7b\u0d37\u0d41\u0d31\u0d7b\u0d38\u0d4d \u0d17\u0d41\u0d23\u0d2d\u0d4b\u0d15\u0d4d\u0d24\u0d3e\u0d15\u0d4d\u0d15\u0d33\u0d41\u0d1f\u0d46 \u0d0e\u0d23\u0d4d\u0d23\u0d24\u0d4d\u0d24\u0d3f\u0d7d \u0d17\u0d23\u0d4d\u0d2f\u0d2e\u0d3e\u0d2f \u0d35\u0d7c\u0d27\u0d28. \u0d15\u0d34\u0d3f\u0d1e\u0d4d\u0d1e \u0d28\u0d3e\u0d32\u0d41\u0d35\u0d7c\u0d37\u0d24\u0d4d\u0d24\u0d3f\u0d28\u0d3f\u0d1f\u0d46 \u0d2e\u0d47\u0d16\u0d32\u0d2f\u0d3f\u0d7d 240% \u0d35\u0d33\u0d7c\u0d1a\u0d4d\u0d1a\u0d2f\u0d41\u0d23\u0d4d\u0d1f\u0d3e\u0d2f\u0d24\u0d3e\u0d2f\u0d3f \u0d07\u0d7b\u0d38\u0d7c\u0d1f\u0d46\u0d15\u0d4d. health insurance, India, COVID-19, insurance growth,...",
+      "date": "11 hours ago",
+      "source": "Manorama Online"
     }
   ],
   "sports": [
     {
-      "link": "https://www.business-standard.com/sports/other-sports-news/what-drives-west-asia-s-multi-billion-push-to-attract-global-sports-stars-124112201349_1.html",
-      "title": "What's behind West Asia's multibillion push to attract global sports stars?",
-      "snippet": "There's little doubt that the Gulf nations' strategic investments in sports has bolstered their economies and provided a fillip to tourism.",
-      "date": "22 Nov 2024",
-      "source": "Business Standard"
-    },
-    {
-      "link": "https://www.hindustantimes.com/sports/tennis/from-an-athlete-who-didnt-play-global-sport-nick-kyrgios-unfiltered-reaction-to-being-called-29-year-old-child-101736992490961.html",
-      "title": "'From an athlete who didn't play global sport...': Nick Kyrgios' unfiltered reaction to being called '29-year-old child'",
-      "snippet": "Nick Kyrgios was involved in another war of words following his early Australian Open exit. | Tennis News.",
-      "date": "1 month ago",
-      "source": "Hindustan Times"
-    },
-    {
-      "link": "https://www.jagranjosh.com/articles/school-assembly-news-headlines-today-november-8-national-international-sports-current-affairs-and-other-top-important-news-1730978569-1",
-      "title": "School Assembly News Headlines For November 8, 2024: National, International, Sports, Current Affairs and Important Education News",
-      "snippet": "Get the list of detailed news headlines for the morning assembly from all major sectors like politics, entertainment, politics, sports, world affairs,...",
-      "date": "7 Nov 2024",
-      "source": "Jagran Josh"
-    },
-    {
-      "link": "https://timesofindia.indiatimes.com/sports/nfl/news/how-the-nfls-deal-with-dazn-is-reshaping-global-sports-broadcasting/articleshow/115740300.cms",
-      "title": "How the NFL's deal with DAZN is reshaping Global Sports broadcasting",
-      "snippet": "NFL News: The NFL's 10-year partnership with DAZN revolutionizes global fan access by offering live games, highlights, and RedZone on one...",
-      "date": "28 Nov 2024",
+      "link": "https://timesofindia.indiatimes.com/sports/cricket/icc-champions-trophy-2025/fakhar-zamans-honest-admission-after-pakistans-champions-trophy-exit-ind-vs-pak/articleshow/118608749.cms",
+      "title": "'Things could have been different': Fakhar Zaman's honest admission after Pakistan's Champions Trophy exi",
+      "snippet": "Cricket News: Hosts and defending champions Pakistan had a poor start in the 2025 Champions Trophy, losing to New Zealand and India.",
+      "date": "3 hours ago",
       "source": "Times of India"
     },
     {
-      "link": "https://www.republicworld.com/sports/cricket/republic-world-todays-top-10-sports-news-headlines",
-      "title": "Today's Sports News Highlights: October 9, 2024 \u2013 India and Global Updates",
-      "snippet": "Stay updated with today's top 10 sports news headlines from India and beyond. Get breaking news, updates on politics, sports, entertainment,...",
-      "date": "9 Oct 2024",
-      "source": "Republic World"
+      "link": "https://www.moneycontrol.com/education/school-assembly-news-headlines-28-february-2025-national-international-business-and-sports-updates-article-12952070.html",
+      "title": "School Assembly News Headlines, 28 February 2025: National, International, Business and Sports Updates",
+      "snippet": "Here are key news updates for 28 February 2025, covering national, international, business, and sports news. It includes major developments in India,...",
+      "date": "7 hours ago",
+      "source": "Moneycontrol"
     },
     {
-      "link": "https://www.travelandtourworld.com/news/article/sports-tourism-market-set-to-reach-usd-1803-7-billion-by-2030-fueling-economic-growth-and-expanding-global-reach-here-is-the-latest-news/",
-      "title": "Sports Tourism Market Set to Reach USD 1,803.7 Billion by 2030, Fueling Economic Growth and Expanding Global Reach: Here Is The Latest News",
-      "snippet": "The sports tourism market is set to grow to $1.8 trillion by 2030, driven by increasing sporting events and global participation.",
-      "date": "27 Dec 2024",
-      "source": "Travel And Tour World"
+      "link": "https://www.laureus.com/news/laureus-world-sports-academy-statement",
+      "title": "Laureus World Sports Academy Statement",
+      "snippet": "Statement from Laureus World Sports Academy Chairman Sean Fitzpatrick: \u201cFollowing discussions by the Laureus Academy it has been decided that Jannik...",
+      "date": "3 hours ago",
+      "source": "Laureus"
     },
     {
-      "link": "https://www.sportstourismnews.com/sports-events-calendar-uk-global-sporting-events/",
-      "title": "Sports events in 2025 \u2013 global sporting calendar",
-      "snippet": "The global sports calendar for 2025 is packed with exciting events that promise unforgettable moments for fans worldwide.",
-      "date": "3 weeks ago",
-      "source": "Sports Tourism News"
+      "link": "https://thesportstak.com/cricket/champions-trophy/story/more-india-vs-pakistan-clashes-on-cards-in-2025-after-the-end-of-champions-trophy-as-asia-cups-window-finalised-for-september-3163241-2025-02-27",
+      "title": "Big News: More India vs Pakistan clashes on cards in 2025 after the end of Champions Trophy as Asia Cup's window finalised",
+      "snippet": "Fans will get to witness more of India versus Pakistan clashes as Asia Cup 2025 schedule has almost been finalised.",
+      "date": "7 hours ago",
+      "source": "SportsTak"
     },
     {
-      "link": "https://www.globenewswire.com/news-release/2024/06/05/2893638/0/en/Latest-Global-Sports-Events-Market-Size-Share-Worth-USD-525-825-1-Million-by-2033-at-a-7-8-CAGR-Custom-Market-Insights-Analysis-Outlook-Leaders-Report-Trends-Forecast-Segmentation-.html",
-      "title": "[Latest] Global Sports Events Market Size/Share Worth USD",
-      "snippet": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Sports...",
-      "date": "5 Jun 2024",
-      "source": "GlobeNewswire"
+      "link": "https://www.news18.com/sports/a-coach-is-a-guide-as-well-as-a-judge-sports-minister-mansukh-mandaviya-eyes-development-of-more-home-grown-coaches-9243666.html",
+      "title": "'A Coach Is A Guide As Well As A Judge': Sports Minister Mansukh Mandaviya Eyes Development Of More Home-Gr",
+      "snippet": "Sports Minister Mansukh Mandaviya on Thursday launched a special capacity-building course in collaboration with Netaji Subhas National Institute of Sports,...",
+      "date": "6 hours ago",
+      "source": "News18"
     },
     {
-      "link": "https://www.prnewswire.com/news-releases/gameabove-sports-announces-partnership-with-kovacs-institute-on-global-sports-performance-consultation-302304428.html",
-      "title": "GameAbove Sports Announces Partnership with Kovacs Institute on Global Sports Performance Consultation",
-      "snippet": "Partnership Aims to Support Current and Future Investments With Latest Performance Sciences. FORT MYERS, Fla., Nov.",
-      "date": "13 Nov 2024",
-      "source": "PR Newswire"
-    },
-    {
-      "link": "https://www.hindustantimes.com/sports/others/kho-kho-world-cup-and-hopes-to-make-a-game-global-101737567790923.html",
-      "title": "Kho Kho World Cup and hopes to make a game global",
-      "snippet": "The first World Cup in Delhi dominated by India showed other nations will need to build on their enthusiasm for the game.",
-      "date": "1 month ago",
+      "link": "https://www.hindustantimes.com/sports/tennis/siddhant-banthia-parikshit-somani-storm-into-bengaluru-open-doubles-semifinals-101740676605046.html",
+      "title": "Siddhant Banthia-Parikshit Somani storm into Bengaluru Open doubles semifinals",
+      "snippet": "The unseeded Indian duo dismantled Nicolas and Bernard 7-5, 6-0 to set up a fight with Australia's Blake Bayldon and Mattew Christopher Romios | Tennis...",
+      "date": "2 hours ago",
       "source": "Hindustan Times"
+    },
+    {
+      "link": "https://www.outlookindia.com/sports/world-february-27-2025-live-blog-scores-updates-results",
+      "title": "Sports Highlights, February 27: Kevin Pietersen Joins Delhi Capitals As New Mentor; Echeverri Joins Manchester City",
+      "snippet": "Here are the highlights of news from sports world for Thursday, February 27. In cricket, Pakistan's last group-stage match against Bangladesh was washed out...",
+      "date": "4 hours ago",
+      "source": "Outlook India"
+    },
+    {
+      "link": "https://www.timesnownews.com/education/school-assembly-news-headlines-28-february-2025-top-stories-in-national-international-and-sports-beat-article-118606436",
+      "title": "School Assembly News Headlines 28 February 2025: Top Stories in National, International and Sports Beat",
+      "snippet": "This article contains the latest news headlines in national, international and sports segments. Students can go through them to choose important ones for...",
+      "date": "6 hours ago",
+      "source": "Times Now"
     }
   ],
   "finance": [
     {
-      "link": "https://www.business-standard.com/economy/news/crypto-stablecoins-can-impact-macroeconomic-financial-stability-rbi-124123000845_1.html",
-      "title": "Crypto assets can negatively impact financial stability, says RBI report",
-      "snippet": "RBI on crypto and financial stability: The banking regulator emphasised the potential consequences of the widespread adoption of...",
-      "date": "30 Dec 2024",
+      "link": "https://www.financialexpress.com/market/bse-sensex-nifty-50-stock-market-today-live-updates-27-february-2025-3761679/",
+      "title": "Stock Market Today | Sensex Nifty 50 Highlights: Markets end flat after rangebound session; Sharp gains banks, NBFCs",
+      "snippet": "BSE Sensex, Nifty 50 Today Live | Share Market Live Updates: Nifty, Sensex flat on Thursday, February 27; broader markets slip lower.",
+      "date": "9 hours ago",
+      "source": "Financialexpress"
+    },
+    {
+      "link": "https://www.moneycontrol.com/banking/rbi-closely-monitoring-capital-position-of-small-finance-banks-few-may-be-forced-to-shore-up-buffer-article-12951954.html",
+      "title": "RBI closely monitoring capital position of small finance banks, few may be forced to shore up buffer",
+      "snippet": "As many as 3\u20134 small finance banks may be required to raise capital in the next 6\u201312 months owing to asset quality issues plaguing the micro lenders,...",
+      "date": "9 hours ago",
+      "source": "Moneycontrol"
+    },
+    {
+      "link": "https://www.business-standard.com/india-news/centre-to-cut-states-share-of-federal-taxes-from-41-to-40-from-2026-125022700417_1.html",
+      "title": "Centre to cut states' share of federal taxes from 41% to 40% from 2026",
+      "snippet": "The panel, headed by economist Arvind Panagariya, will submit its recommendations by October 31 to be implemented from fiscal year 2026-27.",
+      "date": "11 hours ago",
       "source": "Business Standard"
     },
     {
-      "link": "https://www.livemint.com/market/stock-market-news/global-market-crash-from-asian-markets-to-crypto-prices-us-recession-fears-jolt-financial-markets-globally-11722841898336.html",
-      "title": "Global market crash: From Asian markets to crypto prices, US recession fears jolt financial markets globally",
-      "snippet": "Sensex and Nifty 50 witnessed a heavy sell-off on Monday as the rout in global equities intensified amid US recession concerns and...",
-      "date": "5 Aug 2024",
-      "source": "Mint"
+      "link": "https://www.thehindubusinessline.com/markets/share-market-nifty-sensex-live-updates-27-february-2025/article69266191.ece",
+      "title": "Stock Market Highlights 27 February 2025: Sensex, Nifty end flat; Shriram Finance jumps over 5%",
+      "snippet": "Stock Market | Share Market Updates - Find here all the updates related to Sensex, Nifty, BSE, NSE share prices and Indian stock markets for 27 February...",
+      "date": "9 hours ago",
+      "source": "The Hindu BusinessLine"
     },
     {
-      "link": "https://www.hindustantimes.com/world-news/interview-yesha-yadav-on-abc-of-donald-trump-s-new-crypto-world-101737301076231.html",
-      "title": "Interview: Yesha Yadav on ABC of Donald Trump\u2019s new crypto world",
-      "snippet": "A leading scholar on crypto distills the essence of the technology, the legal landscape, the differences in India and the US, and the new world of crypto.",
-      "date": "1 month ago",
-      "source": "Hindustan Times"
+      "link": "https://hackernoon.com/building-a-financial-news-platform-in-brazil",
+      "title": "Building a Financial News Platform in Brazil",
+      "snippet": "Brazil's financial landscape is unique. At the moment the interest rates is higher than should be due inflation. It has an expanding gig economy,...",
+      "date": "5 hours ago",
+      "source": "HackerNoon"
     },
     {
-      "link": "https://www.reuters.com/technology/trumps-crypto-company-launches-strategic-token-reserve-2025-02-12/",
-      "title": "Trump's crypto company launches strategic 'token reserve'",
-      "snippet": "World Liberty Financial, the new crypto platform in which President Donald Trump holds a financial stake, announced that it was unveiling a...",
-      "date": "2 weeks ago",
-      "source": "Reuters"
+      "link": "https://www.financialexpress.com/business/banking-finance-rbi-relief-gives-boost-to-nbfc-stocks-3762519/",
+      "title": "RBI relief gives boost to NBFC stocks",
+      "snippet": "Shares of non-banking finance companies (NBFCs) rose sharply on Thursday after the Reserve Bank of India (RBI) eased banks' lending norms for the sector.",
+      "date": "48 minutes ago",
+      "source": "Financialexpress"
     },
     {
-      "link": "https://m.economictimes.com/news/international/world-news/donald-trump-introduces-new-cryptocurrency-world-liberty-financial-can-it-make-finance-great-again/articleshow/113420089.cms",
-      "title": "Donald Trump introduces new cryptocurrency World Liberty Financial: Can it \u2018make finance great again\u2019?",
-      "snippet": "Former President Donald Trump has launched a new cryptocurrency venture, World Liberty Financial, with his sons and two crypto entrepreneurs.",
-      "date": "17 Sept 2024",
-      "source": "The Economic Times"
+      "link": "https://www.financialexpress.com/money/top-10-gold-etfs-in-india-3762474/",
+      "title": "Top 10 gold ETFs in India",
+      "snippet": "Gold ETFs trade on stock exchanges and can be bought and sold continuously at market prices. Gold ETFs are passive investment instruments linked to current...",
+      "date": "6 hours ago",
+      "source": "Financialexpress"
     },
     {
-      "link": "https://www.businesswire.com/news/home/20241210257591/en/Circle-and-Binance-Enter-Into-a-Strategic-Partnership-That-Will-Accelerate-Global-USDC-and-Crypto-Adoption",
-      "title": "Circle and Binance Enter Into a Strategic Partnership That Will Accelerate Global USDC and Crypto Adoption",
-      "snippet": "Crypto industry giants Circle Internet Group Inc. and Binance have joined forces in a new strategic partnership announced today at Abu Dhabi Finance Week.",
-      "date": "11 Dec 2024",
-      "source": "Business Wire"
-    },
-    {
-      "link": "https://fxnewsgroup.com/forex-news/cryptocurrency/the-role-of-cryptocurrencies-in-emerging-economies/",
-      "title": "The Role of Cryptocurrencies in Emerging Economies",
-      "snippet": "In recent years, cryptocurrencies have emerged as a revolutionary force in global finance, with emerging economies playing a significant...",
-      "date": "20 Dec 2024",
-      "source": "FX News Group"
-    },
-    {
-      "link": "https://www.financemagnates.com/cryptocurrency/from-niche-to-necessity-the-global-rise-of-crypto-atms/",
-      "title": "From Niche to Necessity: The Global Rise of Crypto ATMs",
-      "snippet": "The global crypto ATM market was estimated at USD 182.1 million in 2023 and is projected to grow at a compound annual growth rate (CAGR) of 63.4% from 2024 to...",
-      "date": "15 Aug 2024",
-      "source": "Finance Magnates"
-    },
-    {
-      "link": "https://gfmag.com/capital-raising-corporate-finance/hong-kong-cryptocurrency-etf/",
-      "title": "Hong Kong: Introducing Spot Crypto Trading",
-      "snippet": "Hong Kong has approved the launch of exchange traded funds (ETFs) that directly invest in bitcoin and ether, the world's largest cryptocurrency tokens.",
-      "date": "2 May 2024",
-      "source": "Global Finance Magazine"
-    },
-    {
-      "link": "https://www.hindustantimes.com/opinion/web3-disintermediation-and-the-future-of-global-finance-101730054811261.html",
-      "title": "Web3, disintermediation and the future of global finance",
-      "snippet": "Web3 is about ownership \u2014 of data, transactions, and assets. With smart contracts and decentralised systems, it has the potential to empower...",
-      "date": "28 Oct 2024",
-      "source": "Hindustan Times"
+      "link": "https://www.financialexpress.com/world-news/trump-says-mexico-canada-tariffs-will-start-march-4-doubles-chinas-10-import-tax/3762663/",
+      "title": "Trump says Mexico, Canada tariffs will start March 4; doubles China\u2019s 10% import tax",
+      "snippet": "The announcement has already unsettled global markets, raising concerns about inflation and potential damage to industries such as auto manufacturing if...",
+      "date": "3 hours ago",
+      "source": "Financialexpress"
     }
   ],
-  "geoPolitics": [
+  "geopolitical": [
     {
-      "link": "https://www.cnbc.com/2025/02/24/china-strives-to-attract-foreign-investment-amid-geopolitical-tensions.html",
-      "title": "China's latest action plan shows it's trying to boost foreign investment amid geopolitical tensions",
-      "snippet": "China is trying yet again to boost foreign investment, amid geopolitical tensions and businesses' calls for more concrete actions.",
-      "date": "3 days ago",
-      "source": "CNBC"
+      "link": "https://www.hindustantimes.com/ht-insight/international-affairs/new-era-of-geopolitical-realignments-101740657962378.html",
+      "title": "New era of geopolitical realignments",
+      "snippet": "This article is authored by Kamakshi Wason, global COO, Tillotoma Foundation.",
+      "date": "7 hours ago",
+      "source": "Hindustan Times"
     },
     {
-      "link": "https://www.imf.org/en/News/Articles/2024/05/07/sp-geopolitics-impact-global-trade-and-dollar-gita-gopinath",
-      "title": "Speech: Geopolitics and its Impact on Global Trade and the Dollar",
-      "snippet": "First Deputy Managing Director Gita Gopinath Series on the Future of the International Monetary System (IMS) Stanford Institute for Economic Policy Research",
-      "date": "7 May 2024",
-      "source": "International Monetary Fund"
+      "link": "https://www.seatrade-maritime.com/regulations/geopolitical-disruption-may-jeopardise-shipping-s-high-level-playing-field",
+      "title": "Geopolitical disruption may jeopardise shipping's high-level playing field",
+      "snippet": "IACS outlines challenges to global rules development, regular surveys, and cyber security from escalating geopolitical tension.",
+      "date": "10 hours ago",
+      "source": "Seatrade Maritime News"
     },
     {
-      "link": "https://www.ndtv.com/world-news/world-leaders-on-speed-dial-how-elon-musk-is-causing-geopolitical-tremors-7280783",
-      "title": "World Leaders On Speed-Dial: How Elon Musk Is Causing Geopolitical Tremors",
-      "snippet": "It isn't unthinkable that the world's richest person can pull more than just a few strings with top politicians, but Elon Musk seems to be...",
-      "date": "19 Dec 2024",
-      "source": "NDTV"
+      "link": "https://decode39.com/10042/italy-to-host-2025-antarctic-conference-in-milan/",
+      "title": "Italy to host 2025 Antarctic conference in Milan",
+      "snippet": "Italy is set to host the Antarctic Treaty Consultative Meeting in June 2025 in Milan, marking a significant step in reinforcing its leadership in polar...",
+      "date": "9 hours ago",
+      "source": "Decode39"
     },
     {
-      "link": "https://timesofindia.indiatimes.com/city/mangaluru/india-must-deepen-understanding-of-tibets-geopolitical-importance-experts/articleshow/117178194.cms",
-      "title": "India must deepen understanding of Tibet\u2019s geopolitical importance: Experts",
-      "snippet": "Mangaluru: A session on the topic 'Himalayan Geopolitics' held as part of the seventh edition of the Mangaluru Literature Festival delved...",
-      "date": "1 month ago",
+      "link": "https://geopoliticalfutures.com/reaction-in-the-russian-periphery/",
+      "title": "Reaction in the Russian Periphery",
+      "snippet": "Though still in its early stages, forged U.S.-Russia diplomacy has compelled several nations on Russia's periphery to rethink some of their strategic.",
+      "date": "8 hours ago",
+      "source": "Geopolitical Futures"
+    },
+    {
+      "link": "https://www.intellinews.com/fitch-warns-over-political-and-geopolitical-risks-to-south-caucasus-sovereign-ratings-369304/",
+      "title": "Fitch warns over political and geopolitical risks to South Caucasus sovereign ratings",
+      "snippet": "Political and geopolitical developments that heighten external vulnerabilities and policy weaknesses in the South Caucasus are exerting a significant ...",
+      "date": "10 hours ago",
+      "source": "bne IntelliNews"
+    },
+    {
+      "link": "https://www.eunews.it/en/2025/02/27/three-years-into-russias-war-on-ukraine-defining-the-eus-geopolitical-future/",
+      "title": "Three Years into Russia\u2019s War on Ukraine: Defining the EU\u2019s Geopolitical Future",
+      "snippet": "Three years ago, Russia launched its brutal and unprovoked war of aggression against Ukraine, an attack not just on a sovereign nation but on fundamental.",
+      "date": "8 hours ago",
+      "source": "Eunews"
+    },
+    {
+      "link": "https://www.aa.com.tr/en/economy/ebrd-cuts-2025-growth-projections-amid-trade-geopolitical-uncertainties/3494969",
+      "title": "EBRD cuts 2025 growth projections amid trade, geopolitical uncertainties",
+      "snippet": "ANKARA. The European Bank for Reconstruction and Development (EBRD) on Thursday revised its 2025 growth forecast for its regions downward by 0.3 percentage...",
+      "date": "9 hours ago",
+      "source": "Anadolu Ajans\u0131"
+    },
+    {
+      "link": "https://financialpost.com/news/economy/geopolitical-threats-canadian-companies-governance-practices",
+      "title": "Geopolitical threats should force Canadian companies to beef up governance practices",
+      "snippet": "Robert Balcom: The world order is undergoing a major, rapid and sometimes unpredictable transformation. Read more.",
+      "date": "8 hours ago",
+      "source": "Financial Post"
+    },
+    {
+      "link": "https://www.eureporter.co/world/us/2025/02/27/key-regional-allies-in-trumps-new-geopolitical-world/",
+      "title": "Key regional allies in Trump\u2019s new geopolitical world",
+      "snippet": "The Trump administration's goal to reformulate approaches to the architecture of international security will change geopolitical dynamics in many regions,...",
+      "date": "10 hours ago",
+      "source": "EU Reporter"
+    },
+    {
+      "link": "https://timesca.com/a-blow-to-the-cpc-geopolitical-intrigue-surrounding-the-pipeline/",
+      "title": "A Blow to the CPC: Geopolitical Intrigue Surrounding the Pipeline",
+      "snippet": "More than a week has passed since Ukrainian drones attacked the Kropotkinskaya oil refinery, part of the Caspian Pipeline Consortium (CPC) system. However,",
+      "date": "5 hours ago",
+      "source": "The Times Of Central Asia"
+    }
+  ],
+  "crypto": [
+    {
+      "link": "https://abcnews.go.com/Politics/house-democrats-aim-trump-crypto-meme-coin/story?id=119241283",
+      "title": "House Democrats take aim at $TRUMP crypto meme coin",
+      "snippet": "A California Democrat plans to introduce the Modern Emoluments and Malfeasance Enforcement Act, or MEME Act, on Thursday.",
+      "date": "9 hours ago",
+      "source": "ABC News"
+    },
+    {
+      "link": "https://www.coindesk.com/policy/2025/02/27/pakistan-to-set-up-council-to-oversee-crypto-policy-report",
+      "title": "Pakistan to Set Up Council to Oversee Crypto Policy: Report",
+      "snippet": "The crypto council would be a dedicated advisory body that consists of government representatives, regulatory authorities and industry experts.",
+      "date": "8 hours ago",
+      "source": "CoinDesk"
+    },
+    {
+      "link": "https://www.fxempire.com/forecasts/article/xrp-news-today-will-the-sec-drop-the-ripple-appeal-after-closed-meeting-btc-at-84k-1500554",
+      "title": "XRP News Today: Will the SEC Drop the Ripple Appeal After Closed Meeting? BTC at $84K",
+      "snippet": "XRP Price on Edge: SEC Decision Looms Traders await the SEC's closed meeting outcome\u2014will an appeal withdrawal spark an XRP breakout?",
+      "date": "8 hours ago",
+      "source": "FXEmpire"
+    },
+    {
+      "link": "https://crypto.news/uniswap-wallet-adds-crypto-off-ramping-with-transak/",
+      "title": "Uniswap Wallet adds crypto off-ramping with Transak",
+      "snippet": "This integration allows users to convert their crypto assets into fiat currency directly within the app. The update enhances Uniswap Wallet's functionality,...",
+      "date": "4 hours ago",
+      "source": "Crypto News"
+    },
+    {
+      "link": "https://news.bitcoin.com/murder-in-korea-chinese-national-killed-while-trading-cryptocurrency/",
+      "title": "Murder in Korea: Chinese National Killed While Trading Cryptocurrency",
+      "snippet": "A Chinese national was murdered in a luxury hotel in Jeju City, South Korea, while he was allegedly trading cryptocurrency.",
+      "date": "8 hours ago",
+      "source": "Bitcoin.com News"
+    },
+    {
+      "link": "https://timesofindia.indiatimes.com/business/india-business/bitcoin-falls-over-20-from-january-peak-will-crypto-market-rebound/articleshow/118602984.cms",
+      "title": "Bitcoin falls over 20% from January peak, Will crypto market rebound?",
+      "snippet": "India Business News: Bitcoin plummeted over 20% from a January high of $109350 to $85000, erasing nearly $300 billion in market value due to ETF outflows,...",
+      "date": "9 hours ago",
       "source": "Times of India"
     },
     {
-      "link": "https://www.thehindu.com/news/national/recent-geopolitical-power-plays-show-countries-will-not-hesitate-to-go-to-war-army-chief/article68098227.ece",
-      "title": "Recent geopolitical power plays show countries will not hesitate to go to war: Army Chief",
-      "snippet": "Recent geopolitical power plays have shown that countries will not hesitate to go to war when \u201cnational interests are concerned\u201d,...",
-      "date": "23 Apr 2024",
+      "link": "https://www.cnbc.com/2025/02/27/standard-chartered-crypto-bull-still-sees-bitcoin-hitting-500000.html",
+      "title": "Standard Chartered still sees bitcoin hitting $500,000 despite recent selloff",
+      "snippet": "Bitcoin earlier this week sank to a three-month low below $90000 amid declines in global equity markets.",
+      "date": "5 hours ago",
+      "source": "CNBC"
+    },
+    {
+      "link": "https://www.thehindu.com/news/national/haryana/ed-seizes-cryptocurrencies-worth-about-1720-crore/article69271388.ece",
+      "title": "ED seizes cryptocurrencies worth about \u20b917.20 crore",
+      "snippet": "The Enforcement Directorate has seized cryptocurrencies worth about \u20b917.20 crore following searches at six locations in Haryana in connection with an...",
+      "date": "2 hours ago",
       "source": "The Hindu"
-    },
-    {
-      "link": "https://www.business-standard.com/economy/news/india-s-crude-imports-could-face-problems-in-2025-due-to-geopolitical-risks-124123100696_1.html",
-      "title": "India's crude imports could face problems in 2025 due to geopolitical risks",
-      "snippet": "The US Energy Information Administration predicted global oil price benchmark Brent to average $73.58 per barrel in 2025 in its latest...",
-      "date": "31 Dec 2024",
-      "source": "Business Standard"
-    },
-    {
-      "link": "https://www.voanews.com/a/brics-meeting-highlights-geopolitical-aspirations-rivalries-with-west/7836994.html",
-      "title": "BRICS meeting highlights geopolitical aspirations, rivalries with West",
-      "snippet": "The BRICS grouping meeting in the Russian city of Kazan is not evolving into a geopolitical rival, analysts say BRICS members are working on issues that could...",
-      "date": "24 Oct 2024",
-      "source": "VOA - Voice of America English News"
-    },
-    {
-      "link": "https://www.livemint.com/market/commodities/us-elections-and-more-6-geopolitical-events-that-will-impact-gold-prices-in-2024-11724308604534.html",
-      "title": "US elections and more: 6 geopolitical events that will impact gold prices in 2024",
-      "snippet": "Experts at The Gold Bullion Company have highlighted potential impacts on gold prices, in a recent report. Here's what to watch for.",
-      "date": "23 Aug 2024",
-      "source": "Mint"
-    },
-    {
-      "link": "https://www.geopoliticalmonitor.com/central-asia-the-middle-easts-latest-investment-battleground/",
-      "title": "Central Asia: The Middle East\u2019s Latest Investment Battleground",
-      "snippet": "Middle Eastern states, looking to diversify their economies away from hydrocarbon exports, have been investing in Central Asia like never...",
-      "date": "6 Aug 2024",
-      "source": "Geopolitical Monitor"
-    },
-    {
-      "link": "https://www.bbc.com/news/articles/cp8ke9e27dxo",
-      "title": "Why India is reaching out to the Taliban now",
-      "snippet": "India's latest diplomatic outreach to Afghanistan's Taliban government signals a marked shift in how it sees the geopolitical reality in the region.",
-      "date": "1 month ago",
-      "source": "BBC"
     }
   ]
 }
