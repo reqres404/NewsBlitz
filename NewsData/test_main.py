@@ -12,6 +12,7 @@ import nltk
 import newspaper.settings
 from datetime import datetime, timedelta
 import re
+from urllib.parse import urlparse
 nltk.download('punkt')
 
 newspaper.settings.DATA_DIRECTORY = os.path.join(os.getcwd(), 'newspaper_cache')
@@ -105,11 +106,12 @@ def get_news_data():
 
                 if len(article.text) < 100:
                     continue
-
+                
                 news_item = {
                     "news_number": article_count,
                     "title": article.title,
-                    "content": article.text,  
+                    "content": article.text, 
+                    "publisher": urlparse(article.url).netloc.replace("www.", "").split(".")[0],
                     "url": article.url,
                     "imgURL": article.top_image,
                     "date": article.publish_date.isoformat() if article.publish_date else None,
@@ -118,7 +120,7 @@ def get_news_data():
                 detailed_topic_data.append(news_item)
                 article_count += 1
 
-                if article_count >= 5:
+                if article_count >= 1:
                     break
 
             except Exception as e:
