@@ -1,47 +1,45 @@
-body{
-    background-color: black;
-    /* overflow: hidden; */
-}
-.tagline{
-  color: white;
-  font-size: 2rem;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  font-family: monospace;
-  font-weight: 900;
-  font-style: normal;
 }
-.deck {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    min-height: 100vh;
-    color: white;
-    /* overflow: hidden; */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
 
-  .deck>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  to {
+    transform: rotate(360deg);
   }
-  
+}
 
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    /* overflow: hidden; */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
-  
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 45vh; /* Adjust based on the navbar height */
-  }
-  
-  
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
