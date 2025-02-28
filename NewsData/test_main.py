@@ -26,11 +26,11 @@ yesterday = today - timedelta(days=1)
 yesterday =yesterday.date()
 topics = {
     "AI": f"https://www.google.com/search?q=AI+news+after:{yesterday}&tbm=nws",
-    "health": f"https://www.google.com/search?q=health+news+after:{yesterday}&tbm=nws",
-    "sports": f"https://www.google.com/search?q=sports+news+after:{yesterday}&tbm=nws",
-    "finance": f"https://www.google.com/search?q=finance+news+after:{yesterday}&tbm=nws",
-    "geopolitical": f"https://www.google.com/search?q=geopolitical+news+after:{yesterday}&tbm=nws",
-    "crypto": f"https://www.google.com/search?q=crypto+news+after:{yesterday}&tbm=nws"
+    "Health": f"https://www.google.com/search?q=health+news+after:{yesterday}&tbm=nws",
+    "Sports": f"https://www.google.com/search?q=sports+news+after:{yesterday}&tbm=nws",
+    "Finance": f"https://www.google.com/search?q=finance+news+after:{yesterday}&tbm=nws",
+    "Geopolitical": f"https://www.google.com/search?q=geopolitical+news+after:{yesterday}&tbm=nws",
+    "Crypto": f"https://www.google.com/search?q=crypto+news+after:{yesterday}&tbm=nws"
 }
 
 # "geopolitical" = f"https://www.google.com/search?q=geopolitical+news+after:{today.date()}&tbm=nws"
@@ -53,40 +53,64 @@ chrome_options.add_argument(
     "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"
 )
 
-def get_news_data():
-    start_time = time.time()
-    news_failed_to_scrape_count = 0
-    driver = webdriver.Chrome(options=chrome_options)
+start_time = time.time()
+news_failed_to_scrape_count = 0
 
+def get_news_data():
+    driver = webdriver.Chrome(options=chrome_options)
     def get_news_url(topic_url):
         driver.get(topic_url)
+        news_results = []
+        max_articles = 25  # Set limit to 10 articles
+        max_pages = 3  # Limit number of pages to scrape to avoid infinite loops
+
         try:
             WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div.SoaBEf")))
         except Exception as e:
-            print(f"Error loading page with url : {topic_url} due to {e}")
+            print(f"Error loading page with URL: {topic_url} due to {e}")
             return []
 
-        news_results = []
-        elements = driver.find_elements(By.CSS_SELECTOR, "div.SoaBEf")
-        
-        for el in elements:         
-            try:
-                news_date_str = el.find_element(By.CSS_SELECTOR, ".LfVVr").text
-                print(news_date_str)
-                if "hours" in news_date_str or "minutes" in news_date_str:    
-                        news_results.append(
-                        {
-                            "link": el.find_element(By.TAG_NAME, "a").get_attribute("href"),
-                            "title": el.find_element(By.CSS_SELECTOR, "div.MBeuO").text,
-                            "snippet": el.find_element(By.CSS_SELECTOR, ".GI74Re").text,
-                            "date": el.find_element(By.CSS_SELECTOR, ".LfVVr").text,
-                            "source": el.find_element(By.CSS_SELECTOR, ".NUnG9d span").text,
-                        }
-                    )
-            except Exception as e:
-                print(f"Error extracting news item: {e}")
+        page_count = 0
+        while len(news_results) < max_articles and page_count < max_pages:
+            elements = driver.find_elements(By.CSS_SELECTOR, "div.SoaBEf")
+            
+            for el in elements:
+                try:
+                    news_date_str = el.find_element(By.CSS_SELECTOR, ".LfVVr").text
+                    
+                    if "hours" in news_date_str or "minutes" in news_date_str:
+                        link = el.find_element(By.TAG_NAME, "a").get_attribute("href")
 
-        return news_results[:50]  
+                        if link not in [n["link"] for n in news_results]:  # Avoid duplicates
+                            news_results.append(
+                                {
+                                    "link": link,
+                                    "title": el.find_element(By.CSS_SELECTOR, "div.MBeuO").text,
+                                    "snippet": el.find_element(By.CSS_SELECTOR, ".GI74Re").text,
+                                    "date": news_date_str,
+                                    "source": el.find_element(By.CSS_SELECTOR, ".NUnG9d span").text,
+                                }
+                            )
+                    if len(news_results) >= max_articles:
+                        return news_results[:max_articles]
+
+                except Exception as e:
+                    print(f"Error extracting news item: {e}")
+
+            # Try to find and click the "Next" button
+            try:
+                next_button = driver.find_element(By.CSS_SELECTOR, "a#pnnext")  # Google Search "Next" button
+                driver.execute_script("arguments[0].scrollIntoView();", next_button)
+                time.sleep(1)  # Give time for smooth scrolling
+                next_button.click()
+                time.sleep(3)  # Wait for next page to load
+                page_count += 1
+            except Exception:
+                print("No more pages or 'Next' button not found.")
+                break  # Stop if no "Next" button is found
+
+        return news_results[:max_articles]  # Ensure we return only 10 articles
+
 
     all_news_data = {}
     for topic, url in topics.items():
@@ -130,11 +154,7 @@ def get_news_data():
                 detailed_topic_data.append(news_item)
                 article_count += 1
 
-                if article_count == 1:
-                    break
-
             except Exception as e:
-                news_failed_to_scrape_count += 1
                 print(e)
         detailed_news_data[topic] = detailed_topic_data
 
@@ -145,6 +165,7 @@ def get_news_data():
     print(f"Scraping completed. Saved to {json_file_path}")
     
     summarize_news(json_file_path)  # Call summarization after scraping
+
 
 def summarize_news(json_file_path):
     """
@@ -170,9 +191,11 @@ def summarize_news(json_file_path):
         json.dump(news_data, json_file, indent=2)
 
     print(f"Summarization completed. Saved to {summarized_file_path}")
+    print(f"Time taken for execution: {time.time() - start_time:.2f} seconds")
+    # print(f"failed to scrape {news_failed_to_scrape_count}")
+
 
 def get_summary_from_ollama(text):
-    print("Sending text to Ollama's DeepSeek R1 for summarization.")
 
     payload = {
         "model": MODEL_NAME,

@@ -1,8 +1,950 @@
 {
-  "AI": [],
-  "health": [],
-  "sports": [],
-  "finance": [],
-  "geopolitical": [],
-  "crypto": []
+  "AI": [
+    {
+      "news_number": 0,
+      "title": "AI-generated child abuse global hit leads to dozens of arrests",
+      "content": "Dozens arrested in global hit against AI-generated child abuse; Operation Cumberland by Danish law enforcement led to at least 25 arrests involving a criminal group distributing fully AI-generated images of minors. Europol said it was the first such case in Europe, with 272 suspects identified across multiple countries. 33 house searches and 173 electronic devices seized, including an online platform where users accessed via symbolic payments. Operation Cumberland's main suspect, a Danish national, ran the platform and distributed AI-generated material. AI-generated child abuse is often hard to detect as images can appear realistic without real victims. Europol warned that more such content exists globally. Experts highlight challenges in distinguishing fake from real AI abuse due to material appearing realistic. IWF warns of growing production and rising severity of images on open web.",
+      "publisher": "bbc",
+      "url": "https://www.bbc.com/news/articles/czxnnzz558eo",
+      "imgURL": "https://ichef.bbci.co.uk/news/1024/branded_news/e35d/live/c03d11b0-f5b8-11ef-8c03-7dfdbeeb2526.jpg",
+      "date": null
+    },
+    {
+      "news_number": 1,
+      "title": "Microsoft Exposes LLMjacking Cybercriminals Behind Azure AI Abuse Scheme",
+      "content": "Microsoft revealed that four individuals behind an Azure abuse campaign using generative AI were unmasked. These individuals exploit unauthorized access, generating harmful content. They included Arian Yadegarnia, Alan Krysiak, Ricky Yuen, and Ph\u00e1t Ph\u00f9ng T\u1ea5n, each from different regions. The campaign, called LLMjacking, involved altering services to provide malicious access. Microsoft targeted three categories: Creators who exploit AI tools; Providers modifying these tools; and End Users generating synthetic content. They exploited credentials from public sources, resold them, and resurfaced services. Microsoft sought legal action and seized a crucial website. The attackers belong to Storm-2139, organized by Tor's 2139 network, categorized into Creators, Providers, and End Users. Two more U.S. users were implicated but their identities remain hidden.",
+      "publisher": "thehackernews",
+      "url": "https://thehackernews.com/2025/02/microsoft-exposes-llmjacking.html",
+      "imgURL": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghGXhLQQV7BS34kuhCCIvk08p2aO6v5q_O3j5N0z1eRLZyCc7fRrHA-Nweeg4TDR4D5sw5bYBohg1bLuSfEw5gimXMAqt0A4hEsn8h44_HpTHmnqzUktzIwqTTRJBPoCcOyKEZ1NG0AWDRpDbFj_DNsAWUsZvKDiRfrBDedYgr2j4ok8U33C2kqJEh-nF4/s728-rw-e365/ai-hackers.png",
+      "date": null
+    },
+    {
+      "news_number": 2,
+      "title": "\u2018Her\u2019 Is Here",
+      "content": "In 2013, Spike Jonze's \"Her\" introduced artificial reality as a future where people love operating systems, blending science fiction and the then-popular dating app scene. In 2025, the Oscar-winning film stars Joaquin Phoenix as a former divorcee with AI chatbot Samantha, who mirrors human qualities like curiosity and creativity. \"Her\" ends with a bittersweet moment for Theodore, leaving him alone beyond the unknown of AI's influence.",
+      "publisher": "variety",
+      "url": "https://variety.com/2025/film/news/her-predicted-the-future-ai-relationships-chatgpt-sex-1236320709/",
+      "imgURL": "https://variety.com/wp-content/uploads/2025/02/Her-Movie-2013.jpg?w=1000&h=563&crop=1",
+      "date": "2025-02-28T18:15:00+00:00"
+    },
+    {
+      "news_number": 3,
+      "title": "7 Skills Digital Marketers Need to Use AI Effectively",
+      "content": "AI is transforming digital marketing by automating tasks like content generation, customer service response, and personalization. However, humans remain essential for creativity, strategy, and ethical considerations. To stay competitive, marketers need seven key AI skills: understanding ChatGPT, content creation, data analysis, automation tools, SEO adaptability, ethical practices, and continuous learning. These skills empower them to harness AI\u2019s power while maintaining creativity and responsibility.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/brand-content/pr-release/7-skills-digital-marketers-need-to-use-ai-effectively-2025-02-28-978384",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/brand-content-1740729701.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 4,
+      "title": "Meta Introduces Aria Gen 2, Its Next-Gen AI Research Glasses",
+      "content": "Meta introduced Aria Gen 2, an upgraded research glasses aimed at AI and robotics, featuring a lightweight 75g design. It includes foldable arms, advanced sensors, custom processing chips, and open-end speakers for real-time AI experiences. Available soon, the device offers six to eight hours of battery life with plans to release mid-2023. Amazon is collaborating with Anthropic for an AI-powered Alexa app launch in the US. Meta aims to develop a standalone AI assistant app and is exploring paid subscriptions. LlamaCon, a first AI-focused conference, is set for late April.",
+      "publisher": "analyticsindiamag",
+      "url": "https://analyticsindiamag.com/ai-news-updates/meta-introduces-aria-gen-2-its-next-gen-ai-research-glasses/",
+      "imgURL": "https://analyticsindiamag.com/wp-content/uploads/2024/10/How-Meta-is-Improving-Reasoning-Capabilities-in-Ll.webp",
+      "date": "2025-02-28T08:38:05+00:00"
+    },
+    {
+      "news_number": 5,
+      "title": "AI in Mechanical Engineering: Future Trends, Curriculum & Career Insights",
+      "content": "The rise of artificial intelligence (AI) in mechanical engineering is transforming industries by enhancing efficiency, innovation, and problem-solving. Panelists from leading institutions highlighted AI's impact on predictive maintenance, design optimization, simulation tools, smart manufacturing, automation, and curriculum changes. By integrating AI, students and educators are equipping themselves with complementary skills for a future where machines handle routine tasks. Self-learning and interdisciplinary collaboration are key to staying ahead, while industry-academia collaborations ensure hands-on experience. Career opportunities for mechanical engineers with AI expertise are growing, positioning them as innovators in an increasingly complex world.",
+      "publisher": "thehindu",
+      "url": "https://www.thehindu.com/education/ai-in-mechanical-engineering-how-students-and-teachers-can-prepare/article69274570.ece",
+      "imgURL": "https://th-i.thgim.com/public/education/eo627a/article69274631.ece/alternates/LANDSCAPE_1200/iStock-1835280210.jpg",
+      "date": "2025-02-28T16:19:32+00:00"
+    },
+    {
+      "news_number": 6,
+      "title": "AI Update, February 28, 2025: AI News and Views From the Past Week",
+      "content": "The AI landscape is undergoing a wave of rapid innovation, with several companies leading the charge. OpenAI introduces its latest GPT-4.5, offering improved pattern recognition while reducing hallucinations. Microsoft expands its Phi models, enhancing multimodal capabilities for tasks like math and coding. Amazon releases Alexa+, adding generative AI to personalization. Alibaba and Anthropic launch open-source video AI tools and hybrid models, respectively. Perplexity begins a new AI-powered browser that competes with Google's Chrome. You.com introduces ARI, an AI research agent for regulated industries. Microsoft copilot offers free Voice and Think Deeper features for voice search and decision-making. DeepSeek accelerates the release of R2, the next-generation AI model.",
+      "publisher": "marketingprofs",
+      "url": "https://www.marketingprofs.com/opinions/2025/52799/ai-update-february-28-2025-ai-news-and-views-from-the-past-week",
+      "imgURL": "https://i.marketingprofs.com/assets/images/articles/lg/MP-AI-Update-lg.jpg",
+      "date": null
+    },
+    {
+      "news_number": 7,
+      "title": "Collaborating to advance research and innovation on essential chips for AI",
+      "content": "The MIT Microsystems Technology Laboratories (MTL) and GlobalFoundries (GF), a leading semiconductor manufacturer, have announced a joint research agreement aimed at advancing critical semiconductor technologies for AI. Led by MTL\u2019s labs and GF\u2019s research team, the collaboration focuses on artificial intelligence applications and will leverage GF\u2019s advanced 22FDX platform and its RF SOI technology to drive power efficiencies in data centers and edge devices. With initial projects targeting AI-driven systems and IoT solutions, this partnership underscores MIT's commitment to academic-industry collaboration, positioning it as a leader in semiconductor innovation. This effort aligns with MIT\u2019s vision for fostering cutting-edge research and preparing students for future talent in semiconductors. The agreement builds on GF\u2019s successful track record at MIT and its ongoing partnerships with faculty and industry experts.",
+      "publisher": "news",
+      "url": "https://news.mit.edu/2025/mit-globalfoundries-collaborate-advance-research-innovation-essential-chips-for-ai-0228",
+      "imgURL": "https://news.mit.edu/sites/default/files/images/202502/mit-MTL-GF-Signing.jpg",
+      "date": null
+    },
+    {
+      "news_number": 8,
+      "title": "OFS launches Mayvn AI for Manufacturing",
+      "content": "**Mayvn AI Launches Progress**\n\nAustralian manufacturing efficiency software company OFS has introduced Mayvn AI, an AI platform aimed at enhancing productivity and communication between executives and operational teams. Tested in Australia with Tootsie Roll Industries, which reduced data issues by nearly 90%, Mayvn AI provides real-time insights into manufacturing operations. CEO James Magee highlights the shift to visibility and data-driven decisions due to leadership pressures, emphasizing how Mayvn AI allows executives to access actionable info from previous performance, sparking meaningful discussions with team members. It supports analyzing data for cost savings, ROI evaluations, and capital investments. The company is expanding internationally, including in the UK, Asia-Pacific, and set up a new Latin American headquarters. Mayvn AI is now available, aiming to align the boardroom with manufacturing teams globally and contribute to Australia\u2019s global competitiveness.",
+      "publisher": "insideainews",
+      "url": "https://insideainews.com/2025/02/28/ofs-launches-mayvn-ai-for-manufacturing/",
+      "imgURL": "https://insideainews.com/wp-content/uploads/2025/02/factory-manufacturing-automation-2-1-shutterstock-668203006.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 9,
+      "title": "How Denmark\u2019s Ekstra Bladet used AI to boost subscriptions by 35%",
+      "content": "Ekstra Bladet innovatively integrated machine learning AI into their news publishing to enhance engagement and credibility. Through extensive A/B testing, they developed recommendation systems that combined content-based and collaborative filtering approaches, yielding better results for news coverage. The use of natural language generation tools (NAG) was a key innovation, where Ekstra Bladet anchored AI-generated explanations in external factual bases, reducing hallucinations. They tested various systems\u2014collaborative filtering, content-based recommendations, NLP-generated summaries, and RAGs\u2014in different environments to align with editorial values and reader needs. The goal was to balance engagement, accuracy, and ethical practices. By sharing their learning outcomes through A/B testing results, Ekstra Bladet actively contributed knowledge to other media sectors, promoting holistic news reporting that informed decisions while maintaining ethical standards.",
+      "publisher": "wan-ifra",
+      "url": "https://wan-ifra.org/2025/02/how-denmarks-ekstra-bladet-used-ai-to-boost-subscriptions-by-35/",
+      "imgURL": "https://cdn.wan-ifra.org/wp-content/uploads/2025/02/28101215/Screenshot-2025-02-28-at-10.39.10.png",
+      "date": "2025-02-28T08:46:14+00:00"
+    },
+    {
+      "news_number": 10,
+      "title": "MeitY to present AI impact report to Parliamentary Committee on March 5",
+      "content": "The Ministry of Electronics and Information Technology (MeitY) will convene a meeting with the Parliamentary Standing Committee on Communications and Information Technology on March 5 to present evidence on AI-related issues. The original agenda was set for March 7.\n\nAdditionally, MeitY will discuss draft AI laws requiring social media platforms like Facebook, Instagram, YouTube, and X to include watermarks and labels on AI-generated content.\n\nThe Indian Computer Emergency Response Team (CERT-In) is testing anti-deepfake technology against targeted scams targeting individuals. The parliamentary committee was chaired by Nishikant Dubey, with other participants from various ministries and departments. A 2024 guideline was issued to address regulation of AI-related issues, and a previous advisory from Jitin Prasada in September last year emphasized regulatory actions on social media platforms. Past advisories were published between 2023 and 2024.",
+      "publisher": "storyboard18",
+      "url": "https://www.storyboard18.com/how-it-works/meity-to-present-ai-impact-report-to-parliamentary-committee-on-march-5-58009.htm",
+      "imgURL": "https://images.storyboard18.com/storyboard18/2024/09/meity-2024-09-8ee2e0604db9213f5e163501b4cc8cc2-768x432.jpg",
+      "date": null
+    },
+    {
+      "news_number": 11,
+      "title": "Increasing use of AI in IP raises ethical concerns, say experts at a conference in Visakhapatnam",
+      "content": "The increasing use of artificial intelligence (AI) in intellectual property (IP) raises significant ethical concerns, as discussed at a conference organized by GITAM School of Law. Experts highlighted key issues, emphasizing the importance of ethical AI usage within the legal framework. The Global Indian Legal Academy addressed AI's role in IP rights, particularly in India, while highlighting the need for regulating AI technologies responsibly and protecting intellectual assets through legal means. Key points include AI's impact on patent licensing, algorithms, and software development, with a call to ensure ethical innovation and proper IP management.",
+      "publisher": "thehindu",
+      "url": "https://www.thehindu.com/news/cities/Visakhapatnam/increasing-use-of-ai-in-ip-raises-ethical-concerns-say-experts-at-a-conference-in-visakhapatnam/article69274538.ece",
+      "imgURL": "https://www.thehindu.com/theme/images/og-image.png",
+      "date": "2025-02-28T12:16:30+00:00"
+    },
+    {
+      "news_number": 12,
+      "title": "Madras Medical Mission launches AI-powered centre for cardiac care",
+      "content": "The Madras Medical Mission (MMM) successfully launched the Centre for Advanced Structural, Endovascular, and Congenital Adult Heart Defects (CASCADE) on Friday in the presence of John K. John, chairman of Johnson Lifts Private Ltd. The ceremony featured the installation of this advanced medical center dedicated to congenital heart diseases.\n\nCascade, equipped with AI-integrated imaging technology such as 'Tru-fusion,' which combines 3D echocardiography and fluoroscopy, CT/MRI integration, and cone-beam CT for precise device placement, ensures high-precision procedures like device closures and stent angioplasty. Cardiology director K. Sivakumar stressed the need for specialized interventions due to complex treatments requiring advanced technology.\n\nMullasari Ajit S., chairman of MMM's cardiology division, highlighted innovations enabling minimally invasive treatments for high-risk patients who may not undergo open-heart surgery. Director K. Latchmanadhas praised the team for their precision and commitment to enhancing safety through AI-backed imaging.\n\nCascade aims to improve accuracy in complex procedures while supporting high-risk patients with minimalvasive treatments.",
+      "publisher": "thehindu",
+      "url": "https://www.thehindu.com/sci-tech/health/madras-medical-mission-launches-ai-powered-centre-for-cardiac-care/article69274613.ece",
+      "imgURL": "https://www.thehindu.com/theme/images/og-image.png",
+      "date": "2025-02-28T14:08:46+00:00"
+    },
+    {
+      "news_number": 13,
+      "title": "AI can propel Andhra Pradesh\u2019s growth to achieve Swarnandhra Vision 2029 goals, say speakers at a conference",
+      "content": "The article highlights Andhra Pradesh aiming for AI growth through participation from all stakeholders at a conference, emphasizing initiatives like data city and university. Rajesh Grandhi calls for Visakhapatnam as a key AI hub with a young workforce and strategic advantages, promoting sustainable urban development. A report shows 71% students interested in AI roles and skills, while organizations aim to expand AI adoption with courses and internships, positioning Andhra Pradesh as a global AI powerhouse.",
+      "publisher": "thehindu",
+      "url": "https://www.thehindu.com/news/cities/Visakhapatnam/ai-can-propel-andhra-pradeshs-growth-to-achieve-swarnandhra-vision-2029-goals-say-speakers-at-a-conference/article69274824.ece",
+      "imgURL": "https://www.thehindu.com/theme/images/og-image.png",
+      "date": "2025-02-28T12:57:17+00:00"
+    },
+    {
+      "news_number": 14,
+      "title": "Meta plans paid subscription service for chatbot Meta AI, source says, ET CIO",
+      "content": "Meta is planning a subscription service for its chatbot Meta AI, targeting competition against Microsoft's OpenAI and Google. Meta CEO Mark Zuckerberg aims to expand its AI infrastructure, spending $65 billion annually to strengthen its position.",
+      "publisher": "cio",
+      "url": "https://cio.economictimes.indiatimes.com/amp/news/artificial-intelligence/meta-plans-paid-subscription-service-for-chatbot-meta-ai-source-says/118616980",
+      "imgURL": "https://etimg.etb2bimg.com/thumb/msid-118616980,imgsize-797121,width-1200,height=765,overlay-etcio/artificial-intelligence/meta-plans-paid-subscription-service-for-chatbot-meta-ai-source-says.jpg",
+      "date": null
+    },
+    {
+      "news_number": 15,
+      "title": "AI: A NEW DAWN FOR J&K",
+      "content": "**The Legacy of National Science Day in India's Transformative Future**\n\nAt the University of Kashmir's National Science Day celebration, we honor Sir C.V. Raman's discovery and his enduring impact on science. As India aims to be a tech leader globally, AI integration is pivotal for economic growth and workforce development. Universities are transforming education by establishing AI labs as hubs for innovation, equipping students with skills for an AI-driven future.\n\nAI's interdisciplinary nature addresses complex challenges across sectors like healthcare, agriculture, and public administration. These labs offer hands-on training and virtual lab experiences, fostering creativity and problem-solving. Reskilling and upskilling are key, especially for those adapting to AI. Ethical practices ensure responsible AI development, shaping a society ready for tech change.\n\nThe Raman Effect highlights how science adapts, so future scientists and innovators must embrace AI's potential responsibly. Policymakers and educational institutions need support to foster AI-driven education, creating an ecosystem where knowledge is educated, interactive, and adaptable. This shift will redefine productivity and efficiency across industries, contributing to tangible progress for society. The legacy of Raman reminds us that science adapts continuously, shaping a future with technology at the core.",
+      "publisher": "boldnewsonline",
+      "url": "https://boldnewsonline.com/ai-a-new-dawn-for-jk/",
+      "imgURL": "https://boldnewsonline.com/wp-content/uploads/2025/02/science.jpg",
+      "date": "2025-02-28T17:04:11+00:00"
+    }
+  ],
+  "Health": [
+    {
+      "news_number": 0,
+      "title": "Is krill oil better than fish oil? All about the new hugely popular omega-3 supplement",
+      "content": "krill oil is an alternative omega-3 supplement derived from the ocean crust, offering more efficient absorption than fish oil. Rich in EPA and DHA, it provides heart health benefits, eye health support, and anti-inflammatory properties. Studies suggest it may reduce dry eye symptoms better than fish oil. However, krill oil is expensive to harvest, requiring large vessels. Users might also face digestive issues like bloating or heartburn. A balanced diet of omega-3 foods like fatty fish, nuts, seeds, chia, and seaweed offers a safer alternative without supplements.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/is-krill-oil-better-than-fish-oil-all-about-the-new-hugely-popular-omega-3-supplement/articleshow/118635544.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118635577,width-1070,height-580,imgsize-117666,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 1,
+      "title": "Rekha Gupta Reverses AAP Stand, To Sign Pact With Centre For Health Centres",
+      "content": "Rekha Gupta is taking bold steps to sign a major MoU with Prime Minister Narendra Modi, working closely with him to implement the PM-Ayushman Bharat Health Infrastructure Mission (PM-ABHIM). The Supreme Court ruled against their earlier opposition, while the High Court in January directed the AAP government to scale up the scheme on a pilot basis. Rekha Gupta aims to activate 1,139 Ayushman Arogya Mandirs (U-AAMs) with Rs 2.4 trillion from the Centre, setting up 11 new U-AAMs within Delhi in 30 days. Additionally, plans include expanding health coverage in gated societies and posh areas by increasing ASHA numbers and enrolling a million Ayushman Bharat beneficiaries in a month. The High Court previously directed the AAP government to implement the scheme on a pilot basis, but Rekha Gupta is expanding it further. The CM's commitment to improving health services reflects her election promise to enhance healthcare in Delhi, aligning with India's growing health challenges.",
+      "publisher": "ndtv",
+      "url": "https://www.ndtv.com/india-news/rekha-gupta-reverses-aap-stand-to-sign-pact-with-centre-for-health-centres-7816954",
+      "imgURL": "https://c.ndtvimg.com/2025-02/o56gng4_rekha-gupta_625x300_28_February_25.jpeg",
+      "date": null
+    },
+    {
+      "news_number": 2,
+      "title": "US health agencies participated in WHO flu meeting despite planned exit",
+      "content": "The US Centers for Disease Control and Prevention (CDC) and the Food and Drug Administration (FDA) attended a World Health Organization (WHO) meeting ahead of the upcoming flu season to discuss vaccine composition, including H3N2 for humans, zoonotic vaccines with two bird strains in response to an Australian case, and potential disruption from Robert F. Kennedy Jr.'s DOE head takeover.",
+      "publisher": "indianexpress",
+      "url": "https://indianexpress.com/article/news-today/us-health-agencies-who-flu-meeting-despite-planned-exit-9861885/",
+      "imgURL": "https://images.indianexpress.com/2025/02/WHO-flu-meeting.jpg",
+      "date": "2025-02-28T22:16:45+05:30"
+    },
+    {
+      "news_number": 3,
+      "title": "Heatwave in Mumbai: Know how extreme heat conditions affect our health",
+      "content": "Mumbai experiences an unusual heatwave in February with temperatures reaching over 37 degrees Celsius, triggering health concerns for its residents. According to the Indian Meteorological Department (IMD), a yellow weather alert was issued for Mumbai and its surroundings on Feb 28, predicting clear skies at 35\u00b0C max. Heatwaves can impact daily life, physical health, environment, and finances, while extreme heat has severe consequences like heat exhaustion, heatstroke, dehydration, and cardiovascular strain. Dehydration, caused by excessive sweating, leads to symptoms like dizziness and fatigue, while prolonged heat stress increases cardiovascular strain for those with pre-existing conditions. Additionally, children, the elderly, and individuals with chronic health issues face heightened risks due to their vulnerability to dehydration and heat-related illnesses.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/health/heatwave-in-mumbai-know-how-extreme-heat-conditions-affect-our-health-2025-02-28-978403",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/heatwave-1740734980.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 4,
+      "title": "New WHO and ITU standard aims to prevent hearing loss among gamers",
+      "content": "The World Health Organization (WHO) and the International Telecommunication Union (ITU) have established a global standard to protect hearing health during video gaming and esports. The new standard aims to inform gamers about the risks of hearing loss from loud sounds, promoting safe listening environments. Previously, no devices or games without such features existed, leading to potential permanent hearing loss. The WHO/ITU Global Standard on Safe Listening for Video Gameplay and Esports provides guidelines for both devices and software, ensuring players are safe in all scenarios. This standard was developed under the Make Listening Safe initiative, collaborating with experts from WHO and other stakeholders to improve listening practices, especially among young people. For more details, visit [World Hearing Day 2025](https://www.who.int/campaigns/world-hearing-day/2025).",
+      "publisher": "who",
+      "url": "https://www.who.int/news/item/28-02-2025-new-who-and-itu-standard-aims-to-prevent-hearing-loss-among-gamers",
+      "imgURL": "https://cdn.who.int/media/images/default-source/headquarters/teams/uhc---communicable-noncommunicable-diseases-(ucn)/noncommunicable-diseases-rehabilitation-and-disability-(ncd)/sensory-functions-disability-and-rehabilitation-(sdr)/147_who-russia.tmb-1200v.jpg?sfvrsn=4803540e_6",
+      "date": null
+    },
+    {
+      "news_number": 5,
+      "title": "Centre to train joint directors for Ayushman Bharat Digital Mission",
+      "content": "The Union Government aims to boost digital health accessibility by training joint directors to assist in the Ayushman Bharat Digital Mission (ABDM) implementation and conducting a two-day workshop in Bihar on March 7-8, 2024. The goal is to transform India\u2019s digital health system seamlessly and efficiently for universal healthcare coverage.  \n\nA letter from the NHA highlights the need for joint directors to leverage their experience for ABDM success, emphasizing that this initiative will empower key links like ABHA, HFR, and HPR with training.  \n\nThe Digital India initiative has boosted internet accessibility, with India now having 96.96 crore internet connections by June 2024. The workshop will equip participants with updates, address future road maps, and foster learning to ensure better healthcare delivery. Dr. Rajeev Jayadevan noted the importance of training joint directors in ABDM to bridge gaps in HFR and HPR capabilities.",
+      "publisher": "livemint",
+      "url": "https://www.livemint.com/news/centre-to-train-joint-directors-for-ayushman-bharat-digital-mission-digital-health-universal-accessible-affordable-nha-11740747425979.html",
+      "imgURL": "https://www.livemint.com/lm-img/img/2025/02/28/1600x900/As-many-as-168-621-verified-medical-professionals-_1681665941205_1740761031832.jpg",
+      "date": "2025-02-28T22:18:25+05:30"
+    },
+    {
+      "news_number": 6,
+      "title": "What\u2019s lacking in the One Health approach at present? Integrated data systems and multidisciplinary approaches, say experts",
+      "content": "The growing threat of zoonotic diseases \u2013 diseases that jump between animals and humans \u2013 is critical for global health. A multidisciplinary approach is essential to address these risks, but current efforts often overlook key experts like ecologists and social scientists, which limits their effectiveness. Experts advocate for a unified data-driven strategy, integrating systems thinking with environmental factors to enhance early detection. Despite India's progress in One Health panels, missing experts in systems thinking may hinder holistic disease management. A national framework is needed to share data across sectors, improving outbreak responses.",
+      "publisher": "thehindu",
+      "url": "https://www.thehindu.com/sci-tech/health/whats-lacking-in-the-one-health-approach-at-present-integrated-data-systems-and-multidisciplinary-approaches-say-experts/article69274769.ece",
+      "imgURL": "https://th-i.thgim.com/public/incoming/nim2y6/article69274886.ece/alternates/LANDSCAPE_1200/9868_24_2_2025_17_7_29_2_POULTRYFOOD_2.JPG",
+      "date": "2025-02-28T14:30:00+00:00"
+    },
+    {
+      "news_number": 7,
+      "title": "Jharkhand News: \u091d\u093e\u0930\u0916\u0902\u0921 \u0915\u0947 \u0938\u0930\u0915\u093e\u0930\u0940 \u0915\u0930\u094d\u092e\u091a\u093e\u0930\u093f\u092f\u094b\u0902 \u0915\u0940 \u092c\u0932\u094d\u0932\u0947-\u092c\u0932\u094d\u0932\u0947, CM \u0938\u094b\u0930\u0947\u0928 \u0928\u0947 \u0935\u093e\u0926\u093e \u0915\u0930 \u0926\u093f\u092f\u093e \u092a\u0942\u0930\u093e, \u0926\u0947 \u0926\u0940 \u092c\u0921\u093c\u0940 \u0938\u094c\u0917\u093e\u0924",
+      "content": "Jharkhand's healthcare initiatives under the 'Jharkand Samajwala' program aim to provide financial support for education and healthcare in 2025. The government will invest in medical facilities, staff training, and mental health services, offering a stipend to healthcare workers while medical students won't receive payment but can remain on a stipend.",
+      "publisher": "jagran",
+      "url": "https://www.jagran.com/jharkhand/ranchi-cm-hemant-soren-launched-the-state-employees-health-insurance-scheme-for-5-lakh-23892278.html",
+      "imgURL": "https://www.jagranimages.com/images/newimg/28022025/28_02_2025-jharkhand_health_insurance_23892278_m.webp",
+      "date": null
+    },
+    {
+      "news_number": 8,
+      "title": "Basti News: 32 \u092c\u091a\u094d\u091a\u094b\u0902 \u0915\u0947 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0915\u093e \u0915\u093f\u092f\u093e \u092a\u0930\u0940\u0915\u094d\u0937\u0923, 14 \u0930\u0947\u092b\u0930",
+      "content": "A study examining the well-being of young children found that poor nutrition, lack of sleep, and an increase in colds contributed to their health issues, involving 32 participants from a government program called \"Slahtala.\" These findings are not entirely new, as they build on previous research by other studies.",
+      "publisher": "amarujala",
+      "url": "https://www.amarujala.com/uttar-pradesh/basti/32-childrens-health-tested-14-referred-basti-news-c-207-1-sgkp1006-132725-2025-03-01",
+      "imgURL": "https://staticimg.amarujala.com/assets/images/2021/10/12/basti_1634020970.jpeg?w=750&dpr=1.0",
+      "date": "2025-03-01T00:00:00"
+    },
+    {
+      "news_number": 9,
+      "title": "health",
+      "content": "The talks aim for a $20 billion biodiversity fund by 2025 and up to $30 billion by 2030. As of now, $383 million has been allocated.",
+      "publisher": "voanews",
+      "url": "https://www.voanews.com/z/607",
+      "imgURL": "https://www.voanews.com/Content/responsive/VOA/img/top_logo_news.png",
+      "date": null
+    },
+    {
+      "news_number": 10,
+      "title": "WHO Information Meeting on the Composition of Influenza Virus Vaccines for Use in the 2025-2026 Northern Hemisphere Influenza Season",
+      "content": "The Francis Crick Institute organized a meeting inviting representatives from vaccine regulatory agencies and other organizations. The event is on February 17th at a specified website. Registration is required, free, with a deadline of 17 February 2025. The meeting is titled **NH 2025 InformationMTG**, the Next Generation Vaccinating Movement. Participants will discuss vaccine development strategies under this initiative.",
+      "publisher": "who",
+      "url": "https://www.who.int/news-room/events/detail/2025/02/28/default-calendar/who-information-meeting-on-the-composition-of-influenza-virus-vaccines-for-use-in-the-2025-2026-northern-hemisphere-influenza-season",
+      "imgURL": "https://www.who.int/images/default-source/departments/global-influenza-programme/vaccines-injections/who_arete_florion-goga_smaller.tmb-1200v.jpg?Culture=en&sfvrsn=8d698fb3_6",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 11,
+      "title": "Health min urges states, UTs to utilise funds on time",
+      "content": "Bhubaneswar: J P Nadda, Union Health Minister, urged senior officials from various states and UTs to ensure timely resource utilization of healthcare funds. After a meeting in Puri, he warned against declining healthcare delivery, stressing the need for better allocation. He highlighted issues like project delays and equipment shortages, which impede future efforts. The decline in maternal mortality (MMR) is double global rates, underscoring grassroots efforts. Similarly, infant mortality rates fell notably. Nadda emphasized lifestyle changes through health workers and telemedicine to prevent preventable diseases. CM Mohan Charan Majhi introduced more healthcare institutes, including YOGA and AYushman Bharat-Pradhan Mantri Jan Arogya Yojana (AB-PMJAY), aiming broader healthcare infrastructure. The 9th National Summit on 'Good Practices and Innovation' in Puri focused on sharing best practices across states and UTs.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/city/bhubaneswar/health-min-urges-states-uts-to-utilise-funds-on-time/articleshow/118633743.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118633738,width-1070,height-580,imgsize-51996,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 12,
+      "title": "Pope's health improving as he remains in hospital",
+      "content": "Pope Francis has reported improved health and is staying in hospital for 9 hours due to pneumonia. He was initially diagnosed with pneumonia in both lungs but later showed signs of recovery on February 22nd, when the Vatican announced no further respiratory issues. Despite this, he asked Catholics to pray for him despite being unable to perform the Angelus prayer this week.",
+      "publisher": "bbc",
+      "url": "https://www.bbc.com/news/articles/cd655917g6qo",
+      "imgURL": "https://ichef.bbci.co.uk/news/1024/branded_news/9a81/live/3b4efab0-f5a7-11ef-bcea-7b70a14a5556.jpg",
+      "date": null
+    },
+    {
+      "news_number": 13,
+      "title": "Distributed manufacturing may become the future trend: Pharma Inc",
+      "content": "The pharmaceutical industry is expected to see increased opportunities for Indian companies engaging in distributed manufacturing, potentially spanning several countries over the next five to ten years. R&D efforts will play a crucial role as these units become more interconnected, fostering collaboration and innovation beyond physical proximity. This shift aligns with broader trends in global drug development and could create significant growth potential for investors and researchers alike.",
+      "publisher": "business-standard",
+      "url": "https://www.business-standard.com/health/distributed-manufacturing-may-become-the-future-trend-pharma-inc-125022801197_1.html",
+      "imgURL": "https://bsmedia.business-standard.com/_media/bs/img/article/2025-01/30/thumb/featurecrop/1200X630/1738250746-138.jpg",
+      "date": "2025-02-28T20:12:04+05:30"
+    },
+    {
+      "news_number": 14,
+      "title": "International: Mpox still a health emergency, says WHO, Health News, ET HealthWorld",
+      "content": "The World Health Organization (WHO) declared the mpox outbreak in the Democratic Republic of Congo (DRC) a public health emergency on Thursday, following continued rising cases and geographic spread. The outbreak, classified as an international health emergency, was active from 2023 onwards due to violence blocking response plans in DRC. Travel-related cases have also been reported in countries like Thailand and Britain.\n\nOver 21,000 confirmed mpox cases were reported globally since May 2024, including 70 deaths mainly in the DRC. Last year, over 50,000 suspected cases and more than 1,000 deaths were also reported. Despite challenges in confirming cases, the disease remains typically mild but can be lethal.",
+      "publisher": "health",
+      "url": "https://health.economictimes.indiatimes.com/news/industry/mpox-still-a-health-emergency-says-who/118627254",
+      "imgURL": "https://etimg.etb2bimg.com/thumb/msid-118627254,imgsize-85610,width-1200,height=765,overlay-ethealth/industry/mpox-still-a-health-emergency-says-who.jpg",
+      "date": null
+    },
+    {
+      "news_number": 15,
+      "title": "\u200bDietary supplements may be damaging your liver, research warns",
+      "content": "Dietary supplements are widely taken in the U.S., with 58% of adults consuming them (64% women, 51% men) as reported in the 2017\u201318 National Health and Nutrition Examination Survey. Over 75% of adults use supplements regularly. A study shows these products pose risks to liver health, affecting roughly 20% nationwide. It's crucial not to dismiss multivitamins solely because they're part of an unhealthy diet; understanding their contents matters.\n\nThough supplements may have benefits, their effects can be harmful and dangerous. Some herbs aren't FDA-approved, causing side effects or serious health issues. The FDA regulates them as food but doesn\u2019t review safety or effectiveness. Your healthcare provider should guide you. Avoid 'megadosing'\u2014use them cautiously to avoid severe side effects. Adults shouldn\u2019t consume more than 100 micrograms of vitamin D daily.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/dietary-supplements-may-be-damaging-your-liver-research-warns/articleshow/118398123.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118398123,width-1070,height-580,imgsize-86598,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    }
+  ],
+  "Sports": [
+    {
+      "news_number": 0,
+      "title": "Prague Masters: Praggnanandhaa Registers First Win, Beats Czechia's Dai Van",
+      "content": "R Praggnanandhaa secured a smooth victory against Nguyen Thai Dai Van in the third round of the Prague Masters, becoming an Indian Grandmaster winner. His Nimzo Indian defense and strategic play earned him a decisive win on the 14th move. Despite Dai Van's extra pawn advantage and complex game structure, Prag gnanandhaa demonstrated control, delivering key pawns and handling technical difficulties. With two draws in previous rounds, his victory was pivotal for him as an emerging Indian Grandmaster.",
+      "publisher": "news18",
+      "url": "https://www.news18.com/sports/prague-masters-praggnanandhaa-registers-first-win-beats-czechias-dai-van-9245338.html",
+      "imgURL": "https://images.news18.com/ibnlive/uploads/2025/02/Untitled-design-8-2025-02-466a7ef9ae0ccd390d71a7a17dcc9847-16x9.jpg",
+      "date": null
+    },
+    {
+      "news_number": 1,
+      "title": "Andrew Benintendi out 4-6 weeks as White Sox lose top home run hitter to injury",
+      "content": "Andrew Benintendi, the team\u2019s leading home run hitter, was sidelined for 4-6 weeks due to a hand injury after playing in a game. His absence has led to significant pressure on the White Sox, who struggle with their offense. The manager will need to address pinch-hitters and retool line-ups, highlighting the potential for rebuilding or seeking external help as the team works to regain momentum.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/mlb/news/andrew-benintendi-out-4-6-weeks-as-white-sox-lose-top-home-run-hitter-to-injury/articleshow/118633747.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118633720,width-1070,height-580,imgsize-549490,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 2,
+      "title": "Albert Pujols set to return to the WBC as the Dominican Republic\u2019s manager in 2026",
+      "content": "Albert Pujols is set to return as the manager of the Dominican Republic in 2026 after a successful tenure as a professional baseball player. As the Dominican Republic's manager, he will be leading the nation's efforts in the upcoming 2026 World Baseball Classic (WBC), blending his career from playing to leadership. With a strong support team featuring luminaries like David Ortiz and Juan Marichal, Pujols aims to elevate the team's future achievements under him. His journey from a professional player to national leader speaks volumes about his dedication and vision for success in baseball.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/mlb/news/albert-pujols-set-to-return-to-the-wbc-as-the-dominican-republics-manager-in-2026/articleshow/118636133.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118636154,width-1070,height-580,imgsize-787293,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 3,
+      "title": "Sports News Today highlights on February 28, 2025: South Africa vs England Live Streaming: Where & How to Watch SA vs ENG, ICC Champions Trophy 2025 match online",
+      "content": "Sports News Today highlights the ICC Champions Trophy 2025 match between South Africa and England on February 28th at 10:34 PM IST. The live streaming is available for viewers to enjoy the action online, with details on where it can be accessed provided. Stay updated on sports news with insights from cricketer, hockey, and badminton champions around the world.",
+      "publisher": "livemint",
+      "url": "https://www.livemint.com/sports/latest-sports-news-on-february-28-2025-live-updates-11740719590311.html",
+      "imgURL": "https://www.livemint.com/lm-img/img/2025/02/28/1600x900/Cricket-CT-2025-RSA-PRESSER-2_1740761546537_1740761569910.jpg",
+      "date": "2025-02-28T10:43:09+05:30"
+    },
+    {
+      "news_number": 4,
+      "title": "SL Masters vs AUS Masters International Masters League live cricket score: Sri Lanka vs Australia latest match updates",
+      "content": "The upcoming IMLT20 cricket match between Sri Lanka and Australia will be held at BCA Stadium, Vadodara, marking their first match in the series. Both teams are currently third and fourth, respectively, with only 2 wins each in their previous five matches, including India's dominance.\n\nSri Lanka will face Australia on the sixth match of the series, set to determine a crucial outcome. Opening against Australia, the Sri Lankan side will have players like Ben Laughlin bowling and Upul Tharanga batting, supported by a strong XI that includes experienced players. Australia is set to face their XI with upsets, ensuring a balanced encounter.\n\n highlights include Watson's recent fall and Udana's hat-trick of fours, while Ben Dunk and Daniel Christian are on the field for a fast-paced setup. The venue for BCA Stadium will showcase talent early, aiming to set a new benchmark. India, currently in first place with one win, is on high alert as losing this match could lock them into second place until another victory occurs.\n\nThe match highlights key moments such as Watson's resurgence and Udana's rise, while also noting Sri Lankan strength on the field but Australia's rising XI set to perform well. The outcome will be pivotal, with India's one win placing them at first, while both teams aim for an exciting final result against each other.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/sl-masters-vs-aus-masters-international-masters-league-live-cricket-score-sri-lanka-vs-australia-latest-match-updates-2025-02-28-978456",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/gill-17-1740747679.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 5,
+      "title": "School Assembly News Headlines, 1 March 2025: National, International, Business and Sports Updates",
+      "content": "Stay informed about India\u2019s latest updates is crucial. Key news:  \n- Pakistan criticized Jammu-Kashmir claims at the UN as \u201cbaseless\u201d.  \n- Karnataka Chief Minister\u2019s case handed special court attention.  \n- Andhra Pradesh budget announced.  \n- Ancient ship launched in Goa retracing trade routes.  \n- Delhi PM-ABHIM scheme implemented.  \n- Mumbai Metro Line 3 begins trial.  \n- Senior IAS officers appointed for Delhi CM office.  \n- US President passed the worst phase of pneumonia.  \n- US defense leaders demand congressional hearings.  \n- US government stops funding polio, HIV, malaria, and nutrition programs.  \n- Trump cancels Gaza negotiations.  \n- India plans copper/cobalt expansion in Zambia.  \n-IKEA adds online deliveries in Delhi-NCR and Uttar Pradesh.  \n- SEBI requires mutual funds to deploy NFOs within 30 days.",
+      "publisher": "moneycontrol",
+      "url": "https://www.moneycontrol.com/education/school-assembly-news-headlines-1-march-2025-national-international-business-and-sports-updates-article-12953386.html",
+      "imgURL": "https://images.moneycontrol.com/static-mcnews/2025/02/20250228120751_School-Assembly-News-Headlines-1-March-2025.png",
+      "date": "2025-02-28T18:00:20+05:30"
+    },
+    {
+      "news_number": 6,
+      "title": "Vidarbha vs Kerala Ranji Trophy Final: Highlights",
+      "content": "The Ranji Trophy 2024-25 final between Kerala and Vidarbha was a close contest, with Kerala trailing by only 37 runs at Day 3. Despite losing, Vidarbha secured a strong first innings lead, accumulating 561 runs. Top scorer Sachin Baby achieved a thrilling 98 runs in the opening over. Harsh Dubey and Parth Rekhade took three wickets each, while Darshan Nalkande delivered a standout performance for the losing team. If the match ends in a draw, Vidarbha will be crowned champions thrice.",
+      "publisher": "sports",
+      "url": "https://sports.ndtv.com/cricket/vidarbha-vs-kerala-ranji-trophy-final-live-cricket-score-and-updates-7812590",
+      "imgURL": "https://c.ndtvimg.com/2025-02/7o4j6dcg_kerala-batters-x_625x300_28_February_25.jpeg",
+      "date": null
+    },
+    {
+      "news_number": 7,
+      "title": "Washout secures Australia's spot in Champions Trophy semi-final",
+      "content": "Australia secured their spot in the semifinals of the ICC Champions Trophy despite an abandoned Group B match against Afghanistan due to rain. Despite 12 overs with a high score but losing some runs to Rashid Khan, Australia advanced with four points, up from a previous loss in South Africa. They are now in the semifinals and looking for a breakthrough. Meanwhile, Afghanistan had a competitive 273-run victory over South Africa, and if England takes down South Africa instead, they could improve their group standings.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/icc-champions-trophy-2025/washout-secures-australias-spot-in-champions-trophy-semi-final/articleshow/118633963.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118634249,width-1070,height-580,imgsize-275974,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 8,
+      "title": "India favourites to win Champions Trophy: Michael Clarke - Sports News Portal",
+      "content": "Certainly! Here's a structured summary of the questions and answers you've provided:\n\n---\n\n### **Mental Toughness and Handling Failure in Cricket**\n1. **How should young cricketers aspiring to play at the highest level mentally?**  \n   - Practice hard and discipline are key, as you learn so many lessons from training.\n   - Embrace the idea of losing; it's part of winning.\n\n2. **Should Bumrah be risked in IPL for individual games?**  \n   - India lacks his absence in all formats (50-over), but he is the type of player who wants to play in the IPL.\n   - He needs to be managed well, rested when needed, and fit mentally.\n\n---\n\n### **India's Absence of Bumrah**\n1. **Will Shayan Gupta credit for India without Bumrah?**  \n   - India has done exceptionally well without him; every team in the world is stronger with him.\n   - He wants to play in IPL, but conditions have played a role.\n\n2. **Can Jay Shah handle the ICC chairman position effectively?**  \n   - Jay Shah did an excellent job prioritizing Test cricket and handling organization-wise successes.\n   - credit where due; he focuses on Test cricket.\n\n---\n\n### **Key Players in Recent Champions Trophy**\n1. **Why is Rohan Chowdhury a key player in recent T20U?**  \n   - He complements Virat Kohli at the top end, allowing him to play naturally and be respected.\n   - The experience of Virat has been crucial for their dynamic partnership.\n\n2. **What makes Shubman Gill special in 50-over formats?**  \n   - He's a fantastic player with excellent speed and fielding ability, complemented by Rohit Sharma at the top end.\n\n---\n\n### **Player Development and Team Dynamics**\n1. **How does Shayan Gupta view his career stats in analytics?**  \n   - Shayan consistently references statistics to identify areas for improvement.\n   - He emphasizes consistency and adaptability.\n\n2. **Will Jay Shah's Test cricket role enhance India's performance?**  \n   - He prioritizes Test cricket, which is crucial for maintaining momentum and showcasing talent.\n   - India can leverage his leadership style and team unity in Test matches.\n\n---\n\n### **Critical Thinkers and Their Insights**\n1. **Why Shayan Gupta thinks Virat Kohli shouldn't be at the top of T20U?**  \n   - Virat's consistency is vital for maintaining momentum, so avoiding him can hinder progress.\n   \n2. **What tips Rohan Chowdhury to manage IPL players effectively?**  \n   - Focus on mental fitness and rest during individual games; play every game for your team.\n\n---\n\n### **Team Dynamics and Challenges**\n1. **How does Shayan Gupta rate Bumrah's impact in Test cricket?**  \n   - Bumrah is a great player, but India lacks his absence in Test formats.\n   - He wants to be part of IPL, so conditions have an impact on his career trajectory.\n\n2. **What are the key challenges facing the T20U team?**  \n   - Limited talent on top ends and pressure from recent results need improvement.\n\n---\n\n### **Historical Insights**\n1. **How did Shayan Gupta contribute to analytics for his team?**  \n   - He consistently references statistics, highlighting areas for growth.\n   - His work has been instrumental in identifying potential strengths.\n\n2. **What stats can Shayan Gupta reference when analyzing player performance in T20U?**  \n   - Consistency, consistency in form, and the importance of finding consistency at the top end are key points.\n\n---\n\nThis summary captures the essence of the questions and answers, highlighting key themes like mental toughness, player development, team dynamics, and leadership. Let me know if you'd like further elaboration on any specific aspect!",
+      "publisher": "revsportz",
+      "url": "https://revsportz.in/india-favourites-to-win-champions-trophy-michael-clarke/",
+      "imgURL": "https://revsportz.in/wp-content/uploads/2025/01/Boria-Majumdar-with-Michael-Clarke.jpg",
+      "date": "2025-02-28T11:06:55+00:00"
+    },
+    {
+      "news_number": 9,
+      "title": "School Assembly News Headlines For 1 March 2025: Top Stories in National, International & Sports Beat",
+      "content": "**School Assembly Today**\n\nYour school assembly is set for **March 1st, 2025**, and we want to share the latest updates quickly! Here are the top highlights:\n\n- India confirms the first case of H5N1 bird flu in a cat in Madhya Pradesh.\n\n- Supreme Court rules that anticipatory bail can be requested without an FIR in GST cases.\n\n- Special court summons summoning former Karnataka CM BS Yediyurappa for POCSO case.\n\n- Government introduces new policies to strengthen national waterways.\n\n- Supreme Court rejects paroles against Gurmeet Ram Rahim.\n\n- **OpenAI** introduces GPT-4.5, its most advanced AI model, with CEO praise.\n\n- **HP** plans a cost reduction initiative and Bitcoin drops below $80k for the first time since November.\n\n- Nifty records its longest losing streak in 29 years.\n\n- Microsoft unveils Phi-4 models with multimodal features.\n\n- New Zealand's Bella James is out of Sri Lanka's ODI series.\n\n-mourinhoo faces a fine and suspended for four matches over referee remarks.\n\n- **RCB** ends their WPL 2025 campaign by three losses.\n\n- England's Josuttis step down as captain.  \n\nStay tuned! For more updates, visit [timesnownews.com](https://www.timesnownews.com) to check out the latest stories.",
+      "publisher": "timesnownews",
+      "url": "https://www.timesnownews.com/education/school-assembly-news-headlines-for-1-march-2025-top-stories-in-national-international-sports-beat-article-118632148",
+      "imgURL": "https://static.tnn.in/thumb/msid-118632257,thumbsize-16312,width-1280,height-720,resizemode-75/118632257.jpg",
+      "date": "2025-02-28T20:20:05+05:30"
+    },
+    {
+      "news_number": 10,
+      "title": "Ryan ten Doeschate indicates changes in India's playing XI, selection still a dilemma",
+      "content": "Ryan ten Doeschate updates on India\u2019s XI selection, noting a potential rest period for some players due to only one day off between their semi-final match against New Zealand and the main league game. Rohit Sharma-led team faces Black Caps on March 2 followed by a semi-final on March 4. The coach emphasizes maintaining momentum but acknowledges the importance of beating New Zealand to carry them through the competition, where they are currently leading.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/ryan-ten-doeschate-indicates-changes-in-india-s-playing-xi-selection-still-a-dilemma-2025-02-28-978495",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/untitled-design-2025-02-28t234625-1740766642.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 11,
+      "title": "Best Games for Android and iOS in 2025",
+      "content": "The rise of mobile gaming has seen 2024 mark as one of the year\u2019s best, with the top 15 games offering a mix of action-packed shooter titles, open-world adventures, and sports-oriented games. From asphalt 9 legends toAmong Us, players can dive into immersive worlds where action and strategy meet excitement. Asphalt 9 Legends is a standout, combiningFormula 1-style gameplay with stunning visuals from brands like BMW and Ferrari. Genshin Impact brings the same feel on mobile, featuring elemental combat and a rich fantasy world. Call of Duty: Mobile delivers a console-like experience with multiplayer modes and a standout Battle Royale mode. Among Us remains popular for its engaging multiplayer mechanics across platforms. Within is another game to watch as it combines spaceship survival with hidden dangers. Suzy Cube offers vibrant graphics and smooth controls, whileAmong Us simplifies the classic multiplayer experience.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/esports/news/best-games-for-android-and-ios-in-2025/articleshow/118634252.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118634244,width-1070,height-580,imgsize-821572,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 12,
+      "title": "Champions Trophy 2025: Australia qualify for knockouts after washout in Afghanistan clash",
+      "content": "The Champions Trophy 2025 clash between India and Afghanistan in Afghanistan was abandoned due to heavy rain and a wet outfield, resulting in Australia qualifying for the semis after losing the match. Australia had a target of 274 runs but lost 83 runs in the second innings as rain interrupted play midway. Despite this loss, they managed a strong first innings with two wickets (Ben Dwarshuis) and two no results, securing one win and two no results to earn their top spot in the group stage.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/champions-trophy-2025-australia-qualify-for-knockouts-after-washout-in-afghanistan-clash-2025-02-28-978475",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/untitled-design-2025-02-28t212834-1740758502.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 13,
+      "title": "Oldest Test cricketer passes away at 98 in South Africa",
+      "content": "Ron Draper, the oldest living Test cricketer, passed away at 98 years and 63 days in GQEberha on Friday, marking his first-class debut with a century for Eastern Province against Orange Free State on December 24. He had scored 86 runs against touring Australians in 1949/50 but managed only 25 runs in three innings during his Test career. Draper was selected for the national team before joining South Africa, where he played two Test matches against Australia in 1950. His passing at age 98 left a significant impact on the sport, with family legacy continuing into the next century.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/news/oldest-test-cricketer-passes-away-at-98-in-south-africa/articleshow/118629450.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118630111,width-1070,height-580,imgsize-87568,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 14,
+      "title": "Michael Bracewell lauds Virat Kohli ahead of latter's milestone match",
+      "content": "Michael Bracewell congratulates Virat Kohli ahead of his 300th ODI victory in India, marking a historic milestone. The match is set against New Zealand at Dubai International Stadium on March 2, aiming to celebrate Kohli's impressive achievement. Kohli, known as one of the sport's elite, is thrilled about this breakthrough, highlighting the significance of such an accomplishment. Bracewell notes it's a testament to Kohli's dedication and the unique nature of playing so many games in a single format. He adds that while India has great players, they're up for the fight, making this challenging but exciting. The match could decide group leaders, with both semi-finals on March 2 and 5 in Lahore respectively.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/michael-bracewell-lauds-virat-kohli-ahead-of-latter-s-milestone-match-2025-02-28-978470",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/untitled-design-2025-02-28t204349-1740755656.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 15,
+      "title": "Craig Berube's Leadership: A New Horizon for Toronto Maple Leafs",
+      "content": "Craig Berube has taken over as the Toronto Maple Leafs' head coach, bringing fresh ideas and resetting fan expectations. His new leadership has redefined mental attitude among hardworking players, inspiring a renewed spirit. After Sheldon Keefe's departure, his experience is seen as a factor in restoring performance. Recent wins, including a thrilling 5-4 overtime victory over the Boston Bruins, showcase their progress. Fans are eagerly anticipating future games, driven by their coach's determination to inspire greatness.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/nhl/news/craig-berubes-leadership-a-new-horizon-for-toronto-maple-leafs/articleshow/118633844.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118633845,width-1070,height-580,imgsize-127198,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 16,
+      "title": "NFL Kelce Brothers Video-Meet With NHL Tkachuk Brothers At The News Heights Podcast Show",
+      "content": "Matthew Tkachuk reflects on his father Keith Tkachuk\u2019s advice that being well-rounded is essential for success in hockey. The brothers, who grew up playing different sports (baseball, school soccer, basketball, lacrosse), are now hockey players with a strong foundation in well-rounded skills. Travis Kelce praises the 4 Nations Face-Off event as a game of mutual impact and pride. The siblings share their experience growing up in a multi-sport environment, emphasizing that multisports enhance individual athlete potential. While the NHL\u2019s approach to international events like 4 Nations Face-Off differs from Olympic rules (e.g., no fighting), they aim for similar spirit. Travis expresses excitement about playing against diverse countries, including his family\u2019s home country. The article highlights their bond and admiration for their father\u2019s words about unifying experiences through sports.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/nhl/news/nfl-kelce-brothers-video-meet-with-nhl-tkachuk-brothers-at-the-news-heights-podcast-show/articleshow/118627141.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118627286,width-1070,height-580,imgsize-785556,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 17,
+      "title": "KL Rahul addresses constant change in Indian batting order in Champions Trophy",
+      "content": "Rotating in the Champions Trophy is often challenging for teams like India. KL Rahul was expected to bat at number five but has missed three matches since his debut, with two against Bangladesh and one against Pakistan. Axar Patel promoted from five to six against Bangladesh, while Hardik Pandya went from four to five against Pakistan. Rahul emphasized that this rotation is part of their strategies but acknowledges the challenges in moving quickly, noting that it\u2019s not easy for players to shift early due to conditions like Dubai's tough weather. He added that they\u2019re working on better rotation strategies.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/kl-rahul-addresses-constant-change-in-indian-batting-order-in-champions-trophy-2025-02-28-978491",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/untitled-design-2025-02-28t232311-1740765217.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 18,
+      "title": "Eagles bring in Bowling Green Head Coach Scot Loeffler to oversee quarterbacks",
+      "content": "Scot Loeffler (via: X) has announced stepping down from his coaching role as head coach at Bowling Green after six seasons, to join the Philadelphia Eagles as their new quarterback coach. The 50-year-old coach brings extensive experience and proven leadership, having spent four decades in sports coaching. Under Loeffler's leadership, Bowling Green claimed a 7-6 record with three bowl appearances and finished with an overall record of 27-41. The eagles' transition to him highlights BGSU's pivotal moment in shaping the future of its football program.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/nfl/news/eagles-bring-in-bowling-green-head-coach-to-oversee-quarterbacks/articleshow/118633732.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118634175,width-1070,height-580,imgsize-79244,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 19,
+      "title": "Steve Smith heaps praise on bowlers after Australia qualify for Champions Trophy 2025 semifinals",
+      "content": "Australia qualified for the Champions Trophy 2025 semifinals after their final match against Afghanistan was washed out. Australia's skipper Steve Smith has praised the bowlers' teamwork and effort, making them eligible to reach the last four despite a 4-1 deficit in their first match. Despite this loss, Australia's bowlers showed strong spirit and prepared for the semifinals. The team, including players like Pat Cummins, Josh Hazlewood, Mitchell Starc, Mitchell Marsh, and Marcus Stoinis, managed to limit Afghanistan to 273 runs despite extra innings where wides and overs were leaked.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/steve-smith-heaps-praise-on-bowlers-after-australia-qualify-for-champions-trophy-2025-semifinals-2025-02-28-978492",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/gill-zadran-16-1740765226.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 20,
+      "title": "Best Character Combinations for Free Fire Max in 2025",
+      "content": "Free Fire Max is a standout game known for its vibrant gameplay, intense combat, and unmatched character variety! Below are five iconic character combos from Free Fire Max that cater to various playstyles:\n\n1. **Aggressive Rush Combo**  \n   Combines Tatsuya\u2019s ability with Jota\u2019s healing properties. Use Tatsuya's dash to engage enemies, Jota's ability to sustain you in prolonged fights, and Hayato's ability to boost your HP when attacked.\n\n2. **Defensive Tank Combo**  \n   Features Kenta\u2019s shield, Andrew\u2019s armor protection, Shani\u2019s gear recovery, and Leon\u2019s passive healing. Activate Kenta\u2019s shield while positioning and holding positions to block enemy fire, while Shani keeps your armor strong during tough situations.\n\n3. **Speed and Mobility Combo**  \n   This setup is ideal for fast-paced battles. Kelly's dash increases your sprinting speed, Joseph's Nutty Movement boosts movement when you take damage, and Alok's Drop the Beat provides healing and movement speed, making it versatile and effective in tough fights.\n\n4. **Stealth and Survival combo**  \n   Features Wukong\u2019s Camouflage ability to hide enemies, Clu\u2019s Tracing Steps reveals enemy locations for strategic planning, Rafael\u2019s Dead Silent keeps sniper shots undetectable, and Ford's Iron Will reduces damage outside safe zones, ensuring survival in tight zones.\n\n5. **Hot Drop Combat Combo**  \n   This combo suits players who enjoy sneaky tactics. Wukong\u2019s ability turns you into a bush to escape or ambush opponents, Clu\u2019s Tracing Steps reveals enemy locations post-killing, Rafael's Dead Silent keeps sniper shots undetectable, and Moco's Hacker's Eye marks enemies when shot, offering a mix of stealth and damage.\n\nExperiment with different combinations to find the one that works best for you! Free Fire Max is a game waiting to be revolutionized!",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/esports/news/best-character-combinations-for-free-fire-max-in-2025/articleshow/118631112.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118631125,width-1070,height-580,imgsize-3135660,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 21,
+      "title": "Australian star picks up injury, dark clouds loom over Champions Trophy 2025 semifinal availability",
+      "content": "The dark clouds are casting a shadow over this year\u2019s Champions Trophy 2025 semifinals as Australia have reached their final stage in Group B due to rain. After a 109/1 under 12.5 overs chase, Australia qualified for their semifinals against South Africa at the Gaddafi Stadium on Friday, February 28, despite their last match being washed out by rain.\n\nDespite the injury concerns ahead of the knockout stage, Australia are confident they\u2019ll make it to the final four. Only a shocking loss to England could send them into the tournament\u2019s abyss. Meanwhile, Matthew Short, Australia\u2019s right-handed opener, had an injury and came up for the second innings after the rain. Smith said he was recovering from an uncertain recovery time, with several days being too short.\n\nThe tournament is nearly over, with only two group stage games left before the knockouts lock in the top four. Theauins will face either Semifinal A or B on Tuesday and Wednesday (March 2-3), depending on their Group B position. Short has been open despite weather, having scored 63 runs against England last week, while other team members, including Travis Head and Jake McGurk, have been fitting in the second match without interruption.\n\nSmith praised Australia\u2019s bowling line-up, which did well to restrict Afghanistan to 273 runs, but acknowledged their goal of reaching the semifinals. The team focused on securing a top-two finish from Group B to qualify for the last four and stressed they were aiming to stay competitive before the tournament ends.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/australian-star-picks-up-injury-dark-clouds-loom-over-champions-trophy-2025-semifinal-availability-2025-02-28-978494",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/gill-zadran-17-1740766313.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 22,
+      "title": "KL Rahul opens up about competition with Rishabh Pant ahead of New Zealand clash",
+      "content": "KL Rahul expressed his anticipation for a competitive match with star wicketkeeper Rishabh Pant ahead of their clash against New Zealand at Dubai International Cricket Stadium on March 2. Both are renowned players who can play boldly and disrupt opposing teams. Rahul emphasized that while they are both exceptional, he doesn't see competition from pant at all and won't interfere with his team's plans. The match is crucial for India's advancement to the semi-finals of the Champions Trophy 2025, showcasing their versatility in the XI.",
+      "publisher": "indiatvnews",
+      "url": "https://www.indiatvnews.com/sports/cricket/kl-rahul-opens-up-about-competition-with-rishabh-pant-ahead-of-new-zealand-clash-2025-02-28-978474",
+      "imgURL": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2025/02/untitled-design-2025-02-28t212052-1740758038.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 23,
+      "title": "Ranji Trophy Final: Spin wizard Harsh Dubey creates history on Day 3 to hand Vidarbha slight edge over Kerala",
+      "content": "The Ranji Trophy final between Vidarbha and Kerala saw Vidarbha take control with a crucial 37-run lead in their opening overs. Harsh Dubey became the highest wicket-taker in a single season, claiming his tally of 69 wickets for 3/88. Vidarbha's bowlers included Darshan Nalkande (3/52) and Parth Rekhade (3/65), while Rishabh Pant recovered from viral to protect his team. Kerala, led by Sachin Baby, managed to close at 342 with runs, supported by Aditya Sarwate. The match was a close affair, withvidarbha securing a thrilling 37-run lead despite some close calls. Nizar and Azharuddeen were adjudged LBW, but Baby's absence from the chase left Vidarbha with a commanding 37-run advantage at the end of day three.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/news/ranji-trophy-final-spin-wizard-harsh-dubey-creates-history-on-day-3-to-hand-vidarbha-slight-edge-over-kerala/articleshow/118630064.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118630351,width-1070,height-580,imgsize-157188,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 24,
+      "title": "No concerns over Rohit Sharma, Mohammed Shami's fitness: KL Rahul",
+      "content": "KL Rahul's performance in India vs. New Zealand is a testament to his fitness and talent during the ICC Champions Trophy clash. He emphasized Rohit Sharma's fitness, stating there were no concerns about missing games. The semifinals near, uncertainty on squad rotations looms large as teams prepare for their clash ahead. India had previously won against Pakistan but faced a tense moment where Shami struggled with an injury, finishing low despite the efforts of his team. Jos Buttler stepped in as captain, handing over leadership duties to vice-captain Shubman Gill. Other players like Virat Kohli and Anmol Bhardwaj added their expertise on day one. Despite these challenges, Rahul's confidence carried them into a thrilling encounter against New Zealand.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/icc-champions-trophy-2025/no-concerns-over-rohit-sharma-mohammed-shamis-fitness-kl-rahul/articleshow/118631477.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118631805,width-1070,height-580,imgsize-60820,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    }
+  ],
+  "Finance": [
+    {
+      "news_number": 0,
+      "title": "Fiscal deficit touches 74.5% of full year target at end-Jan: CGA data",
+      "content": "The Centre\u2019s fiscal deficit reached **74.5% of its annual target** by the end of January 2025, as reported by the Controller General of Accounts (CGA). In actual terms, the deficit stood at Rs 11,69,542 crore during the April-January period of 2024-25. The fiscal deficit represented **63.6%** of Revised Estimates (RE) for the previous year and reached **74.7%** in the current financial year. CGA data showed tax revenue at **74.4% of 2024-25 RE**, higher than the previous year\u2019s 74.4% of 2023-24 RE, while expenditure was at **75.7% of 2024-25 RE** and **74.7%** for the last financial year.\n\nThe Union Government aims to reduce its fiscal deficit to **4.8% of GDP** in 2024-25, lower than previous expectations, with an absolute figure of Rs 15,69,542 crore as of March 2025. The fiscal deficit is the gap between government expenditure and tax revenue, highlighting significant borrowing needs and strategic budget proposals to address economic challenges.",
+      "publisher": "financialexpress",
+      "url": "https://www.financialexpress.com/policy/economy-fiscal-deficit-touches-74-5-of-full-year-target-at-end-jan-cga-datanbsp-3763607/",
+      "imgURL": "https://www.financialexpress.com/wp-content/uploads/2024/12/rupee.Bloomberg.jpg",
+      "date": null
+    },
+    {
+      "news_number": 1,
+      "title": "India\u2019s Economy Recovers, Providing Relief to Policymakers",
+      "content": "India\u2019s economy rebounded last quarter, offering relief for Prime Minister Narendra Modi, whose ambitious growth plans face recent challenges due to a slowdown. The country\u2019s gross domestic product (GDP) expanded 6.2% in the first three months of December, aligning with median economic forecasts and higher than a revised reading of 5.6%. For the full year, the economy is projected to grow at 6.5%, up from previous expectations. \n\nKey factors include an increase in government spending post-poll results and strong rural consumption. However, growth remains uncertain as the U.S. President Donald Trump threatens global trade with tariffs.  \n\nThe country\u2019s economic momentum is expected to sustain, supported by exports and government spending recovery. Analysts note mixed optimism on GDP estimates, with some forecasting a 7.5% growth in January-March compared to the government\u2019s projection.",
+      "publisher": "finance",
+      "url": "https://finance.yahoo.com/news/india-economy-recovery-likely-clouded-000000496.html",
+      "imgURL": "https://s.yimg.com/ny/api/res/1.2/M0bHeCmxQcs1Zq_V.fSrow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03NTk-/https://media.zenfs.com/en/bloomberg_markets_842/0a14b4dd62db44f9fad8733a184d347d",
+      "date": null
+    },
+    {
+      "news_number": 2,
+      "title": "MHI Concludes Positive Impact Finance Agreement",
+      "content": "MHI Group responded to climate change in 2020, identifying five key areas\u2014dealing with energy supply and demand for carbon neutrality\u2014under its medium-term business plan. They utilized a Positive Impact Finance (PIF) evaluation with Sumitomo Mitsui Trust Bank to align corporate actions with SDGs. The ESG principles guided this process, which received a credit rating from Japan Credit Rating Agency. Their sustainability report highlighted contributions to achieving net zero and their SUSTAINABILITY DATABOOK 2024. MHI aims to reduce global CO2 emissions by 50% by 2030 and achieve net zero by 2040, focusing on automation and gender equality through diverse leadership roles.",
+      "publisher": "mhi",
+      "url": "https://www.mhi.com/news/250228.html",
+      "imgURL": "https://www.mhi.com/media/426616/download",
+      "date": null
+    },
+    {
+      "news_number": 3,
+      "title": "Telangana Minorities Finance Corporation to distribute over 40,000 sewing machines",
+      "content": "Telangana Minorities Finance Corporation (TGMFC) distributed **40,000 sewing machines** across Telangana on Friday (February 28), intending to empower beneficiaries in the state. The machines will be handed over in Wanaparthy district by March 2nd.  \n\nThe distribution is divided into two phases: the first phase of 10,490 machines will go to nine districts, while the second phase of 31,740 will be given across the State under the Congress government's efforts. Mr. Obedulla Kothwal, chairman of TGMFC, criticized the previous government for lacking support in this initiative, stating that only loans and cars were provided before the elections. He emphasized the need for a skill development program, particularly focusing on 'beautician' and 'mehendi' designing courses to better meet market demands.",
+      "publisher": "thehindu",
+      "url": "https://www.thehindu.com/news/national/telangana/telangana-minorities-finance-corporation-to-distribute-over-40000-sewing-machines/article69275580.ece",
+      "imgURL": "https://th-i.thgim.com/public/incoming/lvpg0z/article69275772.ece/alternates/LANDSCAPE_1200/AFP_36X779T.jpg",
+      "date": "2025-02-28T14:36:27+00:00"
+    },
+    {
+      "news_number": 4,
+      "title": "Ujjivan Small Finance Bank sells its stressed loan portfolio to asset for \u20b934.26 crore",
+      "content": "**Summary:**  \nBengaluru-based lender Ujjivan Small Finance Bank (USFB) completed the sale of its stressed loan portfolio on February 18th, 2025, to ARC for a fraction of its value. The bank's transaction was approved by its authorized Board Committee and part of USFB's efforts to improve its balance sheet by offloading NPAs and loans.  \n\nThe sale, which took place on February 28th, 2025, resulted in Ujjivan's net profit declining by 63.8% YoY from \u20b9108.6 crore in the third quarter of 2024 to \u20b9300 crore in 2023. NII increased by 3.2%, and GNPA dropped from 2.68% to 2.52%.  \n\nUSFB's gross loan book grew by 9.8% YoY, with secured loans increasing by 4%. Reserves declined slightly, and the bank's shares ended the quarter down 1.47%, ending at \u20b932.14 on BSE.",
+      "publisher": "cnbctv18",
+      "url": "https://www.cnbctv18.com/market/stocks/ujjivan-small-finance-bank-share-price-completes-sale-of-rs-364-51-crore-stressed-loans-to-arc-for-rs-34-26-crore-19566678.htm",
+      "imgURL": "https://images.cnbctv18.com/uploads/2024/05/ujjivan-sfb-2024-05-327718a9148f47e6db77abc0a8bda908.jpg?im=FitAndFill,width=500,height=300",
+      "date": "2025-02-28T22:25:01+05:30"
+    },
+    {
+      "news_number": 5,
+      "title": "Wingspire Equipment Finance Expands Partnership with Global IT Managed Service Provider With $30 Million Capital Lease",
+      "content": "WINGSPIRE EQUIPMENT FINANCE STRENGTHENED ITS SEVEN-YEAR STRONGSHIP WITH A leading IT MManaged SERVICE PROVIDER (MSP), OFFERING A $30 MILLION CAPITAL LEANING PROJECT. THE Total FUNDING AS OF TODAY IS OVER $100 MILLION. THE MSP, Known for optimizing IT INFRASTRUCTURE AND MODERNIZING APPLICATIONS, HAS SUPPORTED GLOBAL CLIENTS, covering FINANCIAL, HEALTHCARE, GOVERNMENT, AND RETAIL SECTOR. WINGSPIRE, A PARTNERSHIP ADVOCATE, ACKNOWLEDGED ITS DEEP EXPERTISE IN TECHNOLOGY TO PROVIDE STRATEGIC CAPITAL SOLUTIONS. THE NEW $30 MILLION LEANING PROJECT REINforces THEIR COMMITMENT TO PROVIDING RELIABLE FINANCIAL solutiosN FOR CLOSER client GROWTH, WITH THE ADDITIONAL FUNDING ESTABLISHED IN TWO WEEKS, APOPTOPOD OF QUARTER 2025.",
+      "publisher": "businesswire",
+      "url": "https://www.businesswire.com/news/home/20250228828449/en/Wingspire-Equipment-Finance-Expands-Partnership-with-Global-IT-Managed-Service-Provider-With-30-Million-Capital-Lease",
+      "imgURL": "https://mms.businesswire.com/media/20250228828449/en/2227653/23/WEF-PR-logo-800x239px.jpg",
+      "date": null
+    },
+    {
+      "news_number": 6,
+      "title": "Special focus on completion of Godavari-Banakacherla project, says Finance Minister Payyavula Keshav",
+      "content": "Rayalaseema region is progressing with the Godavari-Banakacherla project and completing pending work. The Finance Minister emphasized drought-proofing by utilizing river water, including Tungabhadra dam gates. The Polavaram project changed Rayalaseema's fate, aiming to transfer water for drought resistance. In Agriculture Budget, funds will fund horticulture clusters in Anantapur and mango clusters in nearby districts, while vegetable saplings are ready through Kuppam center. Specific projects like the Handri Neeva Sujala Sravanthi Project were completed on time.",
+      "publisher": "thehindu",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/special-focus-on-completion-of-godavari-banakacherla-project-says-finance-minister-payyavula-keshav/article69275830.ece",
+      "imgURL": "https://www.thehindu.com/theme/images/og-image.png",
+      "date": "2025-02-28T16:45:59+00:00"
+    },
+    {
+      "news_number": 7,
+      "title": "RBI penalises HSBC, IIFL Samasta Finance over compliance lapses",
+      "content": "The Reserve Bank of India (RBI) has imposed penalties on HSBC, IIFL Samasta Finance Limited, and three cooperative banks in Maharashtra for violations related to financial regulations. HSBC faced a \u20b966.6 lakh penalty for failing to comply with KYC norms, reporting unhedged foreign currency exposures, and adhering to deposit interest rules. Additionally, the bank outsourced AML alerts, failed to report certain borrowers' foreign currency exposures, and opened savings accounts for ineligible entities. RBI inspected HSBC on March 31, 2023, after an inspection by a regulatory body assessing its financial position.\n\nRBI also fined IIFL Samasta Finance \u20b933.1 lakh for multiple regulatory breaches, including charging interest on loans before disbursement, misclassifying NPAs, and using multiple customer identification codes instead of UCI codes. The Mumbai Mercantile Cooperative Bank received a hefty \u20b933.3 lakh fine for violating banking regulations.\n\nIn Maharashtra, Lasalgaon Merchants Cooperative Bank and Business Cooperative Bank were each fined \u20b91 lakh for non-compliance with asset classification and regulatory provisions.",
+      "publisher": "cnbctv18",
+      "url": "https://www.cnbctv18.com/business/finance/rbi-imposes-penalty-on-hsbc-iifl-samasta-finance-over-compliance-lapses-19566640.htm",
+      "imgURL": "https://images.cnbctv18.com/uploads/2024/05/rbi-2024-05-3204e43658ee9c32d54ecf6f62d51e2f.jpg?im=FitAndFill,width=500,height=300",
+      "date": "2025-02-28T20:07:53+05:30"
+    },
+    {
+      "news_number": 8,
+      "title": "Shriram Finance - Positive Breakout: These 5 stocks closed above their 200 DMAs",
+      "content": "On February 27th, several Nifty500 stocks exceeded their 200-day moving average (DMA), signaling bullish indicators. This event highlights traders' focus on monitoring each stock against its own trend relative to the DMA, as crossings above this average suggest potential upward movement in individual contexts.",
+      "publisher": "m",
+      "url": "https://m.economictimes.com/markets/stocks/news/positive-breakout-these-5-stocks-closed-above-their-200-dmas/shriram-finance/slideshow/118616377.cms",
+      "imgURL": "https://img.etimg.com/thumb/msid-118616396,width-1070,height-580,overlay-etmarkets/slideshow.jpg",
+      "date": null
+    },
+    {
+      "news_number": 9,
+      "title": "Paperwork or people? Arvind Iyer of Piramal Finance bets on trust over docs!",
+      "content": "In India\u2019s tier 2 and tier 3 cities, securing a loan isn\u2019t just about interest rates and EMIs\u2014it\u2019s about connecting with the invisible walls of paperwork and approvals. Piramal Finance, adopting its \"Hum Kagaz Se Zyada Neeyat Dekhte Hai\" campaign, emphasizes intent (Neeyat) alongside documentation in a trust-based approach. By blending AI-driven models with human interaction, their underwriting process goes beyond traditional paperwork, offering personalized support to millions. Through documentaries in Hindi, Marathi, Tamil, Telugu, and Kannada, the company captures real customer experiences, highlighting regional and cultural nuances in financial struggles. While the campaign\u2019s content is largely digital (7-minute films), it remains a strategic battleground against other methods reliant on scripted ads. For those seeking television presence, it\u2019s uncertain, but Piramal Finance insists on prioritizing reach over ads. Their approach, rooted in customer relevance, sets them apart from competitors that purely depend on data.",
+      "publisher": "financialexpress",
+      "url": "https://www.financialexpress.com/business/brandwagon-paperwork-or-people-arvind-iyer-of-piramal-finance-bets-on-trust-over-docs-3763311/lite/",
+      "imgURL": "https://www.financialexpress.com/wp-content/uploads/2025/02/Untitled-design-2025-02-28T145918.778.png",
+      "date": null
+    }
+  ],
+  "Geopolitical": [
+    {
+      "news_number": 0,
+      "title": "Navigating 2025's Geopolitical Supply Chain Landscape",
+      "content": "2025 faces complex geopolitical challenges shaping global supply chains. Key risks include rising conflicts (e.g., proxy wars), climate change, trade tensions, natural disasters, and health crises like medical pandemics. Experts advise businesses adopting resilience strategies, mitigating disruptions through strategic planning, and leveraging adaptable solutions to navigate these dynamic conditions. Stay proactive for geopolitical changes that may extend beyond immediate crises, with enhanced supply chain resilience in mind.",
+      "publisher": "maersk",
+      "url": "https://www.maersk.com/insights/resilience/2025/02/28/geopolitical-supply-chain-landscape",
+      "imgURL": "https://www.maersk.com/~/media_sc9/maersk/insights/resilience/2025/02/vintage-globe-with-europe-in-focus_1024x576.jpg?h=576&w=1024&hash=779F50E9AB547373422720C760098287",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 1,
+      "title": "US Stocks Retreat Amid Geopolitical and Economic Concerns",
+      "content": "US stocks reversed gains in the afternoon session, causing the S&P 500 to decline 0.1% and Nasdaq 0.2%. The Dow also fell slightly. Investors reacted to a tense Trump-Zelenskyy exchange, sparking heightened uncertainty, particularly for Big Tech. Core PCE inflation dropped to 2.6%, but consumer spending in January was up 0.2%. Microsoft announced phase-out of Skype, while Bath & Body Works saw a Citigroup upgrade post-earnings. Volatility is high, with S&P 500 and Dow facing their worst declines since April 2024 and September 2023, respectively.",
+      "publisher": "tradingview",
+      "url": "https://www.tradingview.com/news/te_news:449823:0-us-stocks-retreat-amid-geopolitical-and-economic-concerns/",
+      "imgURL": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "date": null
+    },
+    {
+      "news_number": 2,
+      "title": "Germany Is Divided Again",
+      "content": "Antonia Colibasanu is a Senior Geopolitical Analyst at Geopolitical Futures and an associate professor in Eurasia Program at the Foreign Policy Research Institute, Romania. Her expertise includes geopolitics and geoeconomics, with notable works on Eurasian development trends and their implications for Europe. She has served as a partner at Stratfor in several capacities, including roles within the World Trade Center Association in Bucharest. With a master\u2019s degree in International Project Management and an alumna of Georgetown University, she holds a Ph.D. in International Business and Economics from Bucharest\u2019s Academy of Economic Studies, focusing on risk analysis and investment decision-making for transnational companies. Her research highlights the evolving dynamics of Eurasian relations and their geopolitical significance to Europe.",
+      "publisher": "geopoliticalfutures",
+      "url": "https://geopoliticalfutures.com/germany-is-divided-again/",
+      "imgURL": "https://df16bd12.delivery.rocketcdn.me/wp-content/uploads/2020/11/europe_header_grey.jpg",
+      "date": "2025-02-28T11:00:20+00:00"
+    },
+    {
+      "news_number": 3,
+      "title": "Breaking Down the US-Ukraine Critical Minerals Agreement",
+      "content": "The US-Ukraine minerals agreement marks a pivotal moment for U.S.-Ukraine cooperation, aiming to unlock Ukraine's critical reserves and enhance the U.S.'s mineral supply chain. Key challenges include outdated data on reserves, logistical difficulties due to war damage, security concerns over direct military involvement, high costs of infrastructure and energy projects, and limited immediate financial returns. Access to minerals is riskier for both nations, with processing and refining needing local capacity. Geopolitical implications suggest that the agreement could shape future relations, potentially leading Russia to seek de jure or at least de facto division of Ukraine, while Europe might integrate into its security framework. U.S.-Ukraine's limited economic leverage and geopolitical tensions make it challenging for Ukraine to secure equitable growth in the long term.",
+      "publisher": "geopoliticalmonitor",
+      "url": "https://www.geopoliticalmonitor.com/breaking-down-the-us-ukraine-critical-minerals-agreement/",
+      "imgURL": "https://www.geopoliticalmonitor.com/wp-content/uploads/2025/02/TrumpZelenskyDec2024.jpg",
+      "date": "2025-02-28T13:53:58+00:00"
+    },
+    {
+      "news_number": 4,
+      "title": "Agri-Food Europe: EU Protein Markets Facing Disease and Geopolitical Challenges in 2025",
+      "content": "**Summary of February 28, 2025 Event:**  \nExpana\u2019s Agri-Food Europe event in Amsterdam highlighted European animal protein markets' challenges from diseases and geopolitical issues. Challenges included increased disease spread across dairy, eggs, beef, pork, and poultry. Key players featured Rutka Ghodekar and Dineo Komane. Sustainability efforts drove up egg prices, emphasizing the need for better regulations to prevent disease by animals.",
+      "publisher": "seafoodnews",
+      "url": "https://www.seafoodnews.com/Story/1298820/Agri-Food-Europe-EU-Protein-Markets-Facing-Disease-and-Geopolitical-Challenges-in-2025",
+      "imgURL": "https://www.seafoodnews.com/Images/icon.ico",
+      "date": null
+    },
+    {
+      "news_number": 5,
+      "title": "Canadian pension funds scale back emerging market investments amid geopolitical risks",
+      "content": "benefits monitor offers a FREE daily e newsletter to keep you informed about benefits and pensions. Over 2.5 million users have signed up, with a 16% conversion rate, making it a valuable resource for readers.",
+      "publisher": "benefitsandpensionsmonitor",
+      "url": "https://www.benefitsandpensionsmonitor.com/news/industry-news/canadian-pension-funds-scale-back-emerging-market-investments-amid-geopolitical-risks/391498",
+      "imgURL": "https://cdn-res.keymedia.com/cms/images/ca/159/0438_638763517317085616.png",
+      "date": null
+    },
+    {
+      "news_number": 6,
+      "title": "OT/ICS cyber threats escalate as geopolitical conflicts intensify",
+      "content": "**Summary of Cybersecurity Trends in Industrial Sectors**\n\nThe report highlights significant advancements in cyber threats targeting critical infrastructure, particularly in manufacturing, which remains a major vulnerability due to its high dependency on supply chains and complex systems.\n\n1. **Hacktivist Threats**: Cybercriminals like VOLTZITE are increasingly using ransomware and advanced attack vectors to stage full OT site shutdowns and partial system disruption, causing severe data loss and financial impact.\n\n2. **Manufacturing Focus**: Manufacturing remains the largest sector hit, accounting for over 50% of ransomware victims, due to its reliance on critical systems and supply chains.\n\n3. **Ransomware Expansion**: The number of ransomware groups targeting industrial sites surged by 60% to 80 in 2024, with many hitting full OT site shutdowns, marking a concerning rise in sophistication.\n\n4. **Threat Attacking Capabilities**: Advanced attacks are penetrating deeper within ICS networks, causing loss of view and control, necessitating proactive security measures.\n\n5. **Security Transition**: Organizations must adopt proactive strategies, including threat hunting, to prevent damage before it escalates, moving beyond reactive defenses.\n\n6. **Cybercriminal Enhancements**: Attackers exploit known vulnerabilities, remote access weaknesses, and supply chain gaps, requiring organizations to enhance detection and response capabilities.\n\n7. **Long-Term Implications**: These trends suggest a need for organizations to adapt their security practices, highlighting a multi-layered approach that will have significant long-term economic impact across industries.",
+      "publisher": "helpnetsecurity",
+      "url": "https://www.helpnetsecurity.com/2025/02/28/dragos-2025-ot-ics-cybersecurity-report/",
+      "imgURL": "https://img.helpnetsecurity.com/wp-content/uploads/2023/08/01134127/industry-bubble.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 7,
+      "title": "India\u2019s GDP remains resilient amid geopolitical challenges: Industry",
+      "content": "India\u2019s GDP growth rate in Q3 2025 reached 6.2%, reflecting resilience amid geopolitical challenges, as the government and sectors showed robust expansion. The tertiary sector led with steady growth at 7.4%, while agriculture and allied products saw strong performance of 5.6%. Private consumption grew steadily at 6.9% YoY, private final consumption expenditure rose by 6.9%, and manufacturing sector maintained steady growth of 3.5%. Construction activity supported the economy, with a 7% YoQ rise.  \n\nEmkay Global Financial Services\u2019 economist stated that upward revisions to past quarters\u2019 GDP forecasts make the forecast highly dynamic. Aditi Nayar of ICRA noted the pickup in private and government consumption and a narrowing drag from net exports, driving up growth expectations.  \n\nICRA\u2019s Chief Economist, Madhavi Arora, highlighted significant revisions over years. Meanwhile, MP Financial Advisory Services Founder Mahendra Patil noted investment activity is expected to rise if lower interest rates are passed on, boosting employment, while recent tax relief for middle-income groups may amplify consumption.  \n\nIndia\u2019s GDP growth in Q3 2025 stands at 6.2% YoY, a resilient and expanding economy supported by strong consumption, government spending, and rising exports.",
+      "publisher": "weeklyvoice",
+      "url": "https://weeklyvoice.com/indias-gdp-remains-resilient-amid-geopolitical-challenges-industry/",
+      "imgURL": "https://weeklyvoice.com/wp-content/uploads/2022/09/Untitled-design-2.png",
+      "date": "2025-02-28T10:31:55-05:00"
+    },
+    {
+      "news_number": 8,
+      "title": "Taiwan Semi Faces Geopolitical Strain Due To US Scrutiny On Huawei's Chip Access - Taiwan Semiconductor (NYSE:TSM)",
+      "content": "The U.S. administration expresses concern over Huawei accessing Taiwan semiconductor manufacturing chips, reflecting ongoing tensions over artificial intelligence tech. President Trump\u2019s export leader, Jeffrey Kessler, highlighted Tesla issues to Reuters. The U.S.5633 Bureaucratic Impact on AI Chips: As Tesla struggles to match CUDA\u2019s efficiency, Taiwan Semiconductor (NVEV) dominates the AI chip market. In 2019, Washington restricted Huawei\u2019s advanced tech shipments, citing national security threats. TechInsights reported a banned TSM chip in Huawei's AI processor. Taiwan complies with regulations but faces sanctions from the U.S., notably for importing chips to China. While both companies aim global AI alliances, the U.S. targets retaliation via tariffs, amid trade wars between China and the U.S. Taiwan reportedly promised $65 billion in trade ties, though it restricts joint ventures outside China. TSM stock dropped 1.05%, reflecting market focus on geopolitical tensions over competition.",
+      "publisher": "benzinga",
+      "url": "https://www.benzinga.com/media/25/02/44052145/taiwan-semi-faces-geopolitical-strain-due-to-us-scrutiny-on-huaweis-chip-access",
+      "imgURL": "https://cdn.benzinga.com/files/images/story/2025/02/28/TSMCs-Challenges.jpeg?width=1200&height=800&fit=crop",
+      "date": null
+    },
+    {
+      "news_number": 9,
+      "title": "Trump's Mineral Deal With Ukraine Reshapes Geopolitical Landscape",
+      "content": "The U.S. President Donald Trump finalized a mineral agreement with Ukraine, granting access to its extensive natural resources, including lithium, rare earth elements, and other valuable minerals. This deal reshapes the geopolitics of both nations, enhancing economic ties and strategic partnerships that could boost Ukraine's economy. The agreement aims to leverage Ukrainian wealth for increased revenue, addressing challenges from Russia's rising tensions. However, this move also risks undermining Ukraine's sovereignty in a bid to exploit its resources on U.S. interests. Russian media criticize the deal as a sign of Western influence, while U.S. officials support it as part of broader security strategies and economic development plans. The deal is expected to boost local economies and potentially enhance Ukraine's independence. Environmental concerns over lithium extraction are also raised by environmentalists, who warn about ecological impacts.",
+      "publisher": "evrimagaci",
+      "url": "https://evrimagaci.org/tpg/trumps-mineral-deal-with-ukraine-reshapes-geopolitical-landscape-237696",
+      "imgURL": "https://thumbor.evrimagaci.org/uqv_qDBRTgFE2Bn7dC75-ZY6x98=/1200x0/tpg%2F0ec82821-909a-4eb8-8eee-95a2d63369f7.jpeg",
+      "date": null
+    },
+    {
+      "news_number": 10,
+      "title": "Dow Jones acquires geopolitical intelligence providers Dragonfly and Oxford Analytica",
+      "content": "Dow Jones has purchased Dragonfly Intelligence in London/Singapore and Oxford Analytica in Austria for $40 million, totaling $40 million. The deal, set to complete by Q1 2025, requires regulatory approvals in Austria. This move strengthens Dow Jones\u2019 risk & compliance services, expanding their geopolitical intelligence offerings. CEO Almar Latour noted that businesses and professionals are increasingly seeking real-time info on global risks, aligning with rising demand for timely insights.",
+      "publisher": "financefeeds",
+      "url": "https://financefeeds.com/dow-jones-acquires-geopolitical-intelligence-providers-dragonfly-and-oxford-analytica/",
+      "imgURL": "https://financefeeds.com/wp-content/uploads/2025/02/Oxford_Analytica_section.jpg",
+      "date": "2025-02-28T11:50:12+03:00"
+    },
+    {
+      "news_number": 11,
+      "title": "Gold shines brighter as stock markets bleed; gains over 9% in 4 months amid global uncertainties",
+      "content": "Gold has become a favorite in a bull market with significant stock corrections. Over the past four months, gold surged by nearly 92%, while the Nifty50 index fell around 15.6%. This global phenomenon is driven by inflationary concerns, trade wars, geopolitical tensions, and uncertainty. As a safe-haven asset, gold thrives during times of uncertainty. Its history as the most globallyized commodity has seen it gain 37% in the past 12 months, rising from Rs 62,135 to Rs 85,114 on February 28, 2025. Despite ongoing factors like interest rate cuts and geopolitical issues, gold remains a reliable asset during tough times. It\u2019s often sought by investors in low-interest environments and those affected by trade conflicts.",
+      "publisher": "indianexpress",
+      "url": "https://indianexpress.com/article/business/commodities/gold-price-rise-sensex-nifty-fall-9861150/",
+      "imgURL": "https://images.indianexpress.com/2025/02/Gold-Express-Archives.jpg",
+      "date": "2025-02-28T22:13:23+05:30"
+    },
+    {
+      "news_number": 12,
+      "title": "Arctic Showdown: Global Power Struggles & ASEAN\u2019s Stake in the Ice",
+      "content": "The Arctic is increasingly becoming a contested region driven by strategic interests in resource exploitation, maritime control, and military positioning. Different powers\u2014Russia with vast hydrocarbons, China with hydrocarbons and military strength, and the U.S.\u2014are competing for control of this vital area. The region also plays a key role in global geoeconomics, affecting energy trade patterns and regional security.\n\nFor ASEAN, the Arctic's geopolitical competition has significant implications. Many ASEAN members rely on Asia for their energy exports, with rising oil prices potentially destabilizing their economies. The narrowing of the South China Sea Strait may alter maritime trade routes, impacting Asian nations like Singapore and Malaysia. Additionally, Russia's growing influence in the Arctic could lead to stronger military alliances or tensions with China.\n\nGlobal power dynamics are reshaping this conflict, influencing ASEAN's decision-making processes. Each nation's regional influence on Asia and the South China Sea may affect their foreign policies and economic strategies. The Arctic's complex interactions suggest broader challenges for ASEAN as they navigate evolving global security and economic landscapes.",
+      "publisher": "moderndiplomacy",
+      "url": "https://moderndiplomacy.eu/2025/02/28/arctic-showdown-global-power-struggles-aseans-stake-in-the-ice/",
+      "imgURL": "https://moderndiplomacy.eu/wp-content/uploads/2020/12/arctic.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 13,
+      "title": "Market jitters over tariff chatter",
+      "content": "**Economic Data Summaries:**\n\n1. **Australian Dollar (AUD):**\n   - The Reserve Bank of Australia (RBA) will not name dissenting board members in the new monetary policy committee. They expect further inflation news but remain cautious due to Australia's tight labor market.\n\n2. **Japanese Yen (JPY):**\n   - Wage demands from Japan are pushing the Yen technical breakout, with moderate pricing support for a BOJ rate increase. The outlook is mixed based on past price variation patterns.\n\n3. **Chinese Yuan (CNY):**\n   - Diplomatic tones accelerate yuan strength as President Xi encourages calm responses to challenges and expands economic opening.\n   - The USD/CNY pair shows some downside bias targeting 7.3682 if corrected, with concerns about peso capacity from external shocks.\n\n4. **Japanese Yen (JPY) Continuation:**\n   - Inflation expectations are similar to pre-pandemic levels, yet rising inflation could affect the Yen technical breakout.\n\n5. **Canadian Dollar (CAD):**\n   - Key economic points include ISM manufacturing data, with an outlook for mixed inflation and price variation trends.\n\n6. **Japanese Yen (JPY) Update:**\n   - Wage growth in Japan is pushing wage demands to break the Yen technical pattern, supporting BOJ policy normalization with moderate pricing support.\n\n7. **Mexican Peso (MXN):**\n   - A potential 50-basis point rate cut will continue as global uncertainties persist. Structural issues related to USMCA could take time to resolve, affecting MXN capacity.\n\nThis summary captures the main points of each currency's economic data and outlooks without delving into specifics where not provided.",
+      "publisher": "convera",
+      "url": "https://convera.com/blog/foreign-exchange/market-jitters-over-tariff-chatter/",
+      "imgURL": "https://convera.com/wp-content/uploads/2024/02/WeeklyMarketUpdate-BlogHero.jpg",
+      "date": "2025-02-28T10:47:26+00:00"
+    },
+    {
+      "news_number": 14,
+      "title": "EPAM Systems, Inc. SEC 10-K Report",
+      "content": "EPAM Systems, Inc., a global digital platform engineering and software development company, reported its 2024 financial performance in their 10-K report. Revenue of $4.7 billion reflects a 0.8% increase from the previous year, driven by strategic acquisitions and favorable currency rates. Cost of revenues surged 69%, including compensation costs and hedging benefits. Income from operations was $544 million, up 11.5%, with net income at $454 million, down 9.6%. Diluted EPS stood at $7.84, benefiting from financial strength and tax benefits.\n\nEPAM's segments in Financial Services led with 21.6% revenue growth, while Life Sciences & Healthcare and Emerging Verticals saw moderate gains, though other sectors declined. Geographically, the Americas contributed 60%, up 3.4%, with North America showing strong performance. The company expanded service offerings by integrating AI to deliver customer experience design services.\n\nHigh utilization at 76.7% remained effective. However, they face geopolitical risks from Ukraine, requiring workforce relocation and managing currency fluctuations. Regulatory challenges include tax and data protection issues. Overall, EPAM's growth was met with resilience in key areas while addressing sector-specific risks.",
+      "publisher": "tradingview",
+      "url": "https://www.tradingview.com/news/tradingview:03c0d2ffb2875:0-epam-systems-inc-sec-10-k-report/",
+      "imgURL": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "date": null
+    },
+    {
+      "news_number": 15,
+      "title": "Poland\u2019s Immaculate Rise to Europe\u2019s Military and Technological Powerhouse",
+      "content": "Poland has stepped up significantly to counter Russia\u2019s expansion into Eastern Europe following the Russian invasion of Ukraine. Known for its steadfast spirit amid past conflicts, Poland is leading in military and economic efforts. Its purchase of advanced missiles, tanks, aircraft, and howitzers since March 2022 underscores its growing role as a major hub for air defense, technology, and economy in Eastern Europe. As the top contributor to NATO\u2019s defense spending, Poland supports Ukraine through aid and contributes nearly 5% GDP annually. Its influence in science and tech grows with its home to numerous companies and satellite launches. Meanwhile, it aims to be the leading member of NATO's defense spending list, symbolizing a strategic shift from traditional superpower status.",
+      "publisher": "thegeopolitics",
+      "url": "https://thegeopolitics.com/polands-immaculate-rise-to-europes-military-and-technological-powerhouse/",
+      "imgURL": "https://thegeopolitics.com/wp-content/uploads/2025/02/Polish_M1_Abrams-Tank.jpeg",
+      "date": "2025-02-28T14:23:32+00:00"
+    },
+    {
+      "news_number": 16,
+      "title": "G20 finance meeting ends without consensus or communique",
+      "content": "South Africa's G20 meeting in Cape Town ended without a consensus due to officials skipping its crucial climate finance section. The host chair issued a summary but no joint communique was produced. South Africa hoped the event could inspire pressure on rich countries and improve financial systems for poorer nations, yet criticism from richer countries and risks from geopolitical tensions hindered progress.",
+      "publisher": "kitco",
+      "url": "https://www.kitco.com/news/off-the-wire/2025-02-27/g20-finance-meeting-ends-without-consensus-or-communique",
+      "imgURL": "https://image-api.prod.kitco.com/image/7ed7940a-f76c-4d09-aa8c-4f7f98adac91.jpeg?top=0&left=0.1141943587987&width=399.7716112824&height=225&scale_width=1920&token=fcd6781bca974d672c94f37d8e29cec03ff214f6985aa9e1b5d26e6ac5f48576",
+      "date": "2025-02-27T00:00:00"
+    },
+    {
+      "news_number": 17,
+      "title": "T\u00fcrkiye is indispensable for the EU, says former Spanish FM",
+      "content": "Striking a balance between Europeanism and nationalism is crucial for navigating global politics. former Spanish Foreign Minister Arancha Gonzalez Laya highlighted how T\u00fcrkiye is making significant progress as a global actor, essential to the EU. She stressed the EU's diminishing power and emphasized reforms rooted in democracy. The rise of far-right movements and tech companies like Google, Apple, and Amazon are challenging democratic systems. The US leader, Donald Trump, has faced brutal violence opposing alternative governments, adding complexity. While many support a unified Europe, European and nationalist struggles highlight the need for active counter-trends.",
+      "publisher": "news",
+      "url": "https://news.az/news/turkiye-is-indispensable-for-the-eu-says-former-spanish-fm",
+      "imgURL": "https://news.az/photos/2025/02/a-24-1740756184.jpg",
+      "date": null
+    },
+    {
+      "news_number": 18,
+      "title": "What Do Ukraine and Taiwan Have in Common? A U.S They Can't Depend On",
+      "content": "The U.S.-China proposed deal threatens both Ukraine and Taiwan\u2019s stability. While Ukraine might face criticism over Russia, its leaders fear falling into similar traps caused by this collaboration. Similarly, Taiwan\u2019s political risks could be amplified if China aligns with the U.S., creating a \"collateral victim\" scenario. A 2023 White House speech highlighted how their cooperation could transform trade dynamics and economic relations. However, unresolved issues may undermine trust in both nations\u2019 leaders.",
+      "publisher": "haaretz",
+      "url": "https://www.haaretz.com/us-news/2025-02-28/ty-article/.premium/what-do-ukraine-and-taiwan-have-in-common-a-u-s-they-cant-depend-on/00000195-4bbf-d79a-abfd-ffff46f20000",
+      "imgURL": "https://img.haarets.co.il/bs/00000195-4bbf-d79a-abfd-ffff3bcf0000/2f/71/9c6fc5dc4f318d4ebcffc52392a3/60616072.JPG?precrop=4000,2325,x0,y73&height=630&width=1200",
+      "date": "2025-02-28T00:00:00"
+    }
+  ],
+  "Crypto": [
+    {
+      "news_number": 0,
+      "title": "Argentina\u2019s Crypto Scandal Swindled Thousands. What Did Javier Milei Know?",
+      "content": "The scandal began with a tweet posted by Argentina\u2019s president, Javier Milei, at 7:01 p.m. on Valentine\u2019s Day, offering a code to buy a new cryptocurrency called $Libra. 23 minutes earlier, $Libra was created in 2023. The initial surge in investments led to massive gains for large stakeholders, but after weeks of intense trading, the coin collapsed when many sold their shares at a premium. This resulted in a ripple effect where large investors profited while amateur investors faced losses. For crypto enthusiasts, this resembles the classic \u201crug-pull\u201d scenario\u2014a celebrity pushes cryptocurrency, prices surge, then insiders who control most coins sell for significant profit, leaving ordinary investors with losses.",
+      "publisher": "nytimes",
+      "url": "https://www.nytimes.com/2025/02/28/world/americas/argentina-crypto-scandal-president.html",
+      "imgURL": "https://static01.nyt.com/images/2025/03/01/multimedia/22argentina-milei-crypto-hpmk/22argentina-milei-crypto-hpmk-facebookJumbo.jpg",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 1,
+      "title": "A crypto mogul who invested millions into Trump coins is getting a reprieve on civil fraud charges",
+      "content": "Justin Sun was awarded $75 million for purchasing tokens from World Liberty, which benefits the Trump family, while the SEC halted his civil fraud case after three months due to concerns over connections to the president and potential corruption. The White House and the Trump administration are seeking to avoid further crypto investigations and political turmoil.",
+      "publisher": "cnn",
+      "url": "https://www.cnn.com/2025/02/28/business/crypto-mogul-trump-coins-civil-fraud-charges/index.html",
+      "imgURL": "https://media.cnn.com/api/v1/images/stellar/prod/2025-02-26t221817z-1512945230-rc2l2dapdzg3-rtrmadp-3-sec-sun.JPG?c=16x9&q=w_800,c_fill",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 2,
+      "title": "Boerse Stuttgart Partners With DekaBank to Offer Crypto Trading for Institutional Clients",
+      "content": "Boerse Stuttgart has announced a partnership with DekaBank, enabling cryptocurrency trading for German investment banks. With over $427 billion in assets, Deka uses Boerse's brokerage infrastructure. This partnership reflects Boerse's commitment to expanding crypto adoption, aiming to attract more institutions through increased volumes and Custody services. Last year, crypto trading volumes nearly tripled, reaching $4.3 billion in Custody at Boerse Stuttgart Digital. The move underscores Boerse's strategic focus on leveraging its platform for financial stability.",
+      "publisher": "coindesk",
+      "url": "https://www.coindesk.com/markets/2025/02/28/boerse-stuttgart-partners-with-dekabank-to-offer-crypto-trading-for-institutional-clients",
+      "imgURL": "https://cdn.sanity.io/images/s3y3vcno/production/28790cf7fd1659d4d8c35bb7e4acef9d9748ba07-1280x720.jpg?auto=format",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 3,
+      "title": "How $GINI is making Web3 investment easy for first time crypto investors?",
+      "content": "Don't jump into crypto with all your heart... but don't panic either! $GINI tokens are here to ease your first crypto adventure by offering:\n\n- **Confusing-free**: Simple options that let you buy without needing tech know-how, making it easy for newbies.\n\n- **Safe setup**: Straightforward wallet basics and plain English explanations to ensure you understand every step of your crypto journey.\n\n- **Official support**: Comprehensive tools like official websites and regular updates to keep you in the loop.\n\n$GINI also avoids the chaotic crypto world's excitement with:\n\n- **Price protections**: Vested schedules preventing early investors from losing large token amounts.\n\n- **Diverse appeal**: Attracts different types of investors, including veterans who may have more experience than others.\n\nWith a focus on what truly works for new buyers, $GINI offers something like a middle ground between old-school blockchain trials and the wild west atmosphere that dominates crypto. Start small and do your research... but if you're determined to explore this space, $GINI is a great first step.",
+      "publisher": "zeebiz",
+      "url": "https://www.zeebiz.com/markets/currency/news-how-gini-is-making-web3-investment-easy-for-first-time-crypto-investors-349209",
+      "imgURL": "https://cdn.zeebiz.com/sites/default/files/2025/02/28/355403-why-gini-is-a-promising-token-for-diversifying-crypto-portfolios.jpg",
+      "date": "2025-02-28T17:58:45+05:30"
+    },
+    {
+      "news_number": 4,
+      "title": "Bitcoin crashes below $80,000 as Trump\u2019s crypto hype fizzles",
+      "content": "Bitcoin plummeted below $80k due to the fading euphoria surrounding Donald Trump\u2019s pro-crypto policies, causing investors\u2019 happiness to wane. Since its January peak, Bitcoin has lost 21% and dropped below $75k at the start of 2025. Major cryptocurrencies like Ether have suffered sharp declines as well, with Plaid losing nearly 40%. Investors remain cautious, noting institutional sell-offs and mixed sentiment from China\u2019s trade tensions. The market recalibrates expectations, seeking clarity on a Bitcoin reserve before confirming its future.",
+      "publisher": "cnbctv18",
+      "url": "https://www.cnbctv18.com/market/bitcoin-crash-below-80000-cryptocurrency-ethereum-litecoin-trump-policy-19566335.htm",
+      "imgURL": "https://images.cnbctv18.com/uploads/2022/03/bitcoin-5.jpg?im=FitAndFill,width=500,height=300",
+      "date": "2025-02-28T13:57:56+05:30"
+    },
+    {
+      "news_number": 5,
+      "title": "Bitcoin Drops to $81,000 as Crypto-Tied Stocks Fall",
+      "content": "Bitcoin has experienced significant drops in its value, with prices falling over 20% from its peak of around $109,000 to now hovering near $81,000 (a quarter below its January high). This bear market reflects concerns about rising inflation and potential interest rate cuts. Companies like Coinbase Global, Riot Platforms, and Strategy (formerly MicroStrategy) have seen small losses, with Bitcoin mining and infrastructure sectors experiencing gains. Investors remain cautious amid the impact of President Trump's tariffs on major countries. Regulators are likely to consider dismissing a lawsuit related to Robinhood's cryptocurrency operations.",
+      "publisher": "investopedia",
+      "url": "https://www.investopedia.com/bitcoin-drops-to-usd81-000-as-crypto-tied-stocks-fall-11688203",
+      "imgURL": "https://www.investopedia.com/thmb/_fAczcJGMWiAYg3HunNy0Y7fU5s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/WhatYouNeedToKnowAheadoftheBitcoinHalving24-60a4fd642f834f979a3a06697e78645b.jpg",
+      "date": null
+    },
+    {
+      "news_number": 6,
+      "title": "Bitcoin Down 25% From All-Time High as Crypto Rout Worsens",
+      "content": "Bitcoin fell by nearly 20% over the past week due to Trump's trade tensions and cryptocurrency market volatility, marking a significant reality check for the most popular trading strategy among many investors. The weekly decline in Bitcoin has put it below its 200-day moving average, signaling potential deeper sell-offs.zaheer Ebtikar, co-founder of Split Capital, noted that large players' selling activity was higher than usual, contributing to the drop. Bitcoin's performance on technical indicators like the 14-day relative strength index also fell below an oversold level for the first time since September. Despite this, global markets took a broader risk-off hit, pushing down almost all Asian and European stock indices and causing cryptocurrencies to suffer as well.",
+      "publisher": "finance",
+      "url": "https://finance.yahoo.com/news/bitcoin-down-25-time-high-014247224.html",
+      "imgURL": "https://s.yimg.com/ny/api/res/1.2/jvLYRkEYk.wxIniMlbn1Rg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/bloomberg_markets_842/6123b3e0c027221d43c140efc7c75f90",
+      "date": null
+    },
+    {
+      "news_number": 7,
+      "title": "Bitcoin dominance of crypto hits four-year high. Here\u2019s what it means for prices",
+      "content": "Bitcoin commands 60% of crypto market value, leading the industry\u2014its highest since 2017. While altcoins are also performing, Bitcoin's shift from stability to speculation in a volatile environment suggests it may regain dominance but not overtake others like Ethereum or XRP due to institutional adoption and deluge of scandals.",
+      "publisher": "dlnews",
+      "url": "https://www.dlnews.com/articles/markets/bitcoin-dominance-hits-4-year-high-price-impact/",
+      "imgURL": "https://www.dlnews.com/resizer/v2/2LHNUIUWUBDSPCIOKJJUQ4MEFM.jpg?smart=true&auth=01473e3767032dbeb0ed8e960294e5685d7e560bd072723117f05ca6ab6bc6bf&width=1200&height=630",
+      "date": null
+    },
+    {
+      "news_number": 8,
+      "title": "Riding the crypto waves: Sudhakar Pradhan of Pi42 shares his investment playbook for first-time investors",
+      "content": "The Indian cryptocurrency market operates under specific regulatory and financial considerations:\n\n1. **FIU Compliance**: Not all exchanges are FIU registered, so it's essential to confirm the platform's compliance with the Financial Intelligence Unit (FIU).\n\n2. **Liquidity**: Good liquidity is key; using INR margin reduces conversion fees compared to digital wallets.\n\n3. **Tax Structure**:\n   - **Spot Trading/T forwards**: Includes VDA taxes of 1% on each transaction and a flat 30% tax.\n   - **Futures ( spot price future) only applies during off-ramping/on-ramping, not each trade).\n\n4. **Margin Trading Benefits**:\n   - Eliminates conversion fees for INR margin trading.\n   - Simplifies tax benefits by avoiding VDA on INR trades.\n\n5. **Technical Analysis Tools**: Includes RSI (Relative Strength Index) and VWAP (Volume Weighted Average Price), aiding in identifying market trends and potential trading opportunities.\n\n6. **Market Factors**:\n   - Emerging markets often influence crypto prices due to macroeconomic events.\n   - Blockchain developments can impact price dynamics.\n\nThis summary covers regulatory compliance, liquidity, tax implications, margin advantages, technical tools, and external factors affecting trades.",
+      "publisher": "m",
+      "url": "https://m.economictimes.com/markets/riding-the-crypto-waves-sudhakar-pradhan-of-pi42-shares-his-investment-playbook-for-first-time-investors/articleshow/118631177.cms",
+      "imgURL": "https://img.etimg.com/thumb/msid-118631135,width-1200,height-630,imgsize-1772880,overlay-etmarkets/articleshow.jpg",
+      "date": null
+    },
+    {
+      "news_number": 9,
+      "title": "Major Crypto Scam Exposed: Mumbai and Hyderabad Police Take Action Against COINZX Fraud",
+      "content": "The cryptocurrency fraud involving COINZX has expanded its investigation, with authorities in Hyderabad and Mumbai booking Ravi Mahaseth and his associates. COINZX was falsely marketed as a \"India's Bitcoin\" offering high returns but misleading investors by convincing them to invest money, which later revealed as losses. The case was brought under sections of the Indian Penal Code (IPC) and the Telangana State Depositors Act. Ravi Mahaseth, a 40-year-old from Malad East, was granted bail in Hyderabad on February 24 but faced questions about his arrest being illegal or un informed. He will cooperate with the investigation and can be released without prior court permission if conditions improve. COINZX is now viewed as a fraudulent investment trap rather than a reliable currency. Additionally, cases involving FX & Smart Bull, Smart X, and Samruddhi Multi Trade Pvt Ltd have been booked in both Hyderabad and Mumbai. Police are expanding their probe network, with Hyderabad informing Mumbai about Mahaseth's arrest.",
+      "publisher": "timesofindia",
+      "url": "https://timesofindia.indiatimes.com/city/hyderabad/multi-crore-crypto-scam-mumbai-hyderabad-police-crack-down-on-coinzx-fraud/articleshow/118624680.cms",
+      "imgURL": "https://static.toiimg.com/thumb/msid-118624674,width-1070,height-580,imgsize-40102,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "date": null
+    },
+    {
+      "news_number": 10,
+      "title": "Crypto bloodbath as Bitcoin, Etherum, Solana get hammered: What's fueling the meltdown? Here's the breakdown",
+      "content": "The cryptocurrency market is experiencing a severe sell-off, with Bitcoin plummeting in value, causing over $810 billion to be erased. Inflationary pressures and high-level tariffs from Trump's administration contribute to the crash. Despite Bitcoin's significant drops in price\u20146.40% for Bitcoin, 9.52% for Ethereum, and 8.52% for Solana\u2014investors remain cautious, fearing uncertainty around crypto policies and regulation. Joshua Chu highlights Bitcoin as a risk asset, noting its lack of inflationary hedge or digital gold status. A Bybit hack, stealing $1.5 billion in ether, further shook investor confidence. Despite recoveries over the past few years, institutional players are downscaling expectations due to regulatory uncertainty and meme-driven trends, leading to more speculative moves. The market's recent turmoil underscores the risks of inflationary pressures and high tariffs, even as tech influencers and memes like TRUMP and MELANIA face significant drops in value.",
+      "publisher": "m",
+      "url": "https://m.economictimes.com/news/international/us/crypto-bloodbath-as-bitcoin-etherum-solana-get-hammered-whats-fueling-the-meltdown-heres-the-breakdown/articleshow/118629560.cms",
+      "imgURL": "https://img.etimg.com/thumb/msid-118629514,width-1200,height-630,imgsize-1270927,overlay-economictimes/articleshow.jpg",
+      "date": null
+    },
+    {
+      "news_number": 11,
+      "title": "Building trust in the crypto industry should be a shared responsibility",
+      "content": "India\u2019s IT and ITES sector is thriving due to government policies focused on skill development. WazirX, established in 2018, rose to prominence as one of India\u2019s top cryptocurrency exchanges, but a recent cyber-attack in July 2024 has tarnished its reputation. To regain stability, WazirX plans to distribute 85% of user funds in April 2025 under the Singapore High Court\u2019s restructuring. The industry faces challenges in crypto regulation, with several cases taking decades and new regulations needed for smoother adoption. India is building a strong reputation in global crypto markets with platforms like WazirX, which help attract institutional and retail investors. Regulatory reforms are prioritized to ensure companies adapt quickly, fostering innovation and stability.",
+      "publisher": "m",
+      "url": "https://m.economictimes.com/wealth/invest/building-trust-in-the-crypto-industry-should-be-a-shared-responsibility/articleshow/118623903.cms",
+      "imgURL": "https://img.etimg.com/thumb/msid-118625470,width-1200,height-630,imgsize-71112,overlay-etwealth/articleshow.jpg",
+      "date": null
+    },
+    {
+      "news_number": 12,
+      "title": "Crypto prices tumble as Trump-fuelled euphoria fades",
+      "content": "Did you know? Cryptocurrency prices can swing rapidly, leaving investors in a hurry for accurate info to protect their security and confidence.",
+      "publisher": "m",
+      "url": "https://m.economictimes.com/markets/cryptocurrency/crypto-prices-tumble-as-trump-fuelled-euphoria-fades/articleshow/118629325.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "imgURL": "https://img.etimg.com/thumb/msid-118629351,width-1200,height-630,imgsize-190784,overlay-etmarkets/articleshow.jpg",
+      "date": null
+    },
+    {
+      "news_number": 13,
+      "title": "Stars Align for Bybit\u2019s Crypto Zodiac League Trading Competition with 1 Million USDT in Prizes",
+      "content": "Bybit is reimagining traditional trading contests by turning them into an astrological showdown. The Crypto Zodiac League features 12 squads based on birth signs, competing for $1 million in prizes. Individual and squad winners share leaderboards with various reward pools and a livestream highlights expert insights, featuring a $500 Red Packet giveaway. For more info, visit [Bybit](https://www.bybit.com).",
+      "publisher": "globenewswire",
+      "url": "https://www.globenewswire.com/news-release/2025/02/28/3034559/0/en/Stars-Align-for-Bybit-s-Crypto-Zodiac-League-Trading-Competition-with-1-Million-USDT-in-Prizes.html",
+      "imgURL": "https://ml.globenewswire.com/Resource/Download/94bfcbcd-9693-49f4-b84c-05bab65c3372",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 14,
+      "title": "XRP News Today: SEC to Drop Ripple Appeal After Closed-Door Meeting? New BTC L2 Project StratoVM Grabs Attention by Whales",
+      "content": "John Reed Stark, former SEC enforcement attorney, predicted that the SEC might drop its case against Ripple Labs, adding signs that it could abandon the legal pursuit. StratoVM ($SVM), a Layer-2 blockchain for smart contracts and DeFi, has seen an 2300% price surge to $0.068 or 6.8 cents. XRP's update predicts the SEC might drop their appeal as well, with legal specialist Fred Rispoli favoring a straightforward resolution despite concerns about the SEC Chair and judge.\n\nStratoVM is poised for potential growth, with a 2,700% increase in value within one month according to CoinGecko. Its mainnet launch targets a major inflection point. Meanwhile, XRP's update suggests broader DeFi interest, with its ecosystem being valued at $3 million and community reaching over 110,000 members across platforms. StratoVM could open new opportunities for Bitcoin holders in the DeFi space.\n\nThis article doesn't offer financial advice. Cryptocurrencies are unpredictable; research is crucial before investing. Rispoli's optimism contrasts with the SEC's cautious stance on Ripple and XRP.",
+      "publisher": "techpoint",
+      "url": "https://techpoint.africa/cryptoexplorer/2025/02/28/xrp-news-today-sec-to-drop-ripple/",
+      "imgURL": "https://techpoint.africa/cryptoexplorer/wp-content/uploads/2025/02/unnamed-2025-02-28T184505.578.png",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 15,
+      "title": "BexBack: The Easiest 100x Leverage Futures Exchange with Double Deposit Bonus and No KYC Crypto Trading",
+      "content": "With Bitcoin's price below $100k, the crypto market is expected to experience prolonged high volatility. 100x leverage trading has become essential for seasoned investors seeking to maximize gains in this volatile environment. BexBack Exchange offers unmatched promotional packages: a 100% deposit bonus and a $50 welcome bonus, with up to 100x leverage on crypto positions. This platform combines high leverage potential with excellent opportunities for investors.\n\nBexBack stands out due to its intuitive no KYC process, comprehensive trading options via web and mobile apps, seamless trade execution, and 24/7 customer support. The 100% bonus effectively doubles profits during market fluctuations, offering a clear path for those seeking high-risk, high-reward trades. BexBack's attractive pricing makes it an ideal choice for beginners to explore crypto trading.\n\nTake action now to avail this opportunity\u2014register today and claim your exclusive promotion at www.bexback.com.",
+      "publisher": "globenewswire",
+      "url": "https://www.globenewswire.com/news-release/2025/02/28/3034842/0/en/BexBack-The-Easiest-100x-Leverage-Futures-Exchange-with-Double-Deposit-Bonus-and-No-KYC-Crypto-Trading.html",
+      "imgURL": "https://ml.globenewswire.com/Resource/Download/f47f4d3f-3b6c-4732-930a-6dec4386cb9c",
+      "date": "2025-02-28T00:00:00"
+    },
+    {
+      "news_number": 16,
+      "title": "Over $870M Crypto Positions Liquidated as Bitcoin, Ether Suffer Worst Yearly Drops",
+      "content": "Cryptocurrency is becoming increasingly popular, especially among tech enthusiasts, but it carries high risks. As of today, Bitcoin (BTC) is one of the largest cryptocurrencies in terms of market capitalization. The current USD/CNY exchange rate stands at 7.28, with significant fluctuations observed over time. The warning suggests not to over-invest in crypto without understanding its risks. Cryptocurrency is an investment tool but should be used with caution.",
+      "publisher": "fxempire",
+      "url": "https://www.fxempire.com/forecasts/article/over-870m-crypto-positions-liquidated-as-bitcoin-ether-suffer-worst-yearly-drops-1500692",
+      "imgURL": "https://responsive.fxempire.com/v7/_fxempire_/2025/02/BTC-ROLLERCOASTER-2.jpg?func=cover&q=70&width=700",
+      "date": null
+    },
+    {
+      "news_number": 17,
+      "title": "Here\u2019s what happened in crypto today",
+      "content": "Bitcoin is under pressure by global trade concerns and U.S.-China trade tensions, with its BTCUSD price falling below $75,000 support levels amid macroeconomic uncertainties, potentially leading to a correction below $76,000 this week. The U.S. Securities and Exchange Commission (SEC) recently dismissed memecoins as not securities but warned that fraudulent tokens could still face enforcement actions from regulators. Despite these developments, Bitcoin's price has fallen by over 6.5% to $78,197, with some analysts attributing the drop to macroeconomic concerns from President Donald Trump's tariffs on China. Still, others are concerned about a potential first cryptocurrency to hit $70,000. The SEC also agreed in principle to drop its lawsuit against Consensys, which developed MetaMask, but fraud risks remain as the regulatory landscape shifts due to U.S.-China trade tensions and other policies from President Trump.",
+      "publisher": "tradingview",
+      "url": "https://www.tradingview.com/news/cointelegraph:b431ea497094b:0-here-s-what-happened-in-crypto-today/",
+      "imgURL": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "date": null
+    }
+  ]
 }

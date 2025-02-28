@@ -11,11 +11,12 @@ const Filter = ({ onCategoryChange }) => {
 
   const buttons = [
     { label: 'All', value: 'ALL' },
-    { label: 'International', value: 'India' },
+    { label: 'AI', value: 'AI' },
     { label: 'Health', value: 'Health' },
     { label: 'Sports', value: 'Sports' },
-    { label: 'Politics', value: 'Politics' },
+    { label: 'Politics', value: 'Geopolitical' },
     { label: 'Finance', value: 'Finance' },
+    { label: 'Crypto', value: 'Crypto' },
   ];
 
   return (
