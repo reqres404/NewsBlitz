@@ -34,12 +34,13 @@ export function DesktopNavbar() {
           >
             <span>About</span>
           </Link>
-          <Button
-            variant="secondary"
-            className="bg-primary text-primary-foreground"
-          >
-            Donate
-          </Button>
+          <Link href="/donate">
+            <a className="inline-flex">
+              <Button variant="secondary" className="bg-primary text-primary-foreground">
+                Donate
+              </Button>
+            </a>
+          </Link>
         </nav>
       </div>
     </header>

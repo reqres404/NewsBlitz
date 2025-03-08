@@ -1,5 +1,4 @@
 import React from "react";
-import { MobileTopNavbar } from "../components/mobile/MobileTopNavbar";
 import { DesktopNavbar } from "../components/Navbar";
 import { useMediaQuery } from "../hooks/useMobile";
 
@@ -12,8 +11,8 @@ export default function Layout({ children }: LayoutProps) {
 
     return (
         <div className="h-screen flex flex-col">
-            {isMobile ? <MobileTopNavbar onFilterOpen={() => { }} /> : <DesktopNavbar />}
-            <main className="flex-grow overflow-hidden">{children}</main>
+            {!isMobile && <DesktopNavbar />}
+            <main className="flex-grow overflow-auto">{children}</main>
         </div>
     );
 }

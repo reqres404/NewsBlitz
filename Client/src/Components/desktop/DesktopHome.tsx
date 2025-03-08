@@ -13,7 +13,7 @@ export function DesktopHome({
     onFilterChange,
 }: DesktopHomeProps) {
     return (
-        <div className="container py-6 space-y-8">
+        <div className="container py-6 space-y-2">
             <div className="flex justify-center">
                 <Filter onFilterChange={onFilterChange} />
             </div>

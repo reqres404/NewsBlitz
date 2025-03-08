@@ -26,9 +26,7 @@ export function MobileFilterSheet({
     return (
         <Sheet open={isOpen} onOpenChange={onOpenChange}>
             <SheetTrigger asChild>
-                <>
-                    <div />
-                </>
+                <div />
             </SheetTrigger>
             <SheetContent side="top" className="w-full max-w-none pt-20">
                 <SheetHeader>

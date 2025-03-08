@@ -12,7 +12,7 @@ interface NewsCarouselProps {
 }
 
 export function NewsCarousel({ articles, className }: NewsCarouselProps) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
   const [selectedIndex, setSelectedIndex] = useState(0)
 
   const scrollPrev = useCallback(() => {

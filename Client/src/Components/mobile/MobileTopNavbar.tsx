@@ -1,4 +1,5 @@
 import { Filter } from "lucide-react";
+import { Link } from "wouter";
 import { Button } from "../ui/button";
 
 interface MobileTopNavbarProps {
@@ -10,10 +11,13 @@ export function MobileTopNavbar({ onFilterOpen }: MobileTopNavbarProps) {
         <header className="fixed top-0 left-0 right-0 z-50 border-b bg-background/95 backdrop-blur-xs supports-backdrop-filter:bg-background/60">
             <div className="flex h-14 items-center px-4 justify-between">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-lg rotate-12" />
-                    <span className="text-lg font-bold">NewsBlitz</span>
-                </div>
+                <Link href="/" className="flex items-center space-x-2">
+                    <div className="relative h-8 w-8">
+                        <div className="absolute transform rotate-45 bg-primary w-6 h-6" />
+                        <div className="absolute transform -rotate-45 bg-yellow-500 w-6 h-6 left-2" />
+                    </div>
+                    <span className="font-bold text-xl">NewsBlitz</span>
+                </Link>
                 {/* Filter trigger */}
                 <Button
                     variant="ghost"

@@ -3,12 +3,19 @@ import { Route, Switch } from "wouter";
 import Layout from "./layout/layout";
 import { queryClient } from "./lib/queryClient";
 import Home from "./pages/Home";
+import News from "./pages/News";
+import Feedback from "./pages/Feedback";
+import Donate from "./pages/Donate";
 import NotFound from "./pages/NotFound";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/news" component={News} />
+      <Route path="/feedback" component={Feedback} />
+      <Route path="/donate" component={Donate} />
+      <Route path="/about" component={Feedback} />
       <Route path="*" component={NotFound} />
     </Switch>
   );
