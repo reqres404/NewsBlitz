@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import { useNews } from "../hooks/useNews";
 import { useState } from "react";
-import { DesktopHome } from "../components/desktop/desktop-home";
-import { MobileHome } from "../components/mobile/mobile-home";
-import { useMediaQuery } from "../hooks/use-mobile";
+import { DesktopHome } from "../components/desktop/DesktopHome";
+import { MobileHome } from "../components/mobile/MobileHome";
+import { useMediaQuery } from "../hooks/useMobile";
 import type { NewsArticle } from "../shared/schema";
 
 

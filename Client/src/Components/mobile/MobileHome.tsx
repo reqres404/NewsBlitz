@@ -1,8 +1,8 @@
 import type { NewsArticle } from "../../shared/schema";
-import { MobileBottomNavbar } from "./mobile-bottom-navbar";
-import { MobileFilterSheet } from "./mobile-filter-sheet";
-import { MobileNewsCarousel } from "./mobile-news-carousel";
-import { MobileTopNavbar } from "./mobile-top-navbar";
+import { MobileBottomNavbar } from "./MobileBottomNavbar";
+import { MobileFilterSheet } from "./MobileFilterSheet";
+import { MobileNewsCarousel } from "./MobileNewsCarousel";
+import { MobileTopNavbar } from "./MobileTopNavbar";
 
 interface MobileHomeProps {
     filteredArticles: NewsArticle[];

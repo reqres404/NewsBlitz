@@ -1,7 +1,7 @@
 import React from "react";
-import { MobileTopNavbar } from "../components/mobile/mobile-top-navbar";
-import { DesktopNavbar } from "../components/navbar";
-import { useMediaQuery } from "../hooks/use-mobile";
+import { MobileTopNavbar } from "../components/mobile/MobileTopNavbar";
+import { DesktopNavbar } from "../components/Navbar";
+import { useMediaQuery } from "../hooks/useMobile";
 
 interface LayoutProps {
     children: React.ReactNode;

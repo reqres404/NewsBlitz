@@ -1,7 +1,7 @@
 // components/desktop/DesktopHome.tsx
 import type { NewsArticle } from "../../shared/schema";
-import Filter from "../filter";
-import { NewsCarousel } from "./news-carousel";
+import Filter from "../Flter";
+import { NewsCarousel } from "./NewsCarousel";
 
 interface DesktopHomeProps {
     filteredArticles: NewsArticle[];

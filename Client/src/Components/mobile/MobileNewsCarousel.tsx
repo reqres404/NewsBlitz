@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { NewsArticle } from "../../shared/schema";
 import { Button } from "../ui/button";
-import { MobileNewsCard } from "./mobile-news-card";
+import { MobileNewsCard } from "./MobileNewsCard";
 
 interface MobileNewsCarouselProps {
     news: NewsArticle[];
