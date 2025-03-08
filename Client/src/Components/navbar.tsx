@@ -1,15 +1,9 @@
-import { Home, MessageSquare, Info, DollarSign } from "lucide-react";
-import { useMediaQuery } from "../hooks/use-mobile";
 import { Link } from "wouter";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 
-export function Navbar() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
+export function DesktopNavbar() {
   return (
-    <header
-      className={`sticky ${isMobile ? "bottom-0" : "top-0"} z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60`}
-    >
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo Section */}
         <Link href="/" className="flex items-center space-x-2">
@@ -26,27 +20,26 @@ export function Navbar() {
             href="/news"
             className="text-foreground/60 hover:text-foreground transition-colors duration-200"
           >
-            {isMobile ? <Home className="w-6 h-6" /> : <span>News</span>}
+            <span>News</span>
           </Link>
           <Link
             href="/feedback"
             className="text-foreground/60 hover:text-foreground transition-colors duration-200"
           >
-            {isMobile ? <MessageSquare className="w-6 h-6" /> : <span>Feedback</span>}
+            <span>Feedback</span>
           </Link>
           <Link
             href="/about"
             className="text-foreground/60 hover:text-foreground transition-colors duration-200"
           >
-            {isMobile ? <Info className="w-6 h-6" /> : <span>About</span>}
+            <span>About</span>
           </Link>
-          {isMobile ? (
-            <Link href="/donate" className="text-foreground/60 hover:text-foreground transition-colors duration-200">
-              <DollarSign className="w-6 h-6" />
-            </Link>
-          ) : (
-            <Button variant="secondary">Donate</Button>
-          )}
+          <Button
+            variant="secondary"
+            className="bg-primary text-primary-foreground"
+          >
+            Donate
+          </Button>
         </nav>
       </div>
     </header>

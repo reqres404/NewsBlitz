@@ -1,19 +1,19 @@
 import React from "react";
-import { Navbar } from "../components/navbar";
+import { MobileTopNavbar } from "../components/mobile/mobile-top-navbar";
+import { DesktopNavbar } from "../components/navbar";
+import { useMediaQuery } from "../hooks/use-mobile";
 
 interface LayoutProps {
     children: React.ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
+    const isMobile = useMediaQuery("(max-width: 768px)");
+
     return (
         <div className="h-screen flex flex-col">
-            {/* Navbar with fixed height */}
-            <Navbar />
-            {/* Main container fills remaining space */}
-            <main className="flex-grow overflow-hidden">
-                {children}
-            </main>
+            {isMobile ? <MobileTopNavbar onFilterOpen={() => { }} /> : <DesktopNavbar />}
+            <main className="flex-grow overflow-hidden">{children}</main>
         </div>
     );
 }
