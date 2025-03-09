@@ -40,8 +40,11 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
       <div className="w-full h-full" ref={emblaRef}>
         {/* Slides container: horizontal scrolling */}
         <div className="flex h-full">
-          {articles.map((article) => (
-            <div className="relative flex-[0_0_100%] w-full h-full overflow-hidden"            >
+          {articles.map((article, index) => (
+            <div
+              key={article.news_number || index}
+              className="relative flex-[0_0_100%] w-full h-full overflow-hidden"
+            >
               {/* Blurred background to pick up the image's hue */}
               <div
                 className="absolute inset-0"
@@ -81,7 +84,7 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
                   {/* Header row: left for category & date, right for published by */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-4">
-                      <Badge variant="secondary" className="bg-primary text-primary-foreground">
+                      <Badge className="bg-primary text-primary-foreground">
                         {article.category}
                       </Badge>
                       <div className="flex items-center gap-2 text-sm">
@@ -104,24 +107,14 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
 
                   {/* Read more button pinned at the bottom left with extra spacing above */}
                   <div className="mt-auto flex justify-start mt-4">
-                    <a
-                      href={article.readMoreUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="
-                        px-2 py-1
-                        rounded-full
-                        bg-primary
-                        text-primary-foreground
-                        hover:bg-gray-300
-                        hover:text-primary-foreground
-                        transition-all
-                        backdrop-blur-xs
-                        font-bold
-                      "
+                    <Button variant="secondary" className="bg-primary text-primary-foreground font-bold"
+                      onClick={() => {
+                        const newWindow = window.open(article.readMoreUrl, '_blank', 'noopener,noreferrer');
+                        if (newWindow) newWindow.opener = null;
+                      }}
                     >
-                      Read more
-                    </a>
+                      Read More
+                    </Button>
                   </div>
                 </div>
               </div>

@@ -28,12 +28,10 @@ export function DesktopNavbar() {
           >
             <span>Feedback</span>
           </Link>
-          <Link href="/donate">
-            <a className="inline-flex">
-              <Button variant="secondary" className="bg-primary text-primary-foreground">
-                Donate
-              </Button>
-            </a>
+          <Link href="/donate" className="inline-flex">
+            <Button variant="secondary" className="bg-primary text-primary-foreground btn-hover">
+              Donate
+            </Button>
           </Link>
         </nav>
       </div>

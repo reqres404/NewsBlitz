@@ -70,7 +70,7 @@ export function MobileNewsCard({ article }: { article: NewsArticle }) {
                                 rel="noopener noreferrer"
                                 className="block w-full"
                             >
-                                Read full article
+                                Read More
                             </a>
                         </Button>
                     </div>
