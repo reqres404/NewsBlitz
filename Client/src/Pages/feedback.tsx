@@ -184,13 +184,7 @@ export default function Feedback() {
                 <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16">
                     <p className="text-sm text-muted-foreground">© 2025 NewsBlitz. All rights reserved.</p>
                     <div className="flex items-center gap-4">
-                        <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
-                            Privacy
-                        </Link>
-                        <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
-                            Terms
-                        </Link>
-                        <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
+                        <Link href="/feedback" className="text-sm text-muted-foreground hover:text-foreground">
                             Contact
                         </Link>
                     </div>

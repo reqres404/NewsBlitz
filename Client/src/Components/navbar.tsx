@@ -28,12 +28,6 @@ export function DesktopNavbar() {
           >
             <span>Feedback</span>
           </Link>
-          <Link
-            href="/about"
-            className="text-foreground/60 hover:text-foreground transition-colors duration-200"
-          >
-            <span>About</span>
-          </Link>
           <Link href="/donate">
             <a className="inline-flex">
               <Button variant="secondary" className="bg-primary text-primary-foreground">

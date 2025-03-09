@@ -1,5 +1,3 @@
-"use client"
-
 import type React from "react"
 
 import { useState } from "react"
@@ -284,7 +282,7 @@ export default function DonatePage() {
                                         <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
                                             <span className="block h-1.5 w-1.5 rounded-full bg-black"></span>
                                         </span>
-                                        <span>Supporting our journalists and fact-checkers</span>
+                                        <span>Enhancing news variety through smarter curation.</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
@@ -335,15 +333,9 @@ export default function DonatePage() {
             {/* Footer */}
             <footer className="border-t py-6 md:py-0">
                 <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16">
-                    <p className="text-sm text-muted-foreground">© 2024 NewsBlitz. All rights reserved.</p>
+                    <p className="text-sm text-muted-foreground">© 2025 NewsBlitz. All rights reserved.</p>
                     <div className="flex items-center gap-4">
-                        <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
-                            Privacy
-                        </Link>
-                        <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
-                            Terms
-                        </Link>
-                        <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
+                        <Link href="/feedback" className="text-sm text-muted-foreground hover:text-foreground">
                             Contact
                         </Link>
                     </div>

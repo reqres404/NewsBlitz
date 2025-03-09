@@ -70,9 +70,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="rounded-lg border bg-card p-6 shadow-sm">
               <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">Personalized News</h3>
+                <h3 className="text-lg font-semibold">Curated Headlines</h3>
                 <p className="text-sm text-muted-foreground">
-                  Tailored news experience based on your interests and reading habits.
+                  tay up to date with the most important and trending stories—all in one place.
                 </p>
               </div>
             </div>
@@ -86,8 +86,8 @@ export default function HomePage() {
             </div>
             <div className="rounded-lg border bg-card p-6 shadow-sm">
               <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">Offline Access</h3>
-                <p className="text-sm text-muted-foreground">Read your saved news even when you're not connected.</p>
+                <h3 className="text-lg font-semibold">Distraction-Free Reading</h3>
+                <p className="text-sm text-muted-foreground">Enjoy a clean, minimal interface that puts the news front and center, letting you focus on what matters most.</p>
               </div>
             </div>
           </div>
@@ -99,13 +99,7 @@ export default function HomePage() {
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16">
           <p className="text-sm text-muted-foreground">© 2025 NewsBlitz. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
-              Privacy
-            </Link>
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
-              Terms
-            </Link>
-            <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/feedback" className="text-sm text-muted-foreground hover:text-foreground">
               Contact
             </Link>
           </div>
