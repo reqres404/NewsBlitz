@@ -8,10 +8,9 @@ import { Button } from "../ui/button"
 
 interface NewsCarouselProps {
   articles: NewsArticle[]
-  className?: string
 }
 
-export function NewsCarousel({ articles, className }: NewsCarouselProps) {
+export function NewsCarousel({ articles }: NewsCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
   const [selectedIndex, setSelectedIndex] = useState(0)
 
@@ -35,7 +34,7 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
   }, [emblaApi, onSelect])
 
   return (
-    <div className={`relative w-full h-[600px] overflow-hidden ${className || ""}`}>
+    <div className="relative shrink-0 w-full h-[500px] overflow-hidden">
       {/* Embla main viewport */}
       <div className="w-full h-full" ref={emblaRef}>
         {/* Slides container: horizontal scrolling */}
@@ -45,7 +44,7 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
               key={article.news_number || index}
               className="relative flex-[0_0_100%] w-full h-full overflow-hidden"
             >
-              {/* Blurred background to pick up the image's hue */}
+              {/* Blurred background */}
               <div
                 className="absolute inset-0"
                 style={{
@@ -55,33 +54,33 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
                   filter: "blur(12px)",
                 }}
               />
-              {/* Optional darker overlay for contrast */}
               <div className="absolute inset-0 bg-black/30" />
 
-              {/* Foreground: split into left (focused image) & right (glass overlay) */}
+              {/* Foreground: split into left (image) & right (glass overlay) */}
               <div className="relative z-10 flex w-full h-full">
-                {/* Left half: the news image in focus */}
-                <div className="w-1/2 h-full relative">
+                {/* Left half: the news image */}
+                <div className="w-1/2 h-full overflow-hidden">
                   <img
                     src={article.imageUrl || "/placeholder.svg"}
                     alt={article.title}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
-                {/* Right half: glass overlay for text */}
+                {/* Right half: glass overlay for text, scroll if needed */}
                 <div
                   className="
                     w-1/2 h-full p-6
-                    flex flex-col justify-start
+                    flex flex-col
                     bg-black/20
                     backdrop-blur-md
                     border-l border-white/20
                     text-white
                     rounded-r-xl
+                    overflow-y-auto
                   "
                 >
-                  {/* Header row: left for category & date, right for published by */}
+                  {/* Header row */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-4">
                       <Badge className="bg-primary text-primary-foreground">
@@ -98,19 +97,19 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
                   </div>
 
                   {/* Title and description */}
-                  <div>
-                    <h2 className="text-2xl md:text-4xl font-bold mb-2">{article.title}</h2>
-                    <p className="text-sm md:text-base leading-relaxed">
-                      {article.description}
-                    </p>
-                  </div>
+                  <h2 className="text-2xl md:text-4xl font-bold mb-2">{article.title}</h2>
+                  <p className="text-sm md:text-base leading-relaxed">
+                    {article.description}
+                  </p>
 
-                  {/* Read more button pinned at the bottom left with extra spacing above */}
-                  <div className="mt-auto flex justify-start mt-4">
-                    <Button variant="secondary" className="bg-primary text-primary-foreground font-bold"
+                  {/* Read more button pinned at bottom, with extra bottom padding */}
+                  <div className="mt-auto flex justify-start mb-4">
+                    <Button
+                      variant="secondary"
+                      className="bg-primary text-primary-foreground font-bold"
                       onClick={() => {
-                        const newWindow = window.open(article.readMoreUrl, '_blank', 'noopener,noreferrer');
-                        if (newWindow) newWindow.opener = null;
+                        const newWindow = window.open(article.readMoreUrl, "_blank", "noopener,noreferrer")
+                        if (newWindow) newWindow.opener = null
                       }}
                     >
                       Read More
@@ -123,8 +122,8 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
         </div>
       </div>
 
-      {/* Navigation Buttons at bottom right */}
-      <div className="absolute bottom-4 right-4 flex gap-2">
+      {/* Navigation Buttons with extra spacing from edges */}
+      <div className="absolute bottom-6 right-6 flex gap-2">
         <Button
           variant="secondary"
           size="icon"
@@ -143,8 +142,8 @@ export function NewsCarousel({ articles, className }: NewsCarouselProps) {
         </Button>
       </div>
 
-      {/* News Count Indicator (outside the carousel) */}
-      <div className="mt-4 text-center text-white text-sm font-bold">
+      {/* News Count Indicator - placed below the carousel if you prefer */}
+      <div className="mt-6 text-center text-white text-sm font-bold">
         {`News ${selectedIndex + 1} of ${articles.length}`}
       </div>
     </div>

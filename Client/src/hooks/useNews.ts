@@ -1,4 +1,3 @@
-// hooks/useNews.ts
 import { useQuery } from "@tanstack/react-query";
 import type { NewsArticle } from "../shared/schema";
 import { fetchNewsData } from "../data/newsData";
