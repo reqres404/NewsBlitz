@@ -61,7 +61,7 @@ def get_news_data():
     def get_news_url(topic_url):
         driver.get(topic_url)
         news_results = []
-        max_articles = 25  # Set limit to 10 articles
+        max_articles = 5  # Set limit to 10 articles
         max_pages = 3  # Limit number of pages to scrape to avoid infinite loops
 
         try:
@@ -140,7 +140,9 @@ def get_news_data():
 
                 if len(article.text) < 100:
                     continue
-                
+                if article.top_image and (article.top_image.find(".ico") != -1):
+                    print("replaced_image_url :" + article.top_image)
+                    article.top_image = "https://media.istockphoto.com/id/1409309637/vector/breaking-news-label-banner-isolated-vector-design.jpg?s=2048x2048&w=is&k=20&c=rHMT7lr46TFGxQqLQHvSGD6r79AIeTVng-KYA6J1XKM="
                 news_item = {
                     "news_number": article_count,
                     "title": article.title,
@@ -150,6 +152,8 @@ def get_news_data():
                     "imgURL": article.top_image,
                     "date": article.publish_date.isoformat() if article.publish_date else None,
                 }
+
+        
 
                 detailed_topic_data.append(news_item)
                 article_count += 1
