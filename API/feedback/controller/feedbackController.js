@@ -3,22 +3,31 @@ import nodemailer from "nodemailer"
 var transpoter = nodemailer.createTransport({
     service:'gmail',
     auth:{
-        user: "app_mail",
-        pass: "app_pass"
+        user: "test_mail",
+        pass: "requires application password not regular one"
     }
 })
-console.log(process.env.EMAILPASS)
-var mailOptions = {
-    from:"adittyapatil89@gmail.com",
-    to:"adittyapatil78@gmail.com",
-    subject:"news blitz feedback",
-    text:"this is feedback from newsblitz"
+
+export const sendFeedback =async(req,res)=>{
+    try {
+        const feedbackData = await req.body
+
+        var mailOptions = {
+            from:"test_mail",
+            to:"test_mail",
+            subject:"news blitz feedback",
+            text: feedbackData.data
+        }
+        transpoter.sendMail(mailOptions,(error,info)=>{
+            if (error) {
+                res.status(400).json({error:error.message})
+              } else {
+                res.status(200).json({message:`mail sent : ${info.response}`})
+              }
+        })        
+        
+    } catch (error) {
+        res.status(500).json({error:error.message})
+    }
 }
 
-transpoter.sendMail(mailOptions,(error,info)=>{
-    if (error) {
-        console.log(error);
-      } else {
-        console.log('Email sent: ' + info.response);
-      }
-})
