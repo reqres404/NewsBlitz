@@ -13,6 +13,7 @@ import newspaper.settings
 from datetime import datetime, timedelta
 import re
 from urllib.parse import urlparse
+from google.cloud import storage
 
 nltk.download('punkt')
 
@@ -193,7 +194,7 @@ def summarize_news(json_file_path):
     summarized_file_path = os.path.join(os.path.dirname(__file__), ".", "Data", "news_summarised.json")
     with open(summarized_file_path, "w") as json_file:
         json.dump(news_data, json_file, indent=2)
-
+    upload_to_gcs(json_file_path, "news_backup/news.json")
     print(f"Summarization completed. Saved to {summarized_file_path}")
     print(f"Time taken for execution: {time.time() - start_time:.2f} seconds")
     # print(f"failed to scrape {news_failed_to_scrape_count}")
@@ -228,6 +229,21 @@ def get_summary_from_ollama(text):
     except Exception as e:
         print(f"Error communicating with Ollama: {e}")
         return None
+# Function to upload to google cloud bucket
+# GCS_KEY_PATH = "./gcp-storage-key.json"
+# storage_client = storage.Client.from_service_account_json("./gcp-storage-key.json")
+# BUCKET_NAME = "bucket_name"
+
+# def upload_to_gcs(local_file_path,destination_blob_name):
+#     try:
+#         bucket = storage_client.bucket(BUCKET_NAME)
+#         blob = bucket.blob(destination_blob_name)
+#         blob.upload_from_filename(local_file_path)
+#         print(f"✅ File '{local_file_path}' uploaded to GCS as '{destination_blob_name}'")
+#     except Exception as e:
+#         print(f"❌ Failed to upload to GCS: {e}")
+
+
 
 while True:
     get_news_data()
