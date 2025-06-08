@@ -68,19 +68,19 @@ export default function DonatePage() {
                                         <TabsList className="grid grid-cols-3 w-full">
                                             <TabsTrigger
                                                 value="one-time"
-                                                className="data-[state=active]:bg-yellow-400 data-[state=active]:text-black"
+                                                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
                                             >
                                                 One-time
                                             </TabsTrigger>
                                             <TabsTrigger
                                                 value="monthly"
-                                                className="data-[state=active]:bg-yellow-400 data-[state=active]:text-black"
+                                                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
                                             >
                                                 Monthly
                                             </TabsTrigger>
                                             <TabsTrigger
                                                 value="yearly"
-                                                className="data-[state=active]:bg-yellow-400 data-[state=active]:text-black"
+                                                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
                                             >
                                                 Yearly
                                             </TabsTrigger>
@@ -96,7 +96,7 @@ export default function DonatePage() {
                                             <Label
                                                 htmlFor="amount-5"
                                                 className={`w-full h-12 rounded-md border flex items-center justify-center cursor-pointer transition-colors ${amount === "5"
-                                                    ? "bg-yellow-400 text-black border-yellow-400"
+                                                    ? "bg-primary text-primary-foreground border-primary"
                                                     : "border-input bg-background hover:bg-muted"
                                                     }`}
                                             >
@@ -108,7 +108,7 @@ export default function DonatePage() {
                                             <Label
                                                 htmlFor="amount-10"
                                                 className={`w-full h-12 rounded-md border flex items-center justify-center cursor-pointer transition-colors ${amount === "10"
-                                                    ? "bg-yellow-400 text-black border-yellow-400"
+                                                    ? "bg-primary text-primary-foreground border-primary"
                                                     : "border-input bg-background hover:bg-muted"
                                                     }`}
                                             >
@@ -120,7 +120,7 @@ export default function DonatePage() {
                                             <Label
                                                 htmlFor="amount-25"
                                                 className={`w-full h-12 rounded-md border flex items-center justify-center cursor-pointer transition-colors ${amount === "25"
-                                                    ? "bg-yellow-400 text-black border-yellow-400"
+                                                    ? "bg-primary text-primary-foreground border-primary"
                                                     : "border-input bg-background hover:bg-muted"
                                                     }`}
                                             >
@@ -132,7 +132,7 @@ export default function DonatePage() {
                                             <Label
                                                 htmlFor="amount-50"
                                                 className={`w-full h-12 rounded-md border flex items-center justify-center cursor-pointer transition-colors ${amount === "50"
-                                                    ? "bg-yellow-400 text-black border-yellow-400"
+                                                    ? "bg-primary text-primary-foreground border-primary"
                                                     : "border-input bg-background hover:bg-muted"
                                                     }`}
                                             >
@@ -144,7 +144,7 @@ export default function DonatePage() {
                                             <Label
                                                 htmlFor="amount-100"
                                                 className={`w-full h-12 rounded-md border flex items-center justify-center cursor-pointer transition-colors ${amount === "100"
-                                                    ? "bg-yellow-400 text-black border-yellow-400"
+                                                    ? "bg-primary text-primary-foreground border-primary"
                                                     : "border-input bg-background hover:bg-muted"
                                                     }`}
                                             >
@@ -156,7 +156,7 @@ export default function DonatePage() {
                                             <Label
                                                 htmlFor="amount-custom"
                                                 className={`w-full h-12 rounded-md border flex items-center justify-center cursor-pointer transition-colors ${amount === "custom"
-                                                    ? "bg-yellow-400 text-black border-yellow-400"
+                                                    ? "bg-primary text-primary-foreground border-primary"
                                                     : "border-input bg-background hover:bg-muted"
                                                     }`}
                                             >
@@ -247,7 +247,7 @@ export default function DonatePage() {
                             <CardFooter className="flex flex-col space-y-4">
                                 <Button
                                     type="submit"
-                                    className="w-full bg-yellow-400 hover:bg-yellow-500 text-black h-12"
+                                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-12"
                                     disabled={isProcessing || (amount === "custom" && !customAmount)}
                                 >
                                     {isProcessing ? (
@@ -279,20 +279,20 @@ export default function DonatePage() {
                             <CardContent>
                                 <ul className="space-y-2 text-sm">
                                     <li className="flex items-start gap-2">
-                                        <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
-                                            <span className="block h-1.5 w-1.5 rounded-full bg-black"></span>
+                                        <span className="rounded-full bg-primary p-1 mt-0.5">
+                                            <span className="block h-1.5 w-1.5 rounded-full bg-primary-foreground"></span>
                                         </span>
                                         <span>Enhancing news variety through smarter curation.</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
-                                            <span className="block h-1.5 w-1.5 rounded-full bg-black"></span>
+                                        <span className="rounded-full bg-primary p-1 mt-0.5">
+                                            <span className="block h-1.5 w-1.5 rounded-full bg-primary-foreground"></span>
                                         </span>
                                         <span>Maintaining and improving our platform</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
-                                            <span className="block h-1.5 w-1.5 rounded-full bg-black"></span>
+                                        <span className="rounded-full bg-primary p-1 mt-0.5">
+                                            <span className="block h-1.5 w-1.5 rounded-full bg-primary-foreground"></span>
                                         </span>
                                         <span>Expanding coverage to underreported areas</span>
                                     </li>
@@ -306,20 +306,20 @@ export default function DonatePage() {
                             <CardContent>
                                 <ul className="space-y-2 text-sm">
                                     <li className="flex items-start gap-2">
-                                        <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
-                                            <span className="block h-1.5 w-1.5 rounded-full bg-black"></span>
+                                        <span className="rounded-full bg-primary p-1 mt-0.5">
+                                            <span className="block h-1.5 w-1.5 rounded-full bg-primary-foreground"></span>
                                         </span>
                                         <span>Share our articles with friends and family</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
-                                            <span className="block h-1.5 w-1.5 rounded-full bg-black"></span>
+                                        <span className="rounded-full bg-primary p-1 mt-0.5">
+                                            <span className="block h-1.5 w-1.5 rounded-full bg-primary-foreground"></span>
                                         </span>
                                         <span>Subscribe to our newsletter</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <span className="rounded-full bg-yellow-400 p-1 mt-0.5">
-                                            <span className="block h-1.5 w-1.5 rounded-full bg-black"></span>
+                                        <span className="rounded-full bg-primary p-1 mt-0.5">
+                                            <span className="block h-1.5 w-1.5 rounded-full bg-primary-foreground"></span>
                                         </span>
                                         <span>Provide feedback to help us improve</span>
                                     </li>

@@ -20,16 +20,49 @@ export default function Feedback() {
         event.preventDefault()
         setIsSubmitting(true)
 
-        // Simulate form submission
-        await new Promise((resolve) => setTimeout(resolve, 1000))
+        try {
+            const formData = new FormData(event.currentTarget)
+            const feedbackData = {
+                feedbackType,
+                category: formData.get('category'),
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message'),
+                rating: formData.get('rating'),
+                device: formData.get('device')
+            }
 
-        toast({
-            title: "Feedback submitted",
-            description: "Thank you for your feedback! We appreciate your input.",
-        })
+            const response = await fetch('/api/feedback', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(feedbackData)
+            })
+
+            if (response.ok) {
+                toast({
+                    title: "Feedback submitted",
+                    description: "Thank you for your feedback! We appreciate your input.",
+                })
+                // Reset form
+                event.currentTarget.reset()
+                setFeedbackType("suggestion")
+            } else {
+                const error = await response.json()
+                toast({
+                    title: "Error",
+                    description: error.error || "Failed to submit feedback. Please try again.",
+                })
+            }
+        } catch (error) {
+            toast({
+                title: "Error",
+                description: "Failed to submit feedback. Please check your connection and try again.",
+            })
+        }
 
         setIsSubmitting(false)
-        // Reset form here if needed
     }
 
     return (
@@ -92,7 +125,7 @@ export default function Feedback() {
                                 {/* Category */}
                                 <div className="space-y-2">
                                     <Label htmlFor="category">Category *</Label>
-                                    <Select defaultValue="content">
+                                    <Select defaultValue="content" name="category">
                                         <SelectTrigger id="category">
                                             <SelectValue placeholder="Select category" />
                                         </SelectTrigger>
@@ -110,11 +143,11 @@ export default function Feedback() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="space-y-2">
                                         <Label htmlFor="name">Name</Label>
-                                        <Input id="name" placeholder="Your name" />
+                                        <Input id="name" name="name" placeholder="Your name" />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="email">Email *</Label>
-                                        <Input id="email" type="email" placeholder="your.email@example.com" required />
+                                        <Input id="email" name="email" type="email" placeholder="your.email@example.com" required />
                                     </div>
                                 </div>
 
@@ -123,6 +156,7 @@ export default function Feedback() {
                                     <Label htmlFor="message">Your Feedback *</Label>
                                     <Textarea
                                         id="message"
+                                        name="message"
                                         placeholder="Please share your detailed feedback here..."
                                         className="min-h-[120px]"
                                         required
@@ -133,7 +167,7 @@ export default function Feedback() {
                                 {feedbackType === "praise" && (
                                     <div className="space-y-2">
                                         <Label htmlFor="rating">How would you rate our app? *</Label>
-                                        <Select defaultValue="5">
+                                        <Select defaultValue="5" name="rating">
                                             <SelectTrigger id="rating">
                                                 <SelectValue placeholder="Select rating" />
                                             </SelectTrigger>
@@ -152,7 +186,7 @@ export default function Feedback() {
                                 {feedbackType === "issue" && (
                                     <div className="space-y-2">
                                         <Label htmlFor="device">Device Information</Label>
-                                        <Input id="device" placeholder="e.g., iPhone 13, Chrome on Windows" />
+                                        <Input id="device" name="device" placeholder="e.g., iPhone 13, Chrome on Windows" />
                                     </div>
                                 )}
                             </CardContent>
@@ -160,7 +194,7 @@ export default function Feedback() {
                                 <Button variant="outline" type="button" onClick={() => window.history.back()}>
                                     Cancel
                                 </Button>
-                                <Button type="submit" className="bg-yellow-400 hover:bg-yellow-500 text-black" disabled={isSubmitting}>
+                                <Button type="submit" className="bg-primary hover:bg-primary/90 text-primary-foreground" disabled={isSubmitting}>
                                     {isSubmitting ? (
                                         <span className="flex items-center gap-2">
                                             <div className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
