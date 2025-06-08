@@ -16,7 +16,7 @@ export default function News() {
 
   if (isLoading || !articles) {
     return (
-      <div className="fixed flex items-center justify-center h-full bg-background">
+      <div className="fixed inset-0 flex items-center justify-center w-full h-screen bg-background">
         <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
       </div>
     );

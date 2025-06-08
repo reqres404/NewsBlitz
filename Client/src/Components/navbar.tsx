@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "./ui/button";
+import { ThemeToggle } from "./ui/theme-toggle";
 
 export function DesktopNavbar() {
   return (
@@ -28,6 +29,7 @@ export function DesktopNavbar() {
           >
             <span>Feedback</span>
           </Link>
+          <ThemeToggle />
           <Link href="/donate" className="inline-flex">
             <Button variant="secondary" className="bg-primary text-primary-foreground btn-hover">
               Donate

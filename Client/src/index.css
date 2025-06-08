@@ -59,6 +59,9 @@
   --color-sidebar-border: hsl(var(--sidebar-border));
   --color-sidebar-ring: hsl(var(--sidebar-ring));
 
+  /* NewsBlitz brand colors for consistent theming */
+  --color-yellow-400: hsl(var(--yellow-400));
+  --color-yellow-500: hsl(var(--yellow-500));
 
   --font-sans:
     var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
@@ -165,41 +168,60 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* NewsBlitz brand yellows for light mode */
+    --yellow-400: 54 91% 68%;
+    --yellow-500: 48 96% 53%;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
+    /* Main backgrounds - warm dark theme */
+    --background: 240 10% 6%;
+    --foreground: 0 0% 95%;
+    --card: 240 6% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 6% 10%;
+    --popover-foreground: 0 0% 95%;
+    
+    /* Primary colors - keeping the vibrant amber for brand consistency */
+    --primary: 45 93% 47%;
     --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    
+    /* Secondary and accent colors - subtle warm grays */
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 240 4% 16%;
+    --accent-foreground: 0 0% 95%;
+    
+    /* Interactive elements */
+    --destructive: 0 75% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 240 4% 18%;
+    --input: 240 4% 18%;
+    --ring: 45 93% 47%;
+    
+    /* Chart colors - adjusted for dark mode */
+    --chart-1: 45 100% 55%;
+    --chart-2: 195 100% 65%;
+    --chart-3: 160 60% 50%;
+    --chart-4: 280 65% 65%;
+    --chart-5: 340 75% 60%;
+    
+    /* Sidebar colors */
+    --sidebar-background: 240 8% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 45 93% 47%;
+    --sidebar-primary-foreground: 0 0% 9%;
+    --sidebar-accent: 240 4% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 240 4% 18%;
+    --sidebar-ring: 45 93% 47%;
+    
+    /* NewsBlitz brand yellows for dark mode - slightly adjusted for better contrast */
+    --yellow-400: 48 95% 60%;
+    --yellow-500: 45 93% 47%;
   }
 }
 

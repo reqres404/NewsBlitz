@@ -103,7 +103,7 @@ export function NewsCarousel({ articles }: NewsCarouselProps) {
                   </p>
 
                   {/* Read more button pinned at bottom, with extra bottom padding */}
-                  <div className="mt-auto flex justify-start mb-4">
+                  <div className="mt-auto flex justify-start mb-4 pt-7">
                     <Button
                       variant="secondary"
                       className="bg-primary text-primary-foreground font-bold"

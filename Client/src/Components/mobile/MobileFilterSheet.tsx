@@ -39,7 +39,7 @@ export function MobileFilterSheet({
                             variant={selectedCategory === cat ? "default" : "outline"}
                             className={cn(
                                 "h-12",
-                                selectedCategory === cat && "bg-yellow-400 hover:bg-yellow-500 text-black"
+                                selectedCategory === cat && "bg-primary hover:bg-primary/90 text-primary-foreground"
                             )}
                             onClick={() => {
                                 onSelectCategory(cat);

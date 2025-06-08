@@ -1,6 +1,6 @@
 // components/desktop/DesktopHome.tsx
 import type { NewsArticle } from "../../shared/schema";
-import Filter from "../Flter";
+import Filter from "../Filter";
 import { NewsCarousel } from "./NewsCarousel";
 
 interface DesktopHomeProps {
@@ -19,7 +19,7 @@ export function DesktopHome({
             </div>
             <div className="flex-grow flex justify-center">
                 <div className="flex-grow rounded-xl overflow-hidden border bg-card">
-                    <NewsCarousel articles={filteredArticles} className="h-full" />
+                    <NewsCarousel articles={filteredArticles} />
                 </div>
             </div>
         </div>

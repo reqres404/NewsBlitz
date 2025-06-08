@@ -1,6 +1,7 @@
 import { Filter } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "../ui/button";
+import { ThemeToggle } from "../ui/theme-toggle";
 
 interface MobileTopNavbarProps {
     onFilterOpen: () => void;
@@ -18,18 +19,22 @@ export function MobileTopNavbar({ onFilterOpen }: MobileTopNavbarProps) {
                     </div>
                     <span className="font-bold text-xl">NewsBlitz</span>
                 </Link>
-                {/* Filter trigger */}
-                <Button
-                    variant="ghost"
-                    size="icon"
-                    onClick={onFilterOpen}
-                    className="relative"
-                >
-                    <>
-                        <Filter className="h-5 w-5" />
-                        <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-yellow-400" />
-                    </>
-                </Button>
+                {/* Right side buttons */}
+                <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    {/* Filter trigger */}
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={onFilterOpen}
+                        className="relative"
+                    >
+                        <>
+                            <Filter className="h-5 w-5" />
+                            <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-primary" />
+                        </>
+                    </Button>
+                </div>
             </div>
         </header>
     );

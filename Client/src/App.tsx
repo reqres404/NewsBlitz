@@ -2,10 +2,10 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Route, Switch } from "wouter";
 import Layout from "./layout/layout";
 import { queryClient } from "./lib/queryClient";
-import Home from "./pages/Home";
-import News from "./pages/News";
-import Feedback from "./pages/Feedback";
-import Donate from "./pages/Donate";
+import Home from "./pages/home";
+import News from "./pages/news";
+import Feedback from "./pages/feedback";
+import Donate from "./pages/donate";
 import NotFound from "./pages/NotFound";
 
 function Router() {
