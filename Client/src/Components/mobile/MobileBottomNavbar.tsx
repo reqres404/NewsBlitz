@@ -1,5 +1,5 @@
-import { Link } from "wouter";
 import { Heart, Home, MessageSquare, Newspaper } from "lucide-react";
+import { Link } from "wouter";
 import { Button } from "../ui/button";
 
 export function MobileBottomNavbar() {

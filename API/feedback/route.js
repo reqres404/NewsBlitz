@@ -1,9 +1,9 @@
-import express from "express"
+import express from "express";
 import { sendFeedback } from "./controller/feedbackController.js";
 
 const feedBackRouter = express.Router();
 
-feedBackRouter.post("/",sendFeedback)
+feedBackRouter.post("/", sendFeedback)
 
 
 export default feedBackRouter
