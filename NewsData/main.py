@@ -137,4 +137,4 @@ def get_news_data():
 
 while True:
     get_news_data()
-    time.sleep(10)  # Wait for 3 Hrs (10800 seconds) change this to 60 or more while testing
+    time.sleep(100)  # Wait for 3 Hrs (10800 seconds) change this to 60 or more while testing

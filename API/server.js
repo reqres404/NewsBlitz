@@ -1,22 +1,19 @@
-const express = require('express')
-const cors = require('cors');
-const newsRoute = require("./routes/newsRoute")
+import express from "express"
+import newsRouter from "./news/route.js" 
+import feedBackRouter from "./feedback/route.js"
 
 const app = express()
-
-app.use(cors())
 app.use(express.json())
 
+const PORT = process.env.PORT || 3000
 
-app.use((req,res,next)=>{
-    console.log(req.path,req.method)
-    next();
+app.use("/api/news",newsRouter)
+app.use("/api/feedback",feedBackRouter)
+
+app.get("/health",(req,res)=>{
+    res.status(200).json({message:"Healthy server :)"})
 })
 
-app.use("/api",newsRoute)
-
-const PORT = 4000
-
 app.listen(PORT,()=>{
-    console.log(`Server Listening on port : ${PORT}`)
+    console.log(`Serve running on PORT: ${PORT}`)
 })
