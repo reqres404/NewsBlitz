@@ -10,23 +10,63 @@ import { Label } from "../components/ui/label"
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
 import { Tabs, TabsList, TabsTrigger } from "../components/ui/tabs"
+import { timestamp } from "drizzle-orm/mysql-core"
 
 export default function DonatePage() {
     const [amount, setAmount] = useState("10")
     const [customAmount, setCustomAmount] = useState("")
+    const [paymentMethod,setPaymentMethod] = useState("card")
     const [frequency, setFrequency] = useState("one-time")
+    const [donorInfo, setDonorInfo] = useState({
+        firstName:"",
+        lastName:"",
+        email:"",
+        country:""
+    })
     const [isProcessing, setIsProcessing] = useState(false)
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         setIsProcessing(true)
-
-        // Simulate payment processing
-        await new Promise((resolve) => setTimeout(resolve, 1500))
-
-        // In a real app, you would redirect to a success page or show a success message
-        alert("Thank you for your donation!")
-        setIsProcessing(false)
+        try {
+            const donationData = {
+                amount:amount==="custom"?customAmount:amount,
+                frequency,
+                paymentMethod,
+                donorInfo,
+                timestamp: new Date().toISOString
+            }
+            console.log(donationData)
+            // const response = await fetch('http://localhost:3000/api/donate',,{
+            //     method:'POST',
+            //     headers:{
+            //         'Content-Type':'application/json',
+            //     },
+            //     body: JSON.stringify(donationData)
+            // })
+            // if(!response.ok){
+            //     throw new Error(`HTTP error! status: ${response.status}`)
+            // }
+            // const result = await response.json()
+            // alert(`Thank you for the donation! Transaction ID : ${result.transactionId}`)
+            alert(`Thank you for the donation! Transaction ID : ABCD1234`)
+            setAmount("10")
+            setCustomAmount("")
+            setFrequency("one-time")
+            setPaymentMethod("card")
+            setDonorInfo({
+                firstName:"",
+                lastName:"",
+                email:"",
+                country:""
+            })
+        } catch (error) {
+            console.error('Donation submission error: ',error)
+            alert('There was error procesing your donation please try again')
+        }
+        finally{
+            setIsProcessing(false)
+        }
     }
 
     const handleAmountChange = (value: string) => {
@@ -192,7 +232,7 @@ export default function DonatePage() {
                                 {/* Payment Method */}
                                 <div className="space-y-2">
                                     <Label htmlFor="payment-method">Payment Method</Label>
-                                    <Select defaultValue="card">
+                                    <Select value={paymentMethod} onValueChange={setPaymentMethod} defaultValue="card">
                                         <SelectTrigger id="payment-method">
                                             <SelectValue placeholder="Select payment method" />
                                         </SelectTrigger>
@@ -211,20 +251,34 @@ export default function DonatePage() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
                                             <Label htmlFor="first-name">First Name</Label>
-                                            <Input id="first-name" required />
+                                            <Input 
+                                                id="first-name" 
+                                                value={donorInfo.firstName}
+                                                onChange={(e)=> setDonorInfo({...donorInfo,firstName:e.target.value})}
+                                                required 
+                                                />
                                         </div>
                                         <div className="space-y-2">
                                             <Label htmlFor="last-name">Last Name</Label>
-                                            <Input id="last-name" required />
+                                            <Input 
+                                                id="last-name" 
+                                                value={donorInfo.lastName}
+                                                onChange={(e)=> setDonorInfo({...donorInfo,lastName:e.target.value})}
+                                                required 
+                                                />
                                         </div>
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="email">Email</Label>
-                                        <Input id="email" type="email" required />
+                                        <Input                                                id="first-name" 
+                                                value={donorInfo.email}
+                                                onChange={(e)=> setDonorInfo({...donorInfo,email:e.target.value})}
+                                                required  
+                                            />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="country">Country</Label>
-                                        <Select defaultValue="us">
+                                        <Select defaultValue="india" value={donorInfo.country} onValueChange={(value)=> setDonorInfo({...donorInfo,country:value})}>
                                             <SelectTrigger id="country">
                                                 <SelectValue placeholder="Select your country" />
                                             </SelectTrigger>

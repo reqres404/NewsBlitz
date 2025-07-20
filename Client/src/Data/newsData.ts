@@ -13,7 +13,7 @@ interface BEArticle {
 }
 
 
-const url = "http://127.0.0.1:5000/getAllNews";
+const url = "http://127.0.0.1:3000/api/news";
 
 export const fetchNewsData = async (): Promise<NewsArticle[]> => {
     try {
