@@ -14,7 +14,7 @@ interface BEArticle {
 }
 
 
-const url = `${NEWS_DATA_API_URL}/api/news`;
+const url = `${NEWS_DATA_API_URL}/getAllNews`;
 
 export const fetchNewsData = async (): Promise<NewsArticle[]> => {
     try {
