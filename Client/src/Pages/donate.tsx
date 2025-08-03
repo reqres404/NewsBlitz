@@ -193,7 +193,7 @@ export default function DonatePage() {
                     <Card>
                         <form onSubmit={handleSubmit}>
                             <CardHeader>
-                                <CardTitle>Make a Donation</CardTitle>
+                                <CardTitle>Make a Donation (DUMMY PAGE)</CardTitle>
                                 <CardDescription>Choose an amount and payment method to support our journalism.</CardDescription>
                             </CardHeader>
                             <CardContent className="space-y-6">

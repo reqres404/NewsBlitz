@@ -3,6 +3,9 @@ import feedBackRouter from "./feedback/route.js"
 import newsRouter from "./news/route.js"
 import donateRouter from "./donate/router.js"
 import cors from "cors"
+import dotenv from "dotenv"
+
+dotenv.config()
 
 const app = express()
 app.use(express.json())
