@@ -1,5 +1,5 @@
+import { ArrowLeft, CheckCircle, Send, XCircle } from "lucide-react"
 import type React from "react"
-import { ArrowLeft, Send, CheckCircle, XCircle } from "lucide-react"
 import { useState } from "react"
 import { Link } from "wouter"
 import { Button } from "../components/ui/button"
@@ -9,13 +9,16 @@ import { Label } from "../components/ui/label"
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
 import { Textarea } from "../components/ui/textarea"
-import { toast } from "../hooks/useToast"
+import { API_BASE_URL } from "../lib/apiConfig"
+import { MobileBottomNavbar } from "../components/mobile/MobileBottomNavbar"
+import { useMediaQuery } from "../hooks/useMobile"
 
 export default function Feedback() {
     const [feedbackType, setFeedbackType] = useState("suggestion")
     const [category, setCategory] = useState("content")
     const [rating, setRating] = useState("5")
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const isMobile = useMediaQuery("(max-width: 768px)")
     
     // Modal states
     const [showSuccessModal, setShowSuccessModal] = useState(false)
@@ -40,7 +43,7 @@ export default function Feedback() {
 
             console.log('Sending feedback data:', feedbackData)
 
-            const response = await fetch('http://localhost:3000/api/feedback', {
+            const response = await fetch(`${API_BASE_URL}/api/feedback`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -49,7 +52,7 @@ export default function Feedback() {
             })
 
             const result = await response.json()
-            
+
             // Debug: Log what we received
             console.log('Response status:', response.status)
             console.log('Response ok:', response.ok)
@@ -307,7 +310,7 @@ export default function Feedback() {
             </main>
 
             {/* Footer */}
-            <footer className="border-t py-6 md:py-0">
+            <footer className="border-t py-6 md:py-0" style={{ paddingBottom: isMobile ? '64px' : undefined }}>
                 <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16">
                     <p className="text-sm text-muted-foreground">© 2025 NewsBlitz. All rights reserved.</p>
                     <div className="flex items-center gap-4">
@@ -317,6 +320,9 @@ export default function Feedback() {
                     </div>
                 </div>
             </footer>
+            
+            {/* Mobile Bottom Navigation */}
+            {isMobile && <MobileBottomNavbar />}
         </div>
     )
 }

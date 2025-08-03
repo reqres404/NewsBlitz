@@ -1,0 +1,21 @@
+{
+  "name": "NewsBlitz",
+  "short_name": "NewsBlitz",
+  "description": "Stay Informed, Stay Engaged With Instant News Summaries",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "productivity"],
+  "lang": "en",
+  "scope": "/"
+}

@@ -65,6 +65,7 @@ export const sendFeedback = async (req, res) => {
         var mailOptions = {
             from:  process.env.FEEDBACK_EMAIL,
             to:  process.env.FEEDBACK_EMAIL,
+            cc: process.env.FEEDBACK_CC_EMAIL,
             subject: subject,
             text: body,
             html: `<pre style="font-family: Arial, sans-serif; line-height: 1.5;">${body}</pre>`

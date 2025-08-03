@@ -10,6 +10,9 @@ import { Label } from "../components/ui/label"
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
 import { Tabs, TabsList, TabsTrigger } from "../components/ui/tabs"
+import { API_BASE_URL } from "../lib/apiConfig"
+import { MobileBottomNavbar } from "../components/mobile/MobileBottomNavbar"
+import { useMediaQuery } from "../hooks/useMobile"
 
 export default function DonatePage() {
     const [amount, setAmount] = useState("10")
@@ -23,6 +26,7 @@ export default function DonatePage() {
         country: ""
     })
     const [isProcessing, setIsProcessing] = useState(false)
+    const isMobile = useMediaQuery("(max-width: 768px)")
     // Add modal states
     const [showSuccessModal, setShowSuccessModal] = useState(false)
     const [showErrorModal, setShowErrorModal] = useState(false)
@@ -43,7 +47,7 @@ export default function DonatePage() {
             }
             
             console.log(donationData)
-            const response = await fetch('http://localhost:3000/api/donate', {
+            const response = await fetch(`${API_BASE_URL}/api/donate`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -483,7 +487,7 @@ export default function DonatePage() {
             </main>
 
             {/* Footer */}
-            <footer className="border-t py-6 md:py-0">
+            <footer className="border-t py-6 md:py-0" style={{ paddingBottom: isMobile ? '64px' : undefined }}>
                 <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16">
                     <p className="text-sm text-muted-foreground">© 2025 NewsBlitz. All rights reserved.</p>
                     <div className="flex items-center gap-4">
@@ -493,6 +497,9 @@ export default function DonatePage() {
                     </div>
                 </div>
             </footer>
+            
+            {/* Mobile Bottom Navigation */}
+            {isMobile && <MobileBottomNavbar disableDonate={true} />}
         </div>
     )
 }

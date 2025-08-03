@@ -35,9 +35,14 @@ export default function News() {
       onFilterOpenChange={setIsFilterOpen}
     />
   ) : (
-    <DesktopHome
-      filteredArticles={filteredArticles}
-      onFilterChange={setSelectedCategory}
-    />
+    <div className="relative h-full overflow-hidden">
+      {/* Background Pattern - Full page coverage */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#6b7280_1px,transparent_1px)] [background-size:16px_16px] opacity-60"></div>
+      
+      <DesktopHome
+        filteredArticles={filteredArticles}
+        onFilterChange={setSelectedCategory}
+      />
+    </div>
   );
 }
