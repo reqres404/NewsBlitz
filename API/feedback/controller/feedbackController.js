@@ -1,10 +1,12 @@
 import nodemailer from "nodemailer"
+import dotenv from "dotenv"
 
-var transpoter = nodemailer.createTransport({
+dotenv.config()
+var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: "test_mail",
-        pass: "requires application password not regular one"
+        user: process.env.FEEDBACK_EMAIL,
+        pass: process.env.FEEDBACK_EMAIL_PASS
     }
 })
 
@@ -61,20 +63,22 @@ export const sendFeedback = async (req, res) => {
         const body = generateEmailBody(feedbackData)
 
         var mailOptions = {
-            from: "test_mail",
-            to: "newsblitzz@gmail.com",
+            from:  process.env.FEEDBACK_EMAIL,
+            to:  process.env.FEEDBACK_EMAIL,
+            cc: process.env.FEEDBACK_CC_EMAIL,
             subject: subject,
             text: body,
             html: `<pre style="font-family: Arial, sans-serif; line-height: 1.5;">${body}</pre>`
         }
 
-        transpoter.sendMail(mailOptions, (error, info) => {
+        transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
                 console.error('Email sending error:', error)
                 res.status(400).json({ error: error.message })
             } else {
                 console.log('Email sent successfully:', info.response)
                 res.status(200).json({ 
+                    ok:true,
                     message: `Feedback email sent successfully`,
                     type: feedbackData.feedbackType,
                     category: feedbackData.category

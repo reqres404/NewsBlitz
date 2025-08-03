@@ -34,7 +34,7 @@ export function NewsCarousel({ articles }: NewsCarouselProps) {
   }, [emblaApi, onSelect])
 
   return (
-    <div className="relative shrink-0 w-full h-[500px] overflow-hidden">
+    <div className="relative shrink-0 w-full h-full overflow-hidden">
       {/* Embla main viewport */}
       <div className="w-full h-full" ref={emblaRef}>
         {/* Slides container: horizontal scrolling */}
