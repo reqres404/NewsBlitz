@@ -10,61 +10,72 @@ import { Label } from "../components/ui/label"
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
 import { Tabs, TabsList, TabsTrigger } from "../components/ui/tabs"
-import { timestamp } from "drizzle-orm/mysql-core"
 
 export default function DonatePage() {
     const [amount, setAmount] = useState("10")
     const [customAmount, setCustomAmount] = useState("")
-    const [paymentMethod,setPaymentMethod] = useState("card")
+    const [paymentMethod, setPaymentMethod] = useState("card")
     const [frequency, setFrequency] = useState("one-time")
     const [donorInfo, setDonorInfo] = useState({
-        firstName:"",
-        lastName:"",
-        email:"",
-        country:""
+        firstName: "",
+        lastName: "",
+        email: "",
+        country: ""
     })
     const [isProcessing, setIsProcessing] = useState(false)
+    // Add modal states
+    const [showSuccessModal, setShowSuccessModal] = useState(false)
+    const [showErrorModal, setShowErrorModal] = useState(false)
+    const [transactionId, setTransactionId] = useState("")
+    const [errorMessage, setErrorMessage] = useState("")
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         setIsProcessing(true)
+        
         try {
             const donationData = {
-                amount:amount==="custom"?customAmount:amount,
+                amount: amount === "custom" ? customAmount : amount,
                 frequency,
                 paymentMethod,
                 donorInfo,
-                timestamp: new Date().toISOString
+                timestamp: new Date().toISOString()
             }
+            
             console.log(donationData)
-            // const response = await fetch('http://localhost:3000/api/donate',,{
-            //     method:'POST',
-            //     headers:{
-            //         'Content-Type':'application/json',
-            //     },
-            //     body: JSON.stringify(donationData)
-            // })
-            // if(!response.ok){
-            //     throw new Error(`HTTP error! status: ${response.status}`)
-            // }
-            // const result = await response.json()
-            // alert(`Thank you for the donation! Transaction ID : ${result.transactionId}`)
-            alert(`Thank you for the donation! Transaction ID : ABCD1234`)
+            const response = await fetch('http://localhost:3000/api/donate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(donationData)
+            })
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`)
+            }
+            
+            const result = await response.json()
+            setTransactionId(result.transactionId)
+            setShowSuccessModal(true)
+            
+            // Reset form
             setAmount("10")
             setCustomAmount("")
             setFrequency("one-time")
             setPaymentMethod("card")
             setDonorInfo({
-                firstName:"",
-                lastName:"",
-                email:"",
-                country:""
+                firstName: "",
+                lastName: "",
+                email: "",
+                country: ""
             })
+            
         } catch (error) {
-            console.error('Donation submission error: ',error)
-            alert('There was error procesing your donation please try again')
-        }
-        finally{
+            console.error('Donation submission error: ', error)
+            setErrorMessage(error instanceof Error ? error.message : 'An unexpected error occurred')
+            setShowErrorModal(true)
+        } finally {
             setIsProcessing(false)
         }
     }
@@ -78,6 +89,91 @@ export default function DonatePage() {
 
     return (
         <div className="min-h-screen flex flex-col">
+            {/* Success Modal */}
+            {showSuccessModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full">
+                        <div className="text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 mb-4">
+                                <svg className="h-6 w-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+                                Thank You for Your Donation!
+                            </h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                                Your contribution helps us deliver quality journalism. We've sent a confirmation email to {donorInfo.email}.
+                            </p>
+                            <div className="bg-gray-50 dark:bg-gray-700 rounded-md p-3 mb-4">
+                                <p className="text-xs text-gray-600 dark:text-gray-300">Transaction ID</p>
+                                <p className="text-sm font-mono text-gray-900 dark:text-gray-100">{transactionId}</p>
+                            </div>
+                            <div className="flex gap-3">
+                                <Button
+                                    onClick={() => {
+                                        setShowSuccessModal(false)
+                                        window.location.href = '/feedback'
+                                    }}
+                                    variant="outline"
+                                    className="flex-1"
+                                >
+                                    Feedback
+                                </Button>
+                                <Button
+                                    onClick={() => {
+                                        setShowSuccessModal(false)
+                                        window.location.href = '/news'
+                                    }}
+                                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                                >
+                                    News
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Error Modal */}
+            {showErrorModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full">
+                        <div className="text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100 dark:bg-red-900 mb-4">
+                                <svg className="h-6 w-6 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+                                Transaction Failed
+                            </h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                                {errorMessage}
+                            </p>
+                            <div className="flex gap-3">
+                                <Button
+                                    onClick={() => setShowErrorModal(false)}
+                                    variant="outline"
+                                    className="flex-1"
+                                >
+                                    Close
+                                </Button>
+                                <Button
+                                    onClick={() => {
+                                        setShowErrorModal(false)
+                                        // Optionally retry the transaction
+                                    }}
+                                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                                >
+                                    Try Again
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <main className="flex-1 container py-8 md:py-12">
                 <div className="mx-auto max-w-2xl">
                     <div className="mb-8">
@@ -270,11 +366,13 @@ export default function DonatePage() {
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="email">Email</Label>
-                                        <Input                                                id="first-name" 
-                                                value={donorInfo.email}
-                                                onChange={(e)=> setDonorInfo({...donorInfo,email:e.target.value})}
-                                                required  
-                                            />
+                                        <Input 
+                                            id="email"
+                                            type="email"
+                                            value={donorInfo.email}
+                                            onChange={(e) => setDonorInfo({...donorInfo, email: e.target.value})}
+                                            required  
+                                        />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="country">Country</Label>
