@@ -1,6 +1,7 @@
 // src/data/fetchNewsData.ts
 import axios from "axios";
 import type { NewsArticle } from "../shared/schema";
+import { NEWS_DATA_API_URL } from "../lib/apiConfig";
 
 interface BEArticle {
     news_number: number;
@@ -13,7 +14,7 @@ interface BEArticle {
 }
 
 
-const url = "http://127.0.0.1:5000/getAllNews";
+const url = `${NEWS_DATA_API_URL}/getAllNews`;
 
 export const fetchNewsData = async (): Promise<NewsArticle[]> => {
     try {
