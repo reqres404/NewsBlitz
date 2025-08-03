@@ -30,8 +30,8 @@ export function DesktopNavbar() {
             <span>Feedback</span>
           </Link>
           <ThemeToggle />
-          <Link href="/donate" className="inline-flex">
-            <Button variant="secondary" className="bg-primary text-primary-foreground btn-hover">
+          <Link href="" className="inline-flex">
+            <Button variant="secondary" className="bg-primary text-primary-foreground btn-hover" disabled={true}>
               Donate
             </Button>
           </Link>

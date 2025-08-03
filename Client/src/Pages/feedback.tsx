@@ -1,6 +1,5 @@
+import { ArrowLeft, CheckCircle, Send, XCircle } from "lucide-react"
 import type React from "react"
-
-import { ArrowLeft, Send } from "lucide-react"
 import { useState } from "react"
 import { Link } from "wouter"
 import { Button } from "../components/ui/button"
@@ -10,11 +9,21 @@ import { Label } from "../components/ui/label"
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
 import { Textarea } from "../components/ui/textarea"
-import { toast } from "../hooks/useToast"
+import { API_BASE_URL } from "../lib/apiConfig"
+import { MobileBottomNavbar } from "../components/mobile/MobileBottomNavbar"
+import { useMediaQuery } from "../hooks/useMobile"
 
 export default function Feedback() {
     const [feedbackType, setFeedbackType] = useState("suggestion")
+    const [category, setCategory] = useState("content")
+    const [rating, setRating] = useState("5")
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const isMobile = useMediaQuery("(max-width: 768px)")
+    
+    // Modal states
+    const [showSuccessModal, setShowSuccessModal] = useState(false)
+    const [showErrorModal, setShowErrorModal] = useState(false)
+    const [errorMessage, setErrorMessage] = useState("")
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
@@ -24,15 +33,17 @@ export default function Feedback() {
             const formData = new FormData(event.currentTarget)
             const feedbackData = {
                 feedbackType,
-                category: formData.get('category'),
+                category: category,
                 name: formData.get('name'),
                 email: formData.get('email'),
                 message: formData.get('message'),
-                rating: formData.get('rating'),
+                rating: feedbackType === 'praise' ? rating : undefined,
                 device: formData.get('device')
             }
 
-            const response = await fetch('/api/feedback', {
+            console.log('Sending feedback data:', feedbackData)
+
+            const response = await fetch(`${API_BASE_URL}/api/feedback`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -40,26 +51,34 @@ export default function Feedback() {
                 body: JSON.stringify(feedbackData)
             })
 
-            if (response.ok) {
-                toast({
-                    title: "Feedback submitted",
-                    description: "Thank you for your feedback! We appreciate your input.",
-                })
-                // Reset form
-                event.currentTarget.reset()
+            const result = await response.json()
+
+            // Debug: Log what we received
+            console.log('Response status:', response.status)
+            console.log('Response ok:', response.ok)
+            console.log('Result:', result)
+
+            if (response.ok && result.ok) {
+                console.log('✅ SUCCESS: Showing success modal')
+                // Show success modal
+                setShowSuccessModal(true)
+                // Reset form safely
+                if (event.currentTarget) {
+                    event.currentTarget.reset()
+                }
                 setFeedbackType("suggestion")
+                setCategory("content")
+                setRating("5")
             } else {
-                const error = await response.json()
-                toast({
-                    title: "Error",
-                    description: error.error || "Failed to submit feedback. Please try again.",
-                })
+                console.log('❌ ERROR: Showing error modal')
+                // Show error modal
+                setErrorMessage(result.error || "Failed to submit feedback. Please try again.")
+                setShowErrorModal(true)
             }
         } catch (error) {
-            toast({
-                title: "Error",
-                description: "Failed to submit feedback. Please check your connection and try again.",
-            })
+            console.error('Feedback submission error:', error)
+            setErrorMessage("Failed to submit feedback. Please check your connection and try again.")
+            setShowErrorModal(true)
         }
 
         setIsSubmitting(false)
@@ -67,6 +86,83 @@ export default function Feedback() {
 
     return (
         <div className="min-h-screen flex flex-col">
+            {/* Success Modal */}
+            {showSuccessModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full">
+                        <div className="text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 mb-4">
+                                <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400" />
+                            </div>
+                            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+                                Thank You!
+                            </h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
+                                Your feedback has been submitted successfully. We appreciate your input and will use it to improve our service.
+                            </p>
+                            <div className="flex gap-3">
+                                <Button
+                                    onClick={() => {
+                                        setShowSuccessModal(false)
+                                        window.location.href = '/'
+                                    }}
+                                    variant="outline"
+                                    className="flex-1"
+                                >
+                                    Go Home
+                                </Button>
+                                <Button
+                                    onClick={() => {
+                                        setShowSuccessModal(false)
+                                        // Form is already reset, so user can submit another feedback
+                                    }}
+                                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                                >
+                                    Submit Another
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Error Modal */}
+            {showErrorModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full">
+                        <div className="text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100 dark:bg-red-900 mb-4">
+                                <XCircle className="h-6 w-6 text-red-600 dark:text-red-400" />
+                            </div>
+                            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+                                Submission Failed
+                            </h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
+                                {errorMessage}
+                            </p>
+                            <div className="flex gap-3">
+                                <Button
+                                    onClick={() => setShowErrorModal(false)}
+                                    variant="outline"
+                                    className="flex-1"
+                                >
+                                    Close
+                                </Button>
+                                <Button
+                                    onClick={() => {
+                                        setShowErrorModal(false)
+                                        // User can try submitting again
+                                    }}
+                                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                                >
+                                    Try Again
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <main className="flex-1 container py-8 md:py-12">
                 <div className="mx-auto max-w-2xl">
                     <div className="mb-8">
@@ -125,7 +221,7 @@ export default function Feedback() {
                                 {/* Category */}
                                 <div className="space-y-2">
                                     <Label htmlFor="category">Category *</Label>
-                                    <Select defaultValue="content" name="category">
+                                    <Select value={category} onValueChange={setCategory}>
                                         <SelectTrigger id="category">
                                             <SelectValue placeholder="Select category" />
                                         </SelectTrigger>
@@ -167,7 +263,7 @@ export default function Feedback() {
                                 {feedbackType === "praise" && (
                                     <div className="space-y-2">
                                         <Label htmlFor="rating">How would you rate our app? *</Label>
-                                        <Select defaultValue="5" name="rating">
+                                        <Select value={rating} onValueChange={setRating}>
                                             <SelectTrigger id="rating">
                                                 <SelectValue placeholder="Select rating" />
                                             </SelectTrigger>
@@ -214,7 +310,7 @@ export default function Feedback() {
             </main>
 
             {/* Footer */}
-            <footer className="border-t py-6 md:py-0">
+            <footer className="border-t py-6 md:py-0" style={{ paddingBottom: isMobile ? '64px' : undefined }}>
                 <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16">
                     <p className="text-sm text-muted-foreground">© 2025 NewsBlitz. All rights reserved.</p>
                     <div className="flex items-center gap-4">
@@ -224,6 +320,9 @@ export default function Feedback() {
                     </div>
                 </div>
             </footer>
+            
+            {/* Mobile Bottom Navigation */}
+            {isMobile && <MobileBottomNavbar />}
         </div>
     )
 }

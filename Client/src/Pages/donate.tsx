@@ -10,23 +10,78 @@ import { Label } from "../components/ui/label"
 import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
 import { Tabs, TabsList, TabsTrigger } from "../components/ui/tabs"
+import { API_BASE_URL } from "../lib/apiConfig"
+import { MobileBottomNavbar } from "../components/mobile/MobileBottomNavbar"
+import { useMediaQuery } from "../hooks/useMobile"
 
 export default function DonatePage() {
     const [amount, setAmount] = useState("10")
     const [customAmount, setCustomAmount] = useState("")
+    const [paymentMethod, setPaymentMethod] = useState("card")
     const [frequency, setFrequency] = useState("one-time")
+    const [donorInfo, setDonorInfo] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        country: ""
+    })
     const [isProcessing, setIsProcessing] = useState(false)
+    const isMobile = useMediaQuery("(max-width: 768px)")
+    // Add modal states
+    const [showSuccessModal, setShowSuccessModal] = useState(false)
+    const [showErrorModal, setShowErrorModal] = useState(false)
+    const [transactionId, setTransactionId] = useState("")
+    const [errorMessage, setErrorMessage] = useState("")
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         setIsProcessing(true)
-
-        // Simulate payment processing
-        await new Promise((resolve) => setTimeout(resolve, 1500))
-
-        // In a real app, you would redirect to a success page or show a success message
-        alert("Thank you for your donation!")
-        setIsProcessing(false)
+        
+        try {
+            const donationData = {
+                amount: amount === "custom" ? customAmount : amount,
+                frequency,
+                paymentMethod,
+                donorInfo,
+                timestamp: new Date().toISOString()
+            }
+            
+            console.log(donationData)
+            const response = await fetch(`${API_BASE_URL}/api/donate`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(donationData)
+            })
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`)
+            }
+            
+            const result = await response.json()
+            setTransactionId(result.transactionId)
+            setShowSuccessModal(true)
+            
+            // Reset form
+            setAmount("10")
+            setCustomAmount("")
+            setFrequency("one-time")
+            setPaymentMethod("card")
+            setDonorInfo({
+                firstName: "",
+                lastName: "",
+                email: "",
+                country: ""
+            })
+            
+        } catch (error) {
+            console.error('Donation submission error: ', error)
+            setErrorMessage(error instanceof Error ? error.message : 'An unexpected error occurred')
+            setShowErrorModal(true)
+        } finally {
+            setIsProcessing(false)
+        }
     }
 
     const handleAmountChange = (value: string) => {
@@ -38,6 +93,91 @@ export default function DonatePage() {
 
     return (
         <div className="min-h-screen flex flex-col">
+            {/* Success Modal */}
+            {showSuccessModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full">
+                        <div className="text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 mb-4">
+                                <svg className="h-6 w-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+                                Thank You for Your Donation!
+                            </h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                                Your contribution helps us deliver quality journalism. We've sent a confirmation email to {donorInfo.email}.
+                            </p>
+                            <div className="bg-gray-50 dark:bg-gray-700 rounded-md p-3 mb-4">
+                                <p className="text-xs text-gray-600 dark:text-gray-300">Transaction ID</p>
+                                <p className="text-sm font-mono text-gray-900 dark:text-gray-100">{transactionId}</p>
+                            </div>
+                            <div className="flex gap-3">
+                                <Button
+                                    onClick={() => {
+                                        setShowSuccessModal(false)
+                                        window.location.href = '/feedback'
+                                    }}
+                                    variant="outline"
+                                    className="flex-1"
+                                >
+                                    Feedback
+                                </Button>
+                                <Button
+                                    onClick={() => {
+                                        setShowSuccessModal(false)
+                                        window.location.href = '/news'
+                                    }}
+                                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                                >
+                                    News
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Error Modal */}
+            {showErrorModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full">
+                        <div className="text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100 dark:bg-red-900 mb-4">
+                                <svg className="h-6 w-6 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+                                Transaction Failed
+                            </h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                                {errorMessage}
+                            </p>
+                            <div className="flex gap-3">
+                                <Button
+                                    onClick={() => setShowErrorModal(false)}
+                                    variant="outline"
+                                    className="flex-1"
+                                >
+                                    Close
+                                </Button>
+                                <Button
+                                    onClick={() => {
+                                        setShowErrorModal(false)
+                                        // Optionally retry the transaction
+                                    }}
+                                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                                >
+                                    Try Again
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <main className="flex-1 container py-8 md:py-12">
                 <div className="mx-auto max-w-2xl">
                     <div className="mb-8">
@@ -57,7 +197,7 @@ export default function DonatePage() {
                     <Card>
                         <form onSubmit={handleSubmit}>
                             <CardHeader>
-                                <CardTitle>Make a Donation</CardTitle>
+                                <CardTitle>Make a Donation (DUMMY PAGE)</CardTitle>
                                 <CardDescription>Choose an amount and payment method to support our journalism.</CardDescription>
                             </CardHeader>
                             <CardContent className="space-y-6">
@@ -192,7 +332,7 @@ export default function DonatePage() {
                                 {/* Payment Method */}
                                 <div className="space-y-2">
                                     <Label htmlFor="payment-method">Payment Method</Label>
-                                    <Select defaultValue="card">
+                                    <Select value={paymentMethod} onValueChange={setPaymentMethod} defaultValue="card">
                                         <SelectTrigger id="payment-method">
                                             <SelectValue placeholder="Select payment method" />
                                         </SelectTrigger>
@@ -211,20 +351,36 @@ export default function DonatePage() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
                                             <Label htmlFor="first-name">First Name</Label>
-                                            <Input id="first-name" required />
+                                            <Input 
+                                                id="first-name" 
+                                                value={donorInfo.firstName}
+                                                onChange={(e)=> setDonorInfo({...donorInfo,firstName:e.target.value})}
+                                                required 
+                                                />
                                         </div>
                                         <div className="space-y-2">
                                             <Label htmlFor="last-name">Last Name</Label>
-                                            <Input id="last-name" required />
+                                            <Input 
+                                                id="last-name" 
+                                                value={donorInfo.lastName}
+                                                onChange={(e)=> setDonorInfo({...donorInfo,lastName:e.target.value})}
+                                                required 
+                                                />
                                         </div>
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="email">Email</Label>
-                                        <Input id="email" type="email" required />
+                                        <Input 
+                                            id="email"
+                                            type="email"
+                                            value={donorInfo.email}
+                                            onChange={(e) => setDonorInfo({...donorInfo, email: e.target.value})}
+                                            required  
+                                        />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="country">Country</Label>
-                                        <Select defaultValue="us">
+                                        <Select defaultValue="india" value={donorInfo.country} onValueChange={(value)=> setDonorInfo({...donorInfo,country:value})}>
                                             <SelectTrigger id="country">
                                                 <SelectValue placeholder="Select your country" />
                                             </SelectTrigger>
@@ -331,7 +487,7 @@ export default function DonatePage() {
             </main>
 
             {/* Footer */}
-            <footer className="border-t py-6 md:py-0">
+            <footer className="border-t py-6 md:py-0" style={{ paddingBottom: isMobile ? '64px' : undefined }}>
                 <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-16">
                     <p className="text-sm text-muted-foreground">© 2025 NewsBlitz. All rights reserved.</p>
                     <div className="flex items-center gap-4">
@@ -341,6 +497,9 @@ export default function DonatePage() {
                     </div>
                 </div>
             </footer>
+            
+            {/* Mobile Bottom Navigation */}
+            {isMobile && <MobileBottomNavbar disableDonate={true} />}
         </div>
     )
 }
